@@ -14,6 +14,7 @@
     <link rel="stylesheet" th:href="@{/project/css/ionicons.css}">
     <link rel="stylesheet" th:href="@{/project/css/AdminLTE.css}">
     <link rel="stylesheet" th:href="@{/project/css/skins/skin-blue.min.css}">
+    <link rel="stylesheet" th:href="@{/dist/css/container.css}">
     <!--<link rel="stylesheet" th:href="@{/dist/css/container.css}">-->
 
 </head>
@@ -33,7 +34,7 @@
                 </div>
                 <div class="pull-left info">
                     <p>MoonMagician</p>
-                    <!-- 在线妆台 -->
+                    <!-- 在线状态 -->
                     <p href="#"><i class="fa fa-circle text-success"></i> 吼吼吼</p>
                 </div>
             </div>
@@ -132,8 +133,60 @@
     <div class="row">
         <div th:fragment="content-wrapper"  class="content-wrapper" style="height:720px; background-image: url('/img/background1.jpg');background-size:cover">
             <section class="content container-fluid mybox" style="width: 100%;height:100%; ">
+                <div class="container-fluid" style="width: 80%;margin-top: 1px">
+                    <div class="row" style="margin-top:5%">
+                    <div class="col-md-2"></div>
+                    <div class="panel panel-primary col-md-8">
+                        <div class="panel-body" style="">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img th:src="@{/project/img/1.png}"  class="img-circle" style="width: 100%;height: 100%">
+                                </div>
+                                <div class="col-md-8">
+                                    <h1>欢迎光临我的小网站</h1>
+                                    <hr/>
+                                    <p class="lead">嗨~这里是magician，正在努力的完善这个小网站的功能</p>
+                                    <hr/>
+                                    <ul class="lead">
+                                        <li>一名JAVA程序员</li>
+                                        <li>喜欢探索新的技术</li>
+                                        <li>喜欢幻想的世界</li>
+                                    </ul>
 
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <blockquote>
+                                        <p>我的网名可能是magician,或者π或者欺诈师</p>
+                                    </blockquote>
+                                    <blockquote>
+                                        <p>喜欢神秘的东西或者幻想的东西，在幻想的世界可以做到现实中无法做大的事情。一直致力于完成自己幻想世界的搭建。因为对于这些的向往才一直使用magician或者欺诈师这类的网名</p>
+                                    </blockquote>
+                                    <blockquote>
+                                        <p>喜欢一切美好的事物。并且希望能够保护好哪些美好的东西，聚会时一般都是在角落里沉默的那种类型，基本上不会在网络上交友</p>
+                                    </blockquote>
+                                </div>
+                                <div class="col-md-6">
+                                    <div>
+                                        <a class="btn btn-default" href="https://space.bilibili.com/35289419" role="button" style="width: 100%;margin: 5% ">BiliBili @欺诈师-3306</a>
+                                        <a class="btn btn-default" href="https://github.com/Cheackmate" role="button" style="width: 100%;margin: 5% ">Github @Cheackmate</a>
+                                        <a class="btn btn-default" href="https://blog.csdn.net/baidu_40924406/article/details/83241018" role="button" style="width: 100%;margin: 5% ">CSDN @fly_magician</a>
+                                        <a class="btn btn-default" href="https://www.nowcoder.com/profile/360533504" role="button" style="width: 100%;margin: 5% ">牛客网 @magician3306</a>
+                                    </div>
+
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+                    </div>
+                </div>
             </section>
+
         </div>
     </div>
     <div  th:replace="commons/template::main-footer"></div>
