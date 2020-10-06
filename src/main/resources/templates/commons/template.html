@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible">
+    <title>index</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    <link rel="stylesheet" th:href="@{/dist/css/bootstrap.css}">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" th:href="@{/project/css/font-awesome.css}">
+    <!-- Ionicons -->
+    <link rel="stylesheet" th:href="@{/project/css/ionicons.css}">
+    <!-- Theme style -->
+    <link rel="stylesheet" th:href="@{/project/css/AdminLTE.css}">
+    <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
+          page. However, you can choose any other skin. Make sure you
+          apply the skin class to the body tag so the changes take effect. -->
+    <link rel="stylesheet" th:href="@{/project/css/skins/skin-blue.min.css}">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>-->
+    <!--<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>-->
+
+
+    <!-- Google Font -->
+    <!--<link rel="stylesheet"-->
+          <!--href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">-->
+
+
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper">
+        <!-- Main Header -->
+        <header th:fragment="mian-header"  class="main-header">
+
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+                <span class="logo-mini">SCP</span>
+                <!-- logo for regular state and mobile devices -->
+                <span class="logo-lg"><b>Welcome</b>  magician</span>
+            </a>
+
+            <!-- Header Navbar -->
+            <nav class="navbar navbar-static-top" role="navigation">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                    <span class="sr-only">切换左侧导航栏的显示方式</span>
+                </a>
+                <!-- Navbar Right Menu -->
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Messages: style can be found in dropdown.less-->
+                        <li class="dropdown messages-menu">
+                            <!-- Menu toggle button -->
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-envelope-o"></i>
+                                <!--这里是邮箱图标的信息显示位置-->
+                                <span class="label label-success" th:if="${session.email} ne '0'" th:text="${session.email}"></span>
+                            </a>
+                            <!--这里面是邮箱图标下拉菜单栏-->
+                            <ul class="dropdown-menu" th:if="${session.email} ne '0'">
+                                <!--头部显示所有信息总数量-->
+                                <li class="header">You have 4 messages</li>
+                                <!--显示每个信息的单个数据，点击后跳转到相应的信息页面-->
+                                <li>
+                                    <!-- inner menu: contains the messages -->
+                                    <ul class="menu">
+                                        <li><!-- start message -->
+                                            <a href="add.html" target="_blank">
+                                                <div class="pull-left">
+                                                    <!-- User Image -->
+                                                    <img th:src="@{/project/img/1.png}" class="img-circle" alt="User Image">
+                                                </div>
+                                                <!-- Message title and timestamp -->
+                                                <h4>
+                                                    Support Team
+                                                    <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                                </h4>
+                                                <!-- The message -->
+                                                <p>Why not buy a new awesome theme?</p>
+                                            </a>
+                                        </li>
+
+                                        <li><!-- start message -->
+                                            <a href="add.html" target="_blank">
+                                                <div class="pull-left">
+                                                    <!-- User Image -->
+                                                    <img th:src="@{/project/img/2.png}" class="img-circle" alt="User Image">
+                                                </div>
+                                                <!-- Message title and timestamp -->
+                                                <h4>
+                                                    Support Team
+                                                    <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                                </h4>
+                                                <!-- The message -->
+                                                <p>Why not buy a new awesome theme?</p>
+                                            </a>
+                                        </li>
+                                        <!-- end message -->
+                                    </ul>
+                                    <!-- /.menu -->
+                                </li>
+                                <!--更多信息页面add2.html并且使用新建方式跳转到新的页面。-->
+                                <li class="footer"><a href="add2.html" target="_blank">See All Messages</a></li>
+                            </ul>
+                        </li>
+                        <!-- /.messages-menu -->
+
+                        <!-- Notifications Menu -->
+                        <li class="dropdown notifications-menu">
+                            <!-- Menu toggle button -->
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-bell-o"></i>
+                                <!--同上显示的是信息数量-->
+                                <span class="label label-warning" th:if="${session.tip} ne '0'" th:text="${session.tip}">10</span>
+
+                            </a>
+                            <ul class="dropdown-menu" th:if="${session.tip} ne '0'">
+                                <!--头部统计信息总数-->
+                                <li class="header">You have 10 notifications</li>
+                                <li>
+                                    <!-- Inner Menu: contains the notifications -->
+                                    <ul class="menu">
+                                        <li><!-- start notification -->
+                                            <a href="#">
+                                                <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                                            </a>
+                                        </li>
+                                        <!-- end notification -->
+                                    </ul>
+                                </li>
+                                <li class="footer"><a href="#">View all</a></li>
+                            </ul>
+                        </li>
+                        <!-- Tasks Menu -->
+                        <li class="dropdown tasks-menu">
+                            <!-- Menu Toggle Button -->
+                            <a href="#" class="dropdown-toggle"  data-toggle="dropdown">
+                                <i class="fa fa-flag-o"></i>
+                                <span class="label label-danger" th:if="${session.message} ne '0'" th:text="${session.message}"></span>
+                            </a>
+                            <ul  class="dropdown-menu" th:if="${session.message} ne '0'" >
+                                <li class="header">You have 9 tasks</li>
+                                <li>
+                                    <!-- Inner menu: contains the tasks -->
+                                    <ul class="menu">
+                                        <li><!-- Task item -->
+                                            <a href="#">
+                                                <!-- Task title and progress text -->
+                                                <h3>
+                                                    Design some buttons
+                                                    <small class="pull-right">20%</small>
+                                                </h3>
+                                                <!-- The progress bar -->
+                                                <div class="progress xs">
+                                                    <!-- Change the css width attribute to simulate progress -->
+                                                    <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar"
+                                                         aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                        <span class="sr-only">20% Complete</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <!-- end task item -->
+                                    </ul>
+                                </li>
+                                <li class="footer">
+                                    <a href="#">View all tasks</a>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <!-- User Account Menu -->
+
+                        <!--下面两个li是进行的登录显示的，从后台传输过来session数据，判断他是否登录，登录显示出来，没有的登录就显示的登录按钮-->
+                        <li class="dropdown user user-menu" th:if="${session.logincode} eq 'success'" >
+                            <!--/*@thymesVar id="logincode" type="springfox"*/-->
+                            <span th:value="${session.logincode}"></span>
+                        <!-- Menu Toggle Button -->
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <!-- The user img in the navbar-->
+                                <img th:src="${session.headurl}" class="user-image" alt="User Image">
+                                <!-- hidden-xs hides the username on small devices so only the img appears. -->
+                                <!--用户名-->
+                                <span class="hidden-xs">moonmagician</span>
+                            </a>
+                            <!--下拉菜单信息-->
+                            <ul class="dropdown-menu">
+                                <!-- The user img in the menu -->
+                                <li class="user-header">
+                                    <!--头像信息，从数据库中获取登录人的信息-->
+                                    <img th:src="${session.headurl}" class="img-circle" alt="User Image">
+                                    <!--显示登陆人相关信息-->
+                                    <p >
+                                        [[${session.username}]]
+                                        <small th:value="${session.registertime}"></small>
+                                    </p>
+                                </li>
+                                <!-- Menu Body -->
+                                <li class="user-body">
+                                    <div class="row">
+                                        <div class="col-xs-4 text-center">
+                                            <a href="#">关注</a>
+                                        </div>
+                                        <div class="col-xs-4 text-center">
+                                            <a href="#">粉丝</a>
+                                        </div>
+                                        <div class="col-xs-4 text-center">
+                                            <a href="#">动态</a>
+                                        </div>
+                                    </div>
+                                    <!-- /.row -->
+                                </li>
+                                <!-- Menu Footer-->
+                                <li class="user-footer">
+                                    <div class="pull-left">
+                                        <a href="#" class="btn btn-default btn-flat">详细</a>
+                                    </div>
+                                    <div class="pull-right">
+                                        <a href="/logout" class="btn btn-default btn-flat">登出</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown user user-menu" th:if=" ${session.logincode} ne 'success'">
+                            <span th:value="${session.logincode}"></span>
+                            <a href="/userlog" class="dropdown-toggle" >
+                                <!--用户名-->
+                                <span class="hidden-xs">登录/注册</span>
+                            </a>
+                        </li>
+                        <!-- Control Sidebar Toggle Button -->
+                        <li>
+                            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Left side column. contains the logo and sidebar -->
+        <aside th:fragment="main-sidebar"  class="main-sidebar">
+
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
+
+                <!-- Sidebar user panel (optional) -->
+                <div class="user-panel">
+                    <div class="pull-left image">
+                        <!--可以自定义上传图片-->
+                        <img th:src="@{/project/img/1.png}" class="img-circle" alt="User Image">
+                    </div>
+                    <div class="pull-left info">
+                        <p>MoonMagician</p>
+                        <!-- 在线妆台 -->
+                        <p href="#"><i class="fa fa-circle text-success"></i> 吼吼吼</p>
+                    </div>
+                </div>
+
+                <!-- search form (Optional) -->
+                <form action="#" method="get" class="sidebar-form">
+                    <div class="input-group">
+                        <input type="text" name="q" class="form-control" placeholder="搜索...">
+                        <span class="input-group-btn">
+                            <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+                <!-- /.search form -->
+
+                <!-- Sidebar Menu -->
+                <ul class="sidebar-menu" data-widget="tree">
+                    <!--侧栏第一个标题的位置-->
+                    <li class="header">导航</li>
+                    <!-- Optionally, you can add icons to the links -->
+                    <li class="active">
+                        <a href="/">
+                            <i class="glyphicon glyphicon-home"></i>
+                            <span>首页</span>
+                        </a>
+                    </li>
+                    <!-- Optionally, you can add icons to the links -->
+                    <li class="">
+                        <a href="/introduction">
+                            <i class="glyphicon glyphicon-user"></i>
+                            <span>自我介绍</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/allproject">
+                            <i class="glyphicon glyphicon-briefcase"></i>
+                            <span>个人项目</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/javanote">
+                            <i class="glyphicon glyphicon-list-alt"></i>
+                            <span>Java笔记</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/linuxnote/1">
+                            <i class="glyphicon glyphicon-list-alt"></i>
+                            <span>Linux笔记</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/mysqlnote">
+                            <i class="glyphicon glyphicon-list-alt"></i>
+                            <span>Mysql笔记</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/gitnote">
+                            <i class="glyphicon glyphicon-list-alt"></i>
+                            <span>Git笔记</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/vuenote">
+                            <i class="glyphicon glyphicon-list-alt"></i>
+                            <span>Vue笔记</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/redisnote">
+                            <i class="glyphicon glyphicon-list-alt"></i>
+                            <span>Redis笔记</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/othernote">
+                            <i class="glyphicon glyphicon-list-alt"></i>
+                            <span>其他笔记</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/talk">
+                            <i class="glyphicon glyphicon-phone-alt"></i>
+                            <span>讨论区</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- /.sidebar-menu -->
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div th:fragment="content-wrapper" class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+                <h1>
+                    页面标题
+                    <small>页面副标题</small>
+                </h1><ol class="breadcrumb">
+                <li>
+                    <a href="#">
+                        <i class="glyphicon glyphicon-bookmark"></i>
+                        Level
+                    </a>
+                </li>
+                <li class="active">Here</li>
+                <li class="active">whids</li>
+                <li class="active">whis</li>
+
+            </ol>
+            </section>
+
+            <!-- Main content -->
+            <section class="content container-fluid">
+                <div id="container">
+                    页面内容
+                </div>
+
+                <!--------------------------
+                  | Your Page Content Here |
+                  -------------------------->
+
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+
+        <!-- Main Footer -->
+        <footer th:fragment="main-footer" class="main-footer">
+            <!-- To the right -->
+            <div class="pull-right hidden-xs">
+                来一口毒奶
+            </div>
+            <!-- Default to the left -->
+            <strong>Copyright &copy; 2020 <a href="#">上海未元物质科技有限公司</a>.</strong> 保留所有权利
+        </footer>
+
+        <!-- Control Sidebar -->
+        <aside th:fragment="control-sidebar" class="control-sidebar control-sidebar-dark">
+             <!--Create the tabs -->
+            <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+                <li class="active"><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+                <li><a href="#control-sidebar-stats-tab" data-toggle="tab"><i class="fa fa-stumbleupon"></i></a></li>
+                <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <!-- Home tab content -->
+                <div class="tab-pane active" id="control-sidebar-home-tab">
+                    <h3 class="control-sidebar-heading">最近活动</h3>
+                    <ul class="control-sidebar-menu">
+                        <li>
+                            <a href="javascript:;">
+                                <i class="menu-icon fa fa-birthday-cake bg-red"></i>
+
+                                <div class="menu-info">
+                                    <h4 class="control-sidebar-subheading">生日聚会</h4>
+
+                                    <p>生日日期</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.control-sidebar-menu -->
+
+                    <h3 class="control-sidebar-heading">任务进展</h3>
+                    <ul class="control-sidebar-menu">
+                        <li>
+                            <a href="javascript:;">
+                                <h4 class="control-sidebar-subheading">
+                                    设计一个网站
+                                    <span class="pull-right-container">
+                        <span class="label label-danger pull-right">70%</span>
+                      </span>
+                                </h4>
+
+                                <div class="progress progress-xxs">
+                                    <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.control-sidebar-menu -->
+
+                </div>
+                <!-- /.tab-pane -->
+                <!-- Stats tab content -->
+                <div class="tab-pane" id="control-sidebar-stats-tab">
+                    <header>统计选项卡</header>
+                    <small>所有选项卡</small>
+                </div>
+                <!-- /.tab-pane -->
+                <!-- Settings tab content -->
+                <div class="tab-pane" id="control-sidebar-settings-tab">
+                    <form method="post">
+                        <h3 class="control-sidebar-heading">全局设置</h3>
+
+                        <div class="form-group">
+                            <label class="control-sidebar-subheading">
+                                支持使用
+                                <input type="checkbox" class="pull-right" checked>
+                            </label>
+
+                            <p>
+                                一些全局信息
+                            </p>
+                        </div>
+                        <!-- /.form-group -->
+                    </form>
+                </div>
+                <!-- /.tab-pane -->
+            </div>
+        </aside>
+
+        <!-- /.control-sidebar -->
+        <!-- Add the sidebar's background. This div must be placed
+        immediately after the control sidebar -->
+        <div th:fragment="control-sidebar-bg" class="control-sidebar-bg"></div>
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- REQUIRED JS SCRIPTS -->
+
+    <!-- jQuery 3 -->
+    <script th:src="@{/project/js/jquery-3.3.1.min.js}"></script>
+    <!-- Bootstrap 3.3.7 -->
+    <script th:src="@{/project/js/bootstrap.js}"></script>
+    <!-- AdminLTE App -->
+    <script th:src="@{/project/js/adminlte.js}"></script>
+    <!--<script>-->
+        <!--$(function () {-->
+            <!--$('ul.sidebar-menu li').click(function () {-->
+                <!--var li = $('ul.sidebar-menu li.active');-->
+                <!--li.removeClass('active');-->
+                <!--$(this).addClass('active');-->
+            <!--});-->
+
+            <!--$('.myLeftMenu').click(function (e) {-->
+
+                <!--var url = $(this).attr('data');-->
+              <!--//  console.log(url);-->
+                <!--$('#container').load(url);-->
+            <!--});-->
+        <!--})-->
+    <!--</script>-->
+    <!-- Optionally, you can add Slimscroll and FastClick plugins.
+         Both of these plugins are recommended to enhance the
+         user experience. -->
+</body>
+</html>
