@@ -3,10 +3,13 @@ package com.moonmagician.reloads.controller;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.moonmagician.reloads.entity.Allproject;
 import com.moonmagician.reloads.entity.Imgview;
 import com.moonmagician.reloads.entity.Linuxnote;
+import com.moonmagician.reloads.mapper.AllprojectMapper;
 import com.moonmagician.reloads.mapper.ImgviewMapper;
 import com.moonmagician.reloads.mapper.LinuxNoteMapper;
+import com.moonmagician.reloads.service.AllprojectService;
 import com.moonmagician.reloads.service.ImgviewService;
 import com.moonmagician.reloads.service.LinuxNoteService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -158,13 +161,39 @@ public class LeftMenuController {
         return"bar/constitute/introduction";
     }
 
+
+    @Autowired
+    AllprojectMapper allprojectMapper;
+
+    @Autowired
+    AllprojectService allprojectService;
     /**
      * 返回个人项目页面
      * 此页面展示我做个的一些项目案例，并且指出相关项目在github上面的位置
      * @return
      */
-    @RequestMapping("/allproject")
-    public String allproject(){
+    @RequestMapping("/allproject/{id}")
+    public String allproject(@PathVariable("id") int id,Model model){
+        //首先查找总的数据数量
+        Integer datacount = allprojectService.datacount();
+        int pageNumber = datacount/10+1;
+
+        //分页查找当前页的数据
+        QueryWrapper<Allproject> queryWrapper = new QueryWrapper<>();
+        //        queryWrapper.eq("age",23);
+        IPage<Allproject> page = new Page<>(id,10);
+        IPage<Allproject> userIPage = allprojectMapper.selectPage(page, queryWrapper);
+        long total = userIPage.getTotal();
+
+        model.addAttribute("allprojectpageindex",id);
+        model.addAttribute("allprojectpagelist",userIPage);
+        model.addAttribute("allprojectpagesize",total);
+        model.addAttribute("allprojectpagenumber",pageNumber);
+
+
+        List<Allproject> list = new ArrayList<>();
+        userIPage.getRecords().forEach(user-> list.add(user));
+        model.addAttribute("allprojectdatas",list);
         return "bar/constitute/allproject";
     }
 

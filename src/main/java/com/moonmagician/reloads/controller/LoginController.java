@@ -1,17 +1,13 @@
 package com.moonmagician.reloads.controller;
 
-import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.moonmagician.reloads.entity.Consumer;
-import com.moonmagician.reloads.entity.Imgview;
 import com.moonmagician.reloads.service.impl.ConsumerServiceImpl;
 import com.moonmagician.reloads.service.impl.ImgviewServiceImpl;
 import io.lettuce.core.dynamic.annotation.Param;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 
 import javax.servlet.http.HttpServletRequest;
