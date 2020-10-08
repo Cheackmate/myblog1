@@ -14,6 +14,7 @@
     <link rel="stylesheet" th:href="@{/project/css/ionicons.css}">
     <link rel="stylesheet" th:href="@{/project/css/AdminLTE.css}">
     <link rel="stylesheet" th:href="@{/project/css/skins/skin-blue.min.css}">
+    <link rel="stylesheet" th:href="@{/dist/css/container.css}">
     <!--<link rel="stylesheet" th:href="@{/dist/css/container.css}">-->
 
 </head>
@@ -132,7 +133,57 @@
     <div class="row">
         <div th:fragment="content-wrapper"  class="content-wrapper" style="height:720px; background-image: url('/img/background1.jpg');background-size:cover">
             <section class="content container-fluid mybox" style="width: 100%;height:100%; ">
+                <div class="container-fluid" style="width: 80%;margin-top: 1px">
+                    <div class="container-fluid " style="width: 60%">
+                        <h1  class="text-center" style="color: white">MoonMagician</h1>
+                        <p class="text-center"style="color: white">F O R W A R D + E N E R G Y = H A P P I N E S S</p>
+                    </div>
+                    <!--这里是图片的显示区域，之后使用themely语句循环调用后台传输过来的一页的数据-->
 
+                    <div th:each="data:${gitnotedatas}" class="container-fluid mystyle">
+                        <div class="row" >
+                            <div class="col-md-2 "></div>
+                            <a class="col-md-8"  th:href="'/gitnote/note/'+${data.webpagepath}">
+                                <img th:src="${data.imgurl}" class="view-box" style="position: relative;"/>
+                                <div style="position:absolute;top:50%;width:95%;height: 30%;">
+                                    <div class="view-box col-md-12" th:text="${data.title}">
+                                    </div>
+                                    <div class="showdata text-nowrap col-md-12" >
+                                        <!--${#dates.format(baseFeedbackInfo.createTime, 'yyyy-MM-dd HH:mm:ss')-->
+                                        <!--<span th:text="'创建日期:'+${#dates.format(data.createtime,'yyyy-MM-dd HH:mm:ss')}"></span>-->
+                                        <span th:text="'创建日期: '+${data.createtime}" ></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <span th:text="'访问数量: '+${data.visitcount}" ></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <span >讨论数量: [[${data.discusscount}]]</span>
+                                        <!--<span th:text="“'讨论数量: '+${data.discusscount}"></span>-->
+                                    </div>
+
+
+                                </div>
+                            </a>
+                            <div class="col-md-2 col-xs-1"></div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!--这里是分页，之后用数据库查询到的数据进行分页的显示。-->
+                <div>
+                    <nav aria-label="Page navigation" style="text-align: center;">
+                        <ul class="pagination">
+                            <li th:if="${gitnotepageindex}ne'1'">
+                                <a th:href="'/gitnote/'+${(gitnotepageindex)-1}" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li th:each="i:${#numbers.sequence(1,gitnotepagenumber)}"><a th:href="'/gitnote/'+${i}" th:text="${i}"></a></li>
+                            <li th:if="${gitnotepagenumber}ne${gitnotepageindex} ">
+                                <a th:href="'/javanote/'+${gitnotepageindex+1}" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </section>
         </div>
     </div>

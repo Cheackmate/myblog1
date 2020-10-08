@@ -3,18 +3,9 @@ package com.moonmagician.reloads.controller;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.moonmagician.reloads.entity.Allproject;
-import com.moonmagician.reloads.entity.Imgview;
-import com.moonmagician.reloads.entity.Javanote;
-import com.moonmagician.reloads.entity.Linuxnote;
-import com.moonmagician.reloads.mapper.AllprojectMapper;
-import com.moonmagician.reloads.mapper.ImgviewMapper;
-import com.moonmagician.reloads.mapper.JavaNoteMapper;
-import com.moonmagician.reloads.mapper.LinuxNoteMapper;
-import com.moonmagician.reloads.service.AllprojectService;
-import com.moonmagician.reloads.service.ImgviewService;
-import com.moonmagician.reloads.service.JavaNoteService;
-import com.moonmagician.reloads.service.LinuxNoteService;
+import com.moonmagician.reloads.entity.*;
+import com.moonmagician.reloads.mapper.*;
+import com.moonmagician.reloads.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -289,31 +280,108 @@ public class LeftMenuController {
     public String redisnote(){
         return "bar/constitute/redisnote";
     }
+
+    @Autowired
+    MysqlNoteMapper mysqlNoteMapper;
+    @Autowired
+    MysqlNoteService mysqlNoteService;
+
     /**
      * 返回笔记整理下mysqlnote笔记页面
      * 此页面是mysqlnote的相关笔记
      * @return
      */
     @RequestMapping("/mysqlnote/{id}")
-    public String distributednote(@PathVariable("id") int id){
+    public String distributednote(@PathVariable("id") int id,Model model){
+        //首先查找总的数据数量
+        Integer datacount = mysqlNoteService.datacount();
+        int pageNumber = datacount/10+1;
+
+        //分页查找当前页的数据
+        QueryWrapper<Mysqlnote> queryWrapper = new QueryWrapper<>();
+        //        queryWrapper.eq("age",23);
+        IPage<Mysqlnote> page = new Page<>(id,10);
+        IPage<Mysqlnote> userIPage = mysqlNoteMapper.selectPage(page, queryWrapper);
+        long total = userIPage.getTotal();
+
+        model.addAttribute("mysqlnotepageindex",id);
+        model.addAttribute("mysqlnotepagelist",userIPage);
+        model.addAttribute("mysqlnotepagesize",total);
+        model.addAttribute("mysqlnotepagenumber",pageNumber);
+
+
+        List<Mysqlnote> list = new ArrayList<>();
+        userIPage.getRecords().forEach(user-> list.add(user));
+        model.addAttribute("mysqlnotedatas",list);
         return "bar/constitute/mysqlnote";
     }
 
+
+    @Autowired
+    GitNoteMapper gitNoteMapper;
+    @Autowired
+    GitNoteService gitNoteService;
     /**
      * 返回git笔记列表页面
      * @return
      */
     @RequestMapping("/gitnote/{id}")
-    public String gitnote(@PathVariable("id") int id){
+    public String gitnote(@PathVariable("id") int id,Model model){
+        //首先查找总的数据数量
+        Integer datacount = gitNoteService.datacount();
+        int pageNumber = datacount/10+1;
+
+        //分页查找当前页的数据
+        QueryWrapper<Gitnote> queryWrapper = new QueryWrapper<>();
+        //        queryWrapper.eq("age",23);
+        IPage<Gitnote> page = new Page<>(id,10);
+        IPage<Gitnote> userIPage = gitNoteMapper.selectPage(page, queryWrapper);
+        long total = userIPage.getTotal();
+
+        model.addAttribute("gitnotepageindex",id);
+        model.addAttribute("gitnotepagelist",userIPage);
+        model.addAttribute("gitnotepagesize",total);
+        model.addAttribute("gitnotepagenumber",pageNumber);
+
+
+        List<Gitnote> list = new ArrayList<>();
+        userIPage.getRecords().forEach(user-> list.add(user));
+        model.addAttribute("gitnotedatas",list);
+
         return "bar/constitute/gitnote";
     }
 
+    @Autowired
+    OtherNoteMapper otherNoteMapper;
+    @Autowired
+    OtherNoteService otherNoteService;
     /**
      * 返回其他笔记列表页面
      * @return
      */
     @RequestMapping("/othernote/{id}")
-    public String othernote(@PathVariable("id") int id){
+    public String othernote(@PathVariable("id") int id,Model model){
+
+        //首先查找总的数据数量
+        Integer datacount = otherNoteService.datacount();
+        int pageNumber = datacount/10+1;
+
+        //分页查找当前页的数据
+        QueryWrapper<Othernote> queryWrapper = new QueryWrapper<>();
+        //        queryWrapper.eq("age",23);
+        IPage<Othernote> page = new Page<>(id,10);
+        IPage<Othernote> userIPage = otherNoteMapper.selectPage(page, queryWrapper);
+        long total = userIPage.getTotal();
+
+        model.addAttribute("othernotepageindex",id);
+        model.addAttribute("othertepagelist",userIPage);
+        model.addAttribute("othertepagesize",total);
+        model.addAttribute("othernotepagenumber",pageNumber);
+
+
+        List<Othernote> list = new ArrayList<>();
+        userIPage.getRecords().forEach(user-> list.add(user));
+        model.addAttribute("othernotedatas",list);
         return "bar/constitute/othernote";
     }
 }

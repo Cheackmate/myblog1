@@ -22,7 +22,8 @@
     <div  th:replace="commons/template::main-sidebar"></div>
 
     <!--各种页面的显示区域-->
-    <div th:fragment="content-wrapper" class="content-wrapper " style="height:720px; background-image: url('/img/background1.jpg');background-size:cover">
+    <div class="row">
+        <div th:fragment="content-wrapper" class="content-wrapper " style="height:720px; background-image: url('/img/background1.jpg');background-size:cover">
         <!-- Content Header (Page header) -->
 
         <!-- Main content -->
@@ -82,7 +83,7 @@
             </section>
         <!-- /.content -->
     </div>
-
+    </div>
 
 
 
