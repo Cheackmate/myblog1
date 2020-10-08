@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Java笔记</title>
+
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!--标题头像设置-->
+    <link th:href="@{/img/favicon.ico}" type="image/ico" rel="shortcut icon">
+    <!--各种css的引入-->
+    <link rel="stylesheet" th:href="@{/dist/css/bootstrap.css}">
+    <link rel="stylesheet" th:href="@{/project/css/font-awesome.css}">
+    <link rel="stylesheet" th:href="@{/project/css/ionicons.css}">
+    <link rel="stylesheet" th:href="@{/project/css/AdminLTE.css}">
+    <link rel="stylesheet" th:href="@{/project/css/skins/skin-blue.min.css}">
+    <link rel="stylesheet" th:href="@{/dist/css/container.css}">
+    <!--<link rel="stylesheet" th:href="@{/dist/css/container.css}">-->
+
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="warp">
+    <div th:replace="commons/template::mian-header"></div>
+    <aside th:fragment="main-sidebar" class="main-sidebar">
+
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+
+            <!-- Sidebar user panel (optional) -->
+            <div class="user-panel">
+                <div class="pull-left image">
+                    <!--可以自定义上传图片-->
+                    <img th:src="@{/project/img/1.png}" class="img-circle" alt="User Image">
+                </div>
+                <div class="pull-left info">
+                    <p>MoonMagician</p>
+                    <!-- 在线妆台 -->
+                    <p href="#"><i class="fa fa-circle text-success"></i> 吼吼吼</p>
+                </div>
+            </div>
+
+            <!-- search form (Optional) -->
+            <form action="#" method="get" class="sidebar-form">
+                <div class="input-group">
+                    <input type="text" name="q" class="form-control" placeholder="搜索...">
+                    <span class="input-group-btn">
+                            <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </span>
+                </div>
+            </form>
+            <!-- /.search form -->
+
+            <!-- Sidebar Menu -->
+            <ul class="sidebar-menu" data-widget="tree">
+                <!--侧栏第一个标题的位置-->
+                <li class="header">导航</li>
+                <!-- Optionally, you can add icons to the links -->
+                <li>
+                    <a href="/">
+                        <i class="glyphicon glyphicon-home"></i>
+                        <span>首页</span>
+                    </a>
+                </li>
+                <!-- Optionally, you can add icons to the links -->
+                <li class="">
+                    <a href="/introduction">
+                        <i class="glyphicon glyphicon-user"></i>
+                        <span>自我介绍</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/allproject">
+                        <i class="glyphicon glyphicon-briefcase"></i>
+                        <span>个人项目</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="/javanote">
+                        <i class="glyphicon glyphicon-list-alt"></i>
+                        <span>Java笔记</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/linuxnote">
+                        <i class="glyphicon glyphicon-list-alt"></i>
+                        <span>Linux笔记</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/mysqlnote">
+                        <i class="glyphicon glyphicon-list-alt"></i>
+                        <span>Mysql笔记</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/gitnote">
+                        <i class="glyphicon glyphicon-list-alt"></i>
+                        <span>Git笔记</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/vuenote">
+                        <i class="glyphicon glyphicon-list-alt"></i>
+                        <span>Vue笔记</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/redisnote">
+                        <i class="glyphicon glyphicon-list-alt"></i>
+                        <span>Redis笔记</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/othernote">
+                        <i class="glyphicon glyphicon-list-alt"></i>
+                        <span>其他笔记</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/talk">
+                        <i class="glyphicon glyphicon-phone-alt"></i>
+                        <span>讨论区</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- /.sidebar-menu -->
+        </section>
+        <!-- /.sidebar -->
+    </aside>
+
+    <div class="row">
+        <div th:fragment="content-wrapper" class="content-wrapper"
+             style="height:720px; background-image: url('/img/background1.jpg');background-size:cover">
+            <section class="content container-fluid mybox" style="width: 100%;height:100%; ">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10 panel panel-primary">
+                        <br>
+                        <br>
+                        <blockquote>
+                            <p>
+                                究极总结：<br>
+
+                                你登录任意一个网站，点击登录是出现页面，点击链接还是出现的页面；你的任何操作都是页面的切换。<br>
+
+                                我为什么强调页面的切换，是为了方便你理解路径。<br>
+
+                                页面向后台发送请求的路径，后台接收请求要跳转的URL路径。页面向后台发送请求的路径是XML配置的路径；后台跳转的路径是相对于发出请求的这个页面的路径（可以是相对路径）
+                            </p>
+                        </blockquote>
+
+                        <h2>Servlet</h2>
+                        <hr/>
+
+                        <p>首先，你必须必须理解到底什么是Servlet，并且他有什么作用。</p>
+
+                        <h3>Servlet概述</h3>
+
+                        <h4>什么是Servlet：</h4>
+                        <p>
+                            是运行在服务器端的一个小的java程序（其实我们眼中的程序：不过是代码罢了），接收和响应从客户端发送的请求。==就是你在浏览器中输入地址访问，这都是在使用servlet。==
+                        </p>
+                        <h4>Servlet的作用：</h4>
+
+                        <p>
+                            处理客户端的请求，并且对请求作出响应。
+                        </p>
+                        <h3>如何在idea里面创建一个简单Servlet入门程序</h3>
+
+                        <p>servlet属于javaweb，肯定需要服务器tomcat的支持，并且建立的是javaweb项目而不是Java项目。</p>
+
+                        <a>https://blog.csdn.net/jesonjoke/article/details/78276714</a><br>
+
+                        <h4>使用Servlet</h4>
+
+                        <p>你一定记住，只要涉及Servlet接口都必须在web.xml里面映射路径。</p>
+
+                        <h5>实现Servlet接口</h5>
+
+                        <blockquote>
+                            <p>目前不怎么使用这个方式进行servlet开发，都是在使用继承HttpServlet的方式。</p>
+                        </blockquote>
+
+                        inint():在启动Tomcat的一瞬间执行一次（服务器内部调用的），往后不在执行<br>
+                        <br>
+                        service()：在客户端访问服务器时执行，不断访问就不断执行<br>
+                        <br>
+                        destroy()：关闭Tomcat的一瞬间执行。<br>
+                        <br>
+                        <PRE>
+import javax.servlet.*;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+
+@WebServlet(name = "Demo2")
+public class Demo2 implements Servlet {
+    int count=0;
+    @Override
+    public void init(ServletConfig servletConfig) throws ServletException {
+
+        count++;
+        System.out.println(count);
+
+    }
+
+    @Override
+    public ServletConfig getServletConfig() {
+     return null;
+    }
+
+    @Override
+    public void service(ServletRequest servletRequest, ServletResponse servletResponse) throwservletException, IOException {
+        servletResponse.getWriter().print("&lt;h1>hello servlet&lt;/h1>");
+    }
+
+    @Override
+    public String getServletInfo() {
+        return null;
+    }
+
+    @Override
+    public void destroy() {
+        System.out.println(count);
+    }
+}
+                         </PRE>
+
+                        <h5>继承HttpServlet类</h5>
+
+                        <p>案例：使用servlet记录用户访问次数</p>
+                        <p>
+                            `联想专场项目：专场的远程服务器上面的程序是一直开着的，所以我们在 任何地方登陆那个项目的网址都可以访问到这个项目，那就是一个服务器，他不会轻易关掉。每次的访问都可以记录下来`
+                        </p>
+                        <pre>
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+@WebServlet(name = "Demo")
+public class Demo extends HttpServlet {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throwservletException, IOException {
+
+    }
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throwservletException, IOException {
+        ServletContext context = getServletContext(); // 获得ServletContext对象
+        Integer count = (Integer)context.getAttribute("counter"); // 从ServletContext中获得计数器对象
+        if(count == null){ // 如果为空，则在ServletContext中设置一个计数器的属性.即在第一次提交请求时创建该属性
+            count = 1;
+            context.setAttribute("counter", count);
+        }else{ // 之后的请求，每次对计数器值加1
+            context.setAttribute("counter", count+1);
+        }
+
+        response.setContentType("text/html");
+        response.setCharacterEncoding("utf-8");
+        PrintWriter out = response.getWriter();
+        out.println("!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">");
+        out.println("HTML>");
+        out.println("HEAD>TITLE>统计网站访问次数/TITLE>/HEAD>);
+        out.println("BODY>");
+        out.print("h2>font color='gray'> ");
+        out.print("您是第 "+context.getAttribute("counter")+" 位访客");
+        out.println("/font>/h2>");
+        out.println("/BODY>);
+        out.println("/HTML>);
+        out.flush();
+        out.close();
+
+    }
+}
+                        </pre>
+
+                        web.xml映射路径
+
+                        <pre>
+&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaeehttp://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+
+    &lt;servlet>
+
+        &lt;servlet-name&gt;Demo&lt;/servlet-name&gt;
+
+        &lt;servlet-class&gt;Demo&lt;/servlet-class&gt;
+
+    &lt;/servlet>
+
+
+    &lt;servlet-mapping>
+
+        &lt;servlet-name>Demo&lt;/servlet-name>
+
+        &lt;url-pattern>/Demo&lt;/url-pattern>
+
+    &lt;/servlet-mapping>
+
+
+    &lt;servlet>
+
+        &lt;servlet-name>Demo2&lt;/servlet-name>
+
+        &lt;servlet-class>Demo2&lt;/servlet-class>
+
+    &lt;/servlet>
+
+
+    &lt;servlet-mapping>
+
+        &lt;servlet-name>Demo2&lt;/servlet-name>
+
+        &lt;url-pattern>/Demo2&lt;/url-pattern>
+
+    &lt;/servlet-mapping>
+
+&lt;/web-app>
+                        </pre>
+
+                        <h4>HttpServlet和Servlet的关系</h4>
+
+                        <pre>GenericServlet implements Servlet, ServletConfig HttpServlet extends GenericServlet
+                        </pre>
+                        <p>
+                            因此，我们完全可以在HttpServlet实现类里面重写Servlet的相关方法。如：inint()方法
+                        </p>
+                        <h4>ServletContext介绍和使用</h4>
+
+                        <p>这个对象很重要</p>
+
+                        <p>
+                            Servlet中全部的内容ServletContext都了解。一个WEB应用只有一个ServletContext对象，服务器启动的时候创建，项目从服务器中移除的时候销毁。所以你会发现，使用ServletContext的时候从来没有new过。
+                        </p>
+                        1.1. 介绍
+                        <blockquote>
+                            <p>
+                                `ServletContext官方叫servlet上下文。`服务器会为每一个工程创建一个对象，这个对象就是ServletContext对象。这个对象**全局唯一**，而且工程内部的**所有servlet都共享这个对象**。所以叫全局应用程序共享对象。
+                            </p>
+                        </blockquote>
+
+                        1.2. 作用
+                        <pre>
+1. 是一个域对象
+
+2. 可以读取全局配置参数
+
+3. 可以搜索当前工程目录下面的资源文件
+
+4. 可以获取当前工程名字（了解）
+</pre>
+                        <h3>Servlet的四大作用域分析</h3>
+
+                        例如，我们访问index.jsp的时候，分别对pageContext、request、session、application四个作用域进行累加。<br>
+                        计算完成后就从index.jsp执行forward转发到test.jsp，在test.jsp里再进行一次累加，然后显示出这四个整数来。<br>
+
+                        从结果来看：<br>
+                        <pre>
+①page里的变量没法从index.jsp传递到test.jsp，只要页面跳转了，它们就不见了。
+
+②request里的变量可以跨越forward前后两页。但是只要刷新页面，它们就重新计算了。
+
+③session和servletContext的变量一直在累加，开始还看不出区别，只要关闭浏览器，再次重启浏览器访问这个页面，session里的变量就重新计算了。ServletContext里的变量一直在累加，除非你重启Tomcat，否则它会一直变大。 
+</pre>
+                        <h3>作用域规定的是变量的有效期限</h3>
+                        <pre>
+①如果把变量放到pageContext里，就说明它的作用域是page，它的**有效范围只在当前JSP页面里。**从把变量放到pageContext开始，直到JSP页面跳转都可以使用。
+
+②如果把变量放到request里，就说明它的作用域是request，它的有效范围是当前请求周期。                                               
+    所谓请求周期：就是从Http请求发起，到服务器处理结束，返回响应的整个过程。在这个过程中可能使用forward的方式跳转了多个JSP页面，在这些页面里，你都可以使用这个变量。
+
+③如果把这个变量放到session里，就说明它的作用域是session，它的有效范围是当前会话。                                               
+    所谓当前会话：就是指从用户打开浏览器开始，知道用户关闭浏览器这中间的过程，这个过程可能包含多个请求响应。             
+也就是说，只要用户不关闭浏览器，服务器就有办法知道这些请求是一个人发起的，整个过程被称为一个会话，而放到会话中的变量，就可以在当前会话的所有请求里使用。
+
+④如果把变量放到ServletContext里，就说明它的作用域是ServletContext，它的有效范围是整个应用。           
+所谓整个应用：是指从应用启动到应用结束。ServletContext里的变量存活时间最长，如果不进行手动删除，它们就一直可以使用。             
+</pre>
+                        1.2.1. ServletContext是一个域对象<br>
+
+                        javaweb或者说是Servlet四大域对象<br>
+                        <pre>
+ServletContext：`ServletContext servletContext = getServletContext();`。全局共享。
+
+Request
+域：request是表示一个请求，只要发出一个请求就会创建一个request，它的作用域仅在当前请求中有效。当然，使用请求转发的时候顺便把request转过去了，可以看出是同一个request。
+
+Session 域：服务器会为每一个会话创建一个Session对象，所以Session中的数据可供当前会话中所有Servlet共享。
+
+用处：常用于web开发中的登录验证界面（当用户登陆成功后浏览器分配其中一个Session键值对）。
+
+PageContext 域：pageContext作用域为page（页面执行期）。
+
+四个域的作用域范围大小:PageContext （page域） < request < session < servletContext（application域）
+</pre>
+                        1.2.1.1.域对象介绍<br>
+                        <blockquote>
+                            <p>
+                                域对象是服务器在内存上创建的存储空间，用于在不同动态资源（servlet）之间传递与`共享数据`。
+                            </p>
+                        </blockquote>
+
+                        1.2.1.2. 域对象方法<br>
+                        <pre>
+凡是域对象都有如下3个方法：
+
+往域对象里面添加数据，添加时以key-value形式添加
+
+setAttribute(name,value);name是String类型，value是Object类型；
+
+根据指定的key读取域对象里面的数据
+
+getAttribute(name);
+
+根据指定的key从域对象里面删除数据
+
+removeAttribute(name);
+</pre>
+                        1.2.1.3. 域对象功能代码<br>
+                        <pre>
+域对象存储数据AddDataServlet代码
+
+
+/**
+* doGet
+*/
+
+publicvoid doGet(HttpServletRequest request, HttpServletResponse response)
+
+    throws ServletException, IOException {
+
+    //往serlvetContext里面存数据
+    //1.获取ServletContext对象
+
+    //getServletContext()
+
+    //2.往对象里面设置数据
+
+    getServletContext().setAttribute("username", "admin");
+    response.getOutputStream().write("用户名写入到servletContext成功".getBytes());
+}
+                       </pre>
+
+
+                        获取域对象数据GetDataServlet代码<br>
+
+                        <pre>
+/*** doGet
+
+*/
+
+publicvoid doGet(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException {
+    //获取ServletContext里面的用户名数据
+
+    Object valueObject = getServletContext().getAttribute("username");
+    //如果现实访问的上一个servlet，那么就会输出admin。如果直接访问这个servlet，输出null
+    if(valueObject!=null){
+        response.getOutputStream().write(("从servletContext读取到的用户名数据："+valueObject.toString()).getBytes());
+
+    }
+}
+                        </pre>
+
+                        servletContext存储数据特点，<br>
+
+                        全局共享，里面的数据所有动态资源都可以写入和获取<br>
+
+                        服务器启动的时候创建，服务器关闭的时候销毁，因为这是全局应用程序对象，全局共享对象。<br>
+
+                        1.2.2. 可以读取全局配置参数<br>
+                        1.2.2.1. servletContext读取全局参数核心方法<br>
+
+                        web.xml中配置全局参数，从web.xml中里面获取。<br>
+
+                        getServletContext().getInitParameter(name);//根据指定的参数名获取参数值<br>
+
+                        ​ getServletContext().getInitParameterNames();//获取所有参数名称列表<br>
+
+                        1.2.2.2. 实现步骤：<br>
+
+                        1. 在web.xml中配置全局参数<br>
+
+                        <pre>
+<!-- 全局配置参数，因为不属于任何一个servlet，但是所有的servlet都可以通过servletContext读取这个数据 -->
+
+&lt;context-param>
+    &lt;param-name>param1&lt;/param-name>
+&lt;param-value>value1&lt;/param-value>
+&lt;/context-param>
+
+&lt;context-param>
+  &lt;param-name>param2&lt;/param-name>
+ &lt;param-value>value2&lt;/param-value>
+&lt;/context-param>
+
+                        </pre>
+
+
+                        2. 在动态资源servlet里面使用servletcontext读取全局参数代码<br>
+
+                        <pre>
+public void doGet(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException {
+    //使用servletContext读取全局配置参数数据
+
+    //核心方法
+
+    /*getServletContext().getInitParameter(name);//根据指定的参数名获取参数值
+
+    getServletContext().getInitParameterNames();//获取所有参数名称列表*/
+    //打印所有参数
+
+    //1.先获取所有全局配置参数名称
+    Enumeration&lt;String> enumeration = getServletContext().getInitParameterNames();
+    //2.遍历迭代器
+    while(enumeration.hasMoreElements()){
+
+        //获取每个元素的参数名字
+        String parameName = enumeration.nextElement();
+        //根据参数名字获取参数值
+        String parameValue = getServletContext().getInitParameter(parameName);
+        //打印
+        System.out.println(parameName+"="+parameValue);
+    }
+}
+                        </pre>
+
+                        1.2.3. 可以搜索当前工程目录下面的资源文件<br>
+
+                        servletContext可以用来读取各种文件的信息；如：配置文件。<br>
+
+                        1.2.3.1. 核心方法<br>
+
+                        getServletContext().getRealPath(path),根据相对路径获取服务器上资源的绝对路径<br>
+
+                        如：<br>
+
+                        <pre>
+doGet()方法里面：
+System.out.println( "根据相对路径获取服务器里面的绝对路 径："+getServletContext().getRealPath("/Demo"));
+
+结果： C:\JavaWeb\ServlerDemo\out\artifacts\ServlerDemo_war_exploded\Demo。
+                            </pre>
+
+                        ​
+
+                        getServletContext().getResourceAsStream(path),根据相对路径获取服务器上资源的输入字节流
+
+                        1.2.4. 可以获取当前工程名字<br>
+                        1.2.4.1. 核心方法<br>
+                        getServletContext().getContextPath()；<br>
+
+                        作用：获取当前工程名字<br>
+
+                        <br>1.2.4.2. 代码<br>
+                        <pre>
+public void doGet(HttpServletRequest request, HttpServletResponse response)
+throws ServletException, IOException {
+//获取工程名字,getServletContext().getContextPath()
+
+response.getOutputStream().write(("工程名字："+getServletContext().getContextPath()).getBytes());}
+作者：白衬衫丶
+来源：CSDN
+原文：https://blog.csdn.net/qq_36371449/article/details/80314024
+版权声明：本文为博主原创文章，转载请附上博文链接！
+</pre>
+                        <h3>案例：页面跳转</h3>
+
+                        [javaweb的页面跳转只有两种方式：转发和重定向]()<br>
+
+                        当我们在idea里面启动Tomcat的时候，首先映入眼帘的是index.jsp页面的展示。<br>
+
+                        <h5>登录界面</h5>
+
+                        index.jap<br>
+
+                        <pre>
+<%@ page pageEncoding="UTF-8" import="java.util.*" language="java" %>
+<% String path=request.getContextPath();%>
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+&lt;html>
+&lt;head>
+&lt;title>用户登录&lt;/title>
+&lt;/head>
+&lt;body>
+&lt;center>
+&lt;p>用户登录&lt;/p>
+&lt;/center>
+&lt;form action="/Demo" method="get">
+&lt;table border="1" width="250px;" align="center">
+&lt;tr>
+&lt;td width="75px">用户名:&lt;/td>
+&lt;td>&lt;input type="text" name="name">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td width="75px">密&nbsp;&nbsp;码:&lt;/td>
+&lt;td>&lt;input name="pwd" type="password">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td colspan="2">
+&lt;input type="submit" value="登录"/>&nbsp;&nbsp;
+&lt;/td>
+&lt;/tr>
+&lt;/table>
+&lt;/form>
+&lt;/body>
+&lt;/html>
+                        </pre>
+
+                        <h5>后台代码</h5>
+
+                        登录界面，点击登录后，依靠登录界面的==action指定的路径==找到后台的程序，后台代码根据登录界面的==name==属性对象的值获取你输入的用户名和密码。<br>
+
+                        如果验证成功，就==跳转成功页面，带着两个参数过去的==：request和response<br>
+
+                        -------request.getRequestDispatcher("==success.jsp==").forward(request, response);<br>
+
+                        ==success.jsp界面的和Index.jsp页面同级目录的==<br>
+
+                        <pre>
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+@WebServlet(name = "Demo")
+public class Demo extends HttpServlet {
+
+    public void inint() throws ServletException{
+
+    }
+
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throwsServletException, IOException {
+
+    }
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws
+        ServletException, IOException {
+            request.setCharacterEncoding("UTF-8"); //设置请求数据的字符编码格式
+            String name = request.getParameter("name"); //获得请求表单中的用户名
+            String pwd = request.getParameter("pwd"); //获得请求表单中的密码
+            if((name!=null&&!name.equals(""))&&(pwd!=null&&!pwd.equals(""))){
+                if(name.equals("mr")&&pwd.equals("123456")){
+                //使用RequestDispatcher对象将页面请求转发到success.jsp页
+                request.getRequestDispatcher("success.jsp").forward(request, response);
+                }else {
+            //使用sendRedirect()方法将页面重定向到error.jsp
+            response.sendRedirect("error.jsp");
+            }
+        }
+    }
+}
+                        </pre>
+
+                        index.jsp初始化路径 http://localhost:8080/<br>
+
+                        成功后跳转路径的方式是：转发，地址栏路径不变 http://localhost:8080/Demo?name=mr&pwd=123456<br>
+
+                        失败后跳转路径的方式是：重定向，地址 路径改变 http://localhost:8080/error.jsp<br>
+
+                        <h5>成功界面</h5>
+
+                        只有一点需要注意：<br>
+
+                        ----恭喜您【==<%=request.getParameter("name")%>==】，登录成功！<br>
+
+                        <pre>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%String path = request.getContextPath();String basePath =request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";%>
+
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+&lt;html>
+&lt;head>
+    &lt;base href="<%=basePath%>">
+
+    &lt;title>My JSP 'success.jsp' starting page&lt;/title>
+
+    &lt;meta http-equiv="pragma" content="no-cache">
+    &lt;meta http-equiv="cache-control" content="no-cache">
+    &lt;meta http-equiv="expires" content="0">
+    &lt;meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    &lt;meta http-equiv="description" content="This is my page">
+    <!--
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    -->
+    &lt;style type="text/css">
+        table {
+            font-size: 12px;
+            font-family: 隶书;
+            color: gray;
+            border: 1px green solid;
+        }
+
+        input {
+            font-size: 12px;
+            font-family: 隶书;
+            color: gray;
+        }
+        &lt;/style>
+&lt;/head>
+
+                            &lt;body>
+&lt;table align="center">
+    &lt;tr>
+        &lt;td>
+            &lt;font color="green">
+                恭喜您【<%=request.getParameter("name")%>】，登录成功！
+            &lt;/font>
+        &lt;/td>
+    &lt;/tr>
+&lt;/table>
+
+&lt;/body>
+&lt;/html>
+                        </pre>
+
+
+                        <h2>==JaveWEB==开发</h2>
+
+                        ==我为什么强调是javaweb：因为我们现在不是使用的框架，如果使用了框架我就会强调是哪个框架。所以说：百度百度，你起码明确自己在用什么技术进行开发<br>
+
+                        作为一名程序员，特别是**==java
+                        web开发==的程序员（为什么强调javaweb开发，因为如果你使用框架，人家都给你封装好了，谁还告诉你框架的转发和重定向。但是你必须明白javaweb，因为它才是最基础的。），在使用servlet/jsp的时候，我们必须要知道实现页面跳转的两种方式的区别和联系：即转发和重定向的区别。<br>
+
+                        总结：<br>
+
+                        转发在服务器端完成的；重定向是在客户端完成的<br>
+                        转发的速度快；重定向速度慢<br>
+                        转发的是同一次请求；重定向是两次不同请求 -----可以通过看浏览器地址栏确定<br>
+                        转发不会执行转发后的代码；重定向会执行重定向之后的代码<br>
+                        转发地址栏没有变化；重定向地址栏有变化<br>
+                        转发必须是在同一台服务器下完成；重定向可以在不同的服务器下完成<br>
+
+                        <h3>搞清楚为什么页面跳转</h3>
+
+                        首先，你要知道：前台的数据是可以传递到前台的。你的用户名和密码完全可以从这个页面通过action的方式指定跳转页面路径直接传递到另外一个页面。<br>
+
+                        <h4>jsp表单通过action方式提交到另外一个jsp页面</h4>
+
+                        <pre>
+index.html页面
+<%@ page pageEncoding="UTF-8" import="java.util.*" language="java" %>
+<% String path=request.getContextPath();%>
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+&lt;html>
+&lt;head>
+    &lt;title>用户登录&lt;/title>
+&lt;/head>
+&lt;body>
+&lt;center>
+    &lt;p>用户登录&lt;/p>
+&lt;/center>
+&lt;form action="success.jsp" method="get">
+    &lt;table border="1" width="250px;" align="center">
+        &lt;tr>
+            &lt;td width="75px">用户名:&lt;/td>
+            &lt;td>&lt;input type="text" name="name">&lt;/td>
+        &lt;/tr>
+        &lt;tr>
+            &lt;td width="75px">密&nbsp;&nbsp;码:&lt;/td>
+            &lt;td>&lt;input name="pwd" type="password">&lt;/td>
+        &lt;/tr>
+        &lt;tr>
+            &lt;td colspan="2">
+                &lt;input type="submit" value="登录"/>&nbsp;&nbsp;
+            &lt;/td>
+        &lt;/tr>
+    &lt;/table>
+&lt;/form>
+&lt;/body>
+&lt;/html>
+
+
+                        </pre>
+
+                        ​ 将index.html里面表单数据提交到success.jsp。提交后，如何显示到另外一个页面上？就是提交后，跳转到另外一个页面，在另外一个页面里显示我所提写的表单。
+
+                        <pre>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%String path = request.getContextPath();String basePath =request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";%>
+
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+&lt;html>
+&lt;head>
+    &lt;base href="<%=basePath%>">
+
+    &lt;title>My JSP 'success.jsp' starting page&lt;/title>
+
+    &lt;meta http-equiv="pragma" content="no-cache">
+    &lt;meta http-equiv="cache-control" content="no-cache">
+    &lt;meta http-equiv="expires" content="0">
+    &lt;meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    &lt;meta http-equiv="description" content="This is my page">
+    <!--
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    -->
+    &lt;style type="text/css">
+        table {
+            font-size: 12px;
+            font-family: 隶书;
+            color: gray;
+            border: 1px green solid;
+        }
+
+        input {
+            font-size: 12px;
+            font-family: 隶书;
+            color: gray;
+        }
+    &lt;/style>
+&lt;/head>
+
+&lt;body>
+&lt;table align="center">
+    &lt;tr>
+        &lt;td>
+            &lt;font color="green">
+                恭喜您【<%=request.getParameter("name")%>】，登录成功！
+            &lt;/font>
+        &lt;/td>
+    &lt;/tr>
+&lt;/table>
+
+&lt;/body>
+&lt;/html>
+
+
+页面中先通过写java代码取出他的值：<% String name=requset.getParameter("username") %>
+然后在action.jsp的页面中输出：&lt;input type="text" name="myname" value="<%=name%>">
+                        </pre>>
+
+                        注意：<br>
+
+                        还是使用的java代码取出表单里面的值，只不过这个java代码实在前台页面写的。--是靠request。<br>
+
+                        输出格式：<%=name%><br>
+
+                        <h4>jsp表单通过servlet跳转页面</h4>
+
+                        接下来，我们要思考为什么前台这个页面先把值传给后台的servlet，再让servlet通过页面跳转（转发和重定向）把值传递给另外一个页面。一方面，我们为了分离前台和后台的代码；另一方面，并且最关键的是仅通过前台与前台的交互满足不了我们的需求，更多时候我们需要连接数据库从数据库里面获取指定数据返回到页面。
+
+                        <h4>==区分==“发送请求”和“页面跳转”</h4>
+
+                        发送请求，是前台给后台发请求；而==一个页面跳转到另外一个页面叫做jsp页面跳转==，不能说是前台给前台发请求。所以我们必须搞清楚什么叫做发送请求什么叫做页面跳转。<br>
+
+                        页面跳转：1.我们可以直接从这个页面跳转到另外一个页面：href、所有带有src属性的标签。<br>
+
+                        ​ 2.我们可以先向后台发送请求，然后在后台往下一个页面跳转。<br>
+
+                        我们要对“发送请求”这个概念深澈了解：前台往后台发送一个请求，可以通过ajax、表单等方式；后台接收请求，然后响应前台。<br>
+
+                        主动发请求的前台页面和后来接收响应的前台页面可以是同一个页面也可以是不同页面：<br>
+
+                        不同页面：登录界面带着登录名和密码发出请求，后台验证登录名和密码，登录成功就跳转到成功页面，登录失败就跳转到失败页面。<br>
+
+                        同个页面：我在这个前台页面点击一个按钮，发送请求给后台，后台响应返回这个页面数据，这个页面获取设到数据。<br>
+
+                        <h3>前端向后台发送请求有几种方式？</h3>
+<pre>
+1、 link标签的href属性
+
+2、 script标签的src属性
+
+3、 img标签的src属性
+
+4、 **ajax发送请求：使用json或XML数据格式提交数据**
+
+5、 **表单提交发送请求：表单的action属性和method方法**
+
+6、 **a标签的href发送请求**
+
+7、 iframe的src属性发送请求
+
+> [这些标签里面的属性既然可以发送请求，那也可以页面跳转。]()
+</pre>
+
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div th:replace="commons/template::main-footer"></div>
+    <div th:replace="commons/template::control-sidebar"></div>
+    <div th:replace="commons/template::control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED JS SCRIPTS -->
+
+<!-- jQuery 3 -->
+<script th:src="@{/project/js/jquery-3.3.1.min.js}"></script>
+<!-- Bootstrap 3.3.7 -->
+<script th:src="@{/project/js/bootstrap.js}"></script>
+<!-- AdminLTE App -->
+<script th:src="@{/project/js/adminlte.js}"></script>
+<!--<script>-->
+<!--$(function () {-->
+<!--$('ul.sidebar-menu li').click(function () {-->
+<!--var li = $('ul.sidebar-menu li.active');-->
+<!--li.removeClass('active');-->
+<!--$(this).addClass('active');-->
+<!--});-->
+
+<!--$('.myLeftMenu').click(function (e) {-->
+
+<!--var url = $(this).attr('data');-->
+<!--//  console.log(url);-->
+<!--$('#container').load(url);-->
+<!--});-->
+<!--})-->
+<!--</script>-->
+</body>
+<!-- Optionally, you can add Slimscroll and FastClick plugins.
+     Both of these plugins are recommended to enhance the
+     user experience. -->
+</html>

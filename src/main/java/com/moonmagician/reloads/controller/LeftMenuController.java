@@ -5,12 +5,15 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.moonmagician.reloads.entity.Allproject;
 import com.moonmagician.reloads.entity.Imgview;
+import com.moonmagician.reloads.entity.Javanote;
 import com.moonmagician.reloads.entity.Linuxnote;
 import com.moonmagician.reloads.mapper.AllprojectMapper;
 import com.moonmagician.reloads.mapper.ImgviewMapper;
+import com.moonmagician.reloads.mapper.JavaNoteMapper;
 import com.moonmagician.reloads.mapper.LinuxNoteMapper;
 import com.moonmagician.reloads.service.AllprojectService;
 import com.moonmagician.reloads.service.ImgviewService;
+import com.moonmagician.reloads.service.JavaNoteService;
 import com.moonmagician.reloads.service.LinuxNoteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -234,13 +237,38 @@ public class LeftMenuController {
         model.addAttribute("linuxnotedatas",list);
         return "bar/constitute/linuxnote";
     }
+
+    @Autowired
+    JavaNoteMapper javaNoteMapper;
+    @Autowired
+    JavaNoteService javaNoteService;
     /**
      * 返回笔记整理下java笔记页面
      * 此页面是java的相关笔记
      * @return
      */
-    @RequestMapping("/javanote")
-    public String javanote(){
+    @RequestMapping("/javanote/{id}")
+    public String javanote(@PathVariable("id") int id,Model model){
+        //首先查找总的数据数量
+        Integer datacount = javaNoteService.datacount();
+        int pageNumber = datacount/10+1;
+
+        //分页查找当前页的数据
+        QueryWrapper<Javanote> queryWrapper = new QueryWrapper<>();
+        //        queryWrapper.eq("age",23);
+        IPage<Javanote> page = new Page<>(id,10);
+        IPage<Javanote> userIPage = javaNoteMapper.selectPage(page, queryWrapper);
+        long total = userIPage.getTotal();
+
+        model.addAttribute("javanotepageindex",id);
+        model.addAttribute("javanotepagelist",userIPage);
+        model.addAttribute("javanotepagesize",total);
+        model.addAttribute("javanotepagenumber",pageNumber);
+
+
+        List<Javanote> list = new ArrayList<>();
+        userIPage.getRecords().forEach(user-> list.add(user));
+        model.addAttribute("javanotedatas",list);
         return "bar/constitute/javanote";
     }
     /**
@@ -266,8 +294,8 @@ public class LeftMenuController {
      * 此页面是mysqlnote的相关笔记
      * @return
      */
-    @RequestMapping("/mysqlnote")
-    public String distributednote(){
+    @RequestMapping("/mysqlnote/{id}")
+    public String distributednote(@PathVariable("id") int id){
         return "bar/constitute/mysqlnote";
     }
 
@@ -275,8 +303,8 @@ public class LeftMenuController {
      * 返回git笔记列表页面
      * @return
      */
-    @RequestMapping("/gitnote")
-    public String gitnote(){
+    @RequestMapping("/gitnote/{id}")
+    public String gitnote(@PathVariable("id") int id){
         return "bar/constitute/gitnote";
     }
 
@@ -284,8 +312,8 @@ public class LeftMenuController {
      * 返回其他笔记列表页面
      * @return
      */
-    @RequestMapping("/othernote")
-    public String othernote(){
+    @RequestMapping("/othernote/{id}")
+    public String othernote(@PathVariable("id") int id){
         return "bar/constitute/othernote";
     }
 }
