@@ -7506,3 +7506,1162 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [bar/p
 2020-10-08 14:06:27.429 [ main ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 163 ] - Found 1 custom documentation plugin(s)
 2020-10-08 14:06:27.464 [ main ] - [ INFO  ] [ s.d.spring.web.scanners.ApiListingReferenceScanner : 41 ] - Scanning for api listing references
 2020-10-08 14:06:27.486 [ main ] - [ INFO  ] [ com.moonmagician.reloads.ReloadsApplication : 61 ] - Started ReloadsApplication in 3.221 seconds (JVM running for 4.055)
+2020-10-08 14:10:41.411 [ main ] - [ INFO  ] [ com.moonmagician.reloads.ReloadsApplication : 55 ] - Starting ReloadsApplication on DESKTOP-GQFO42A with PID 14448 (C:\Users\HP\Desktop\reloads\target\classes started by HP in C:\Users\HP\Desktop\reloads)
+2020-10-08 14:10:41.414 [ main ] - [ DEBUG ] [ com.moonmagician.reloads.ReloadsApplication : 56 ] - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-10-08 14:10:41.414 [ main ] - [ INFO  ] [ com.moonmagician.reloads.ReloadsApplication : 655 ] - The following profiles are active: dev
+2020-10-08 14:10:42.647 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 108 ] - Tomcat initialized with port(s): 8089 (http)
+2020-10-08 14:10:42.655 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8089"]
+2020-10-08 14:10:42.655 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2020-10-08 14:10:42.656 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-10-08 14:10:42.741 [ main ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2020-10-08 14:10:42.741 [ main ] - [ INFO  ] [ o.s.b.w.s.c.ServletWebServerApplicationContext : 285 ] - Root WebApplicationContext: initialization completed in 1290 ms
+2020-10-08 14:10:42.966 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 994 ] - {dataSource-1} inited
+2020-10-08 14:10:43.687 [ main ] - [ INFO  ] [ s.d.s.w.PropertySourcedRequestMappingHandlerMapping : 69 ] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-08 14:10:43.814 [ main ] - [ INFO  ] [ o.s.scheduling.concurrent.ThreadPoolTaskExecutor : 181 ] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-08 14:10:43.855 [ main ] - [ INFO  ] [ o.s.b.a.web.servlet.WelcomePageHandlerMapping : 54 ] - Adding welcome page: class path resource [templates/index.html]
+2020-10-08 14:10:43.999 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8089"]
+2020-10-08 14:10:44.014 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 220 ] - Tomcat started on port(s): 8089 (http) with context path ''
+2020-10-08 14:10:44.015 [ main ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 160 ] - Context refreshed
+2020-10-08 14:10:44.026 [ main ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 163 ] - Found 1 custom documentation plugin(s)
+2020-10-08 14:10:44.046 [ main ] - [ INFO  ] [ s.d.spring.web.scanners.ApiListingReferenceScanner : 41 ] - Scanning for api listing references
+2020-10-08 14:10:44.060 [ main ] - [ INFO  ] [ com.moonmagician.reloads.ReloadsApplication : 61 ] - Started ReloadsApplication in 3.061 seconds (JVM running for 3.793)
+2020-10-08 14:10:54.109 [ http-nio-8089-exec-1 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-08 14:10:54.109 [ http-nio-8089-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 525 ] - Initializing Servlet 'dispatcherServlet'
+2020-10-08 14:10:54.115 [ http-nio-8089-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 547 ] - Completed initialization in 6 ms
+2020-10-08 14:10:54.137 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/
+2020-10-08 14:10:54.137 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:10:54.139 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.index
+2020-10-08 14:10:54.139 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : [org.apache.catalina.connector.RequestFacade@2262cd2f]
+2020-10-08 14:10:54.163 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - ==>  Preparing: select count(id) from imgview order by createtime desc ; 
+2020-10-08 14:10:54.176 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - ==> Parameters: 
+2020-10-08 14:10:54.188 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - <==      Total: 1
+2020-10-08 14:10:54.226 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==>  Preparing: SELECT COUNT(1) FROM imgview 
+2020-10-08 14:10:54.227 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==> Parameters: 
+2020-10-08 14:10:54.230 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==>  Preparing: SELECT id,title,imgurl,createtime,describetext,discusscount,visitcount,type,webpagepath FROM imgview LIMIT ?,? 
+2020-10-08 14:10:54.231 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==> Parameters: 0(Long), 10(Long)
+2020-10-08 14:10:54.234 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - <==      Total: 5
+2020-10-08 14:10:54.235 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : index
+2020-10-08 14:10:54.235 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 98
+2020-10-08 14:10:59.019 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/userlog
+2020-10-08 14:10:59.019 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:10:59.020 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LoginController.userlog
+2020-10-08 14:10:59.020 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-08 14:10:59.022 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /logins/login
+2020-10-08 14:10:59.022 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 3
+2020-10-08 14:11:02.208 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/register
+2020-10-08 14:11:02.208 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:11:02.208 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LoginController.register
+2020-10-08 14:11:02.209 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-08 14:11:02.209 [ http-nio-8089-exec-6 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /logins/register
+2020-10-08 14:11:02.209 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-08 14:11:14.993 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/userRegister
+2020-10-08 14:11:14.993 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : POST
+2020-10-08 14:11:14.993 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LoginController.userRegister
+2020-10-08 14:11:14.994 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-08 14:11:14.994 [ http-nio-8089-exec-3 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /logins/register
+2020-10-08 14:11:14.994 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-08 14:12:27.610 [ http-nio-8089-exec-9 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/
+2020-10-08 14:12:27.611 [ http-nio-8089-exec-9 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:12:27.611 [ http-nio-8089-exec-9 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.index
+2020-10-08 14:12:27.611 [ http-nio-8089-exec-9 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : [org.apache.catalina.connector.RequestFacade@2262cd2f]
+2020-10-08 14:12:27.618 [ http-nio-8089-exec-9 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - ==>  Preparing: select count(id) from imgview order by createtime desc ; 
+2020-10-08 14:12:27.618 [ http-nio-8089-exec-9 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - ==> Parameters: 
+2020-10-08 14:12:27.619 [ http-nio-8089-exec-9 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - <==      Total: 1
+2020-10-08 14:12:27.621 [ http-nio-8089-exec-9 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==>  Preparing: SELECT COUNT(1) FROM imgview 
+2020-10-08 14:12:27.621 [ http-nio-8089-exec-9 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==> Parameters: 
+2020-10-08 14:12:27.622 [ http-nio-8089-exec-9 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==>  Preparing: SELECT id,title,imgurl,createtime,describetext,discusscount,visitcount,type,webpagepath FROM imgview LIMIT ?,? 
+2020-10-08 14:12:27.623 [ http-nio-8089-exec-9 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==> Parameters: 0(Long), 10(Long)
+2020-10-08 14:12:27.625 [ http-nio-8089-exec-9 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - <==      Total: 5
+2020-10-08 14:12:27.626 [ http-nio-8089-exec-9 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : index
+2020-10-08 14:12:27.626 [ http-nio-8089-exec-9 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 16
+2020-10-08 14:12:31.218 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/userlog
+2020-10-08 14:12:31.219 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:12:31.219 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LoginController.userlog
+2020-10-08 14:12:31.219 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-08 14:12:31.219 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /logins/login
+2020-10-08 14:12:31.219 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-08 14:12:32.641 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/register
+2020-10-08 14:12:32.642 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:12:32.642 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LoginController.register
+2020-10-08 14:12:32.642 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-08 14:12:32.642 [ http-nio-8089-exec-6 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /logins/register
+2020-10-08 14:12:32.642 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-08 14:12:33.704 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/userlog
+2020-10-08 14:12:33.705 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:12:33.705 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LoginController.userlog
+2020-10-08 14:12:33.705 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-08 14:12:33.705 [ http-nio-8089-exec-3 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /logins/login
+2020-10-08 14:12:33.706 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 2
+2020-10-08 14:12:40.711 [ http-nio-8089-exec-10 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/register
+2020-10-08 14:12:40.712 [ http-nio-8089-exec-10 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:12:40.712 [ http-nio-8089-exec-10 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LoginController.register
+2020-10-08 14:12:40.712 [ http-nio-8089-exec-10 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-08 14:12:40.712 [ http-nio-8089-exec-10 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /logins/register
+2020-10-08 14:12:40.713 [ http-nio-8089-exec-10 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 2
+2020-10-08 14:15:42.824 [ main ] - [ INFO  ] [ com.moonmagician.reloads.ReloadsApplication : 55 ] - Starting ReloadsApplication on DESKTOP-GQFO42A with PID 23996 (C:\Users\HP\Desktop\reloads\target\classes started by HP in C:\Users\HP\Desktop\reloads)
+2020-10-08 14:15:42.827 [ main ] - [ DEBUG ] [ com.moonmagician.reloads.ReloadsApplication : 56 ] - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-10-08 14:15:42.828 [ main ] - [ INFO  ] [ com.moonmagician.reloads.ReloadsApplication : 655 ] - The following profiles are active: dev
+2020-10-08 14:15:44.110 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 108 ] - Tomcat initialized with port(s): 8089 (http)
+2020-10-08 14:15:44.119 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8089"]
+2020-10-08 14:15:44.120 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2020-10-08 14:15:44.120 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-10-08 14:15:44.209 [ main ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2020-10-08 14:15:44.209 [ main ] - [ INFO  ] [ o.s.b.w.s.c.ServletWebServerApplicationContext : 285 ] - Root WebApplicationContext: initialization completed in 1347 ms
+2020-10-08 14:15:44.453 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 994 ] - {dataSource-1} inited
+2020-10-08 14:15:45.292 [ main ] - [ INFO  ] [ s.d.s.w.PropertySourcedRequestMappingHandlerMapping : 69 ] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-08 14:15:45.397 [ main ] - [ INFO  ] [ o.s.scheduling.concurrent.ThreadPoolTaskExecutor : 181 ] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-08 14:15:45.437 [ main ] - [ INFO  ] [ o.s.b.a.web.servlet.WelcomePageHandlerMapping : 54 ] - Adding welcome page: class path resource [templates/index.html]
+2020-10-08 14:15:45.580 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8089"]
+2020-10-08 14:15:45.594 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 220 ] - Tomcat started on port(s): 8089 (http) with context path ''
+2020-10-08 14:15:45.594 [ main ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 160 ] - Context refreshed
+2020-10-08 14:15:45.605 [ main ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 163 ] - Found 1 custom documentation plugin(s)
+2020-10-08 14:15:45.624 [ main ] - [ INFO  ] [ s.d.spring.web.scanners.ApiListingReferenceScanner : 41 ] - Scanning for api listing references
+2020-10-08 14:15:45.638 [ main ] - [ INFO  ] [ com.moonmagician.reloads.ReloadsApplication : 61 ] - Started ReloadsApplication in 3.267 seconds (JVM running for 4.395)
+2020-10-08 14:15:46.344 [ http-nio-8089-exec-1 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-08 14:15:46.345 [ http-nio-8089-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 525 ] - Initializing Servlet 'dispatcherServlet'
+2020-10-08 14:15:46.350 [ http-nio-8089-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 547 ] - Completed initialization in 5 ms
+2020-10-08 14:15:46.368 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/register
+2020-10-08 14:15:46.369 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:15:46.370 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LoginController.register
+2020-10-08 14:15:46.370 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-08 14:15:46.373 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /logins/register
+2020-10-08 14:15:46.373 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 5
+2020-10-08 14:15:51.171 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/
+2020-10-08 14:15:51.172 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:15:51.172 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.index
+2020-10-08 14:15:51.172 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : [org.apache.catalina.connector.RequestFacade@4e128df8]
+2020-10-08 14:15:51.199 [ http-nio-8089-exec-4 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - ==>  Preparing: select count(id) from imgview order by createtime desc ; 
+2020-10-08 14:15:51.215 [ http-nio-8089-exec-4 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - ==> Parameters: 
+2020-10-08 14:15:51.228 [ http-nio-8089-exec-4 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - <==      Total: 1
+2020-10-08 14:15:51.264 [ http-nio-8089-exec-4 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==>  Preparing: SELECT COUNT(1) FROM imgview 
+2020-10-08 14:15:51.265 [ http-nio-8089-exec-4 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==> Parameters: 
+2020-10-08 14:15:51.268 [ http-nio-8089-exec-4 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==>  Preparing: SELECT id,title,imgurl,createtime,describetext,discusscount,visitcount,type,webpagepath FROM imgview LIMIT ?,? 
+2020-10-08 14:15:51.268 [ http-nio-8089-exec-4 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==> Parameters: 0(Long), 10(Long)
+2020-10-08 14:15:51.271 [ http-nio-8089-exec-4 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - <==      Total: 5
+2020-10-08 14:15:51.274 [ http-nio-8089-exec-4 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : index
+2020-10-08 14:15:51.274 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 103
+2020-10-08 14:15:54.923 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/
+2020-10-08 14:15:54.923 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:15:54.923 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.index
+2020-10-08 14:15:54.923 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : [org.apache.catalina.connector.RequestFacade@4e128df8]
+2020-10-08 14:15:54.924 [ http-nio-8089-exec-3 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - ==>  Preparing: select count(id) from imgview order by createtime desc ; 
+2020-10-08 14:15:54.924 [ http-nio-8089-exec-3 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - ==> Parameters: 
+2020-10-08 14:15:54.925 [ http-nio-8089-exec-3 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - <==      Total: 1
+2020-10-08 14:15:54.926 [ http-nio-8089-exec-3 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==>  Preparing: SELECT COUNT(1) FROM imgview 
+2020-10-08 14:15:54.927 [ http-nio-8089-exec-3 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==> Parameters: 
+2020-10-08 14:15:54.928 [ http-nio-8089-exec-3 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==>  Preparing: SELECT id,title,imgurl,createtime,describetext,discusscount,visitcount,type,webpagepath FROM imgview LIMIT ?,? 
+2020-10-08 14:15:54.928 [ http-nio-8089-exec-3 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==> Parameters: 0(Long), 10(Long)
+2020-10-08 14:15:54.930 [ http-nio-8089-exec-3 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - <==      Total: 5
+2020-10-08 14:15:54.931 [ http-nio-8089-exec-3 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : index
+2020-10-08 14:15:54.931 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 9
+2020-10-08 14:16:07.606 [ main ] - [ INFO  ] [ com.moonmagician.reloads.ReloadsApplication : 55 ] - Starting ReloadsApplication on DESKTOP-GQFO42A with PID 25560 (C:\Users\HP\Desktop\reloads\target\classes started by HP in C:\Users\HP\Desktop\reloads)
+2020-10-08 14:16:07.610 [ main ] - [ DEBUG ] [ com.moonmagician.reloads.ReloadsApplication : 56 ] - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-10-08 14:16:07.610 [ main ] - [ INFO  ] [ com.moonmagician.reloads.ReloadsApplication : 655 ] - The following profiles are active: dev
+2020-10-08 14:16:08.957 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 108 ] - Tomcat initialized with port(s): 8089 (http)
+2020-10-08 14:16:08.966 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8089"]
+2020-10-08 14:16:08.966 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2020-10-08 14:16:08.967 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-10-08 14:16:09.058 [ main ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2020-10-08 14:16:09.059 [ main ] - [ INFO  ] [ o.s.b.w.s.c.ServletWebServerApplicationContext : 285 ] - Root WebApplicationContext: initialization completed in 1404 ms
+2020-10-08 14:16:09.365 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 994 ] - {dataSource-1} inited
+2020-10-08 14:16:10.135 [ main ] - [ INFO  ] [ s.d.s.w.PropertySourcedRequestMappingHandlerMapping : 69 ] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-08 14:16:10.231 [ main ] - [ INFO  ] [ o.s.scheduling.concurrent.ThreadPoolTaskExecutor : 181 ] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-08 14:16:10.270 [ main ] - [ INFO  ] [ o.s.b.a.web.servlet.WelcomePageHandlerMapping : 54 ] - Adding welcome page: class path resource [templates/index.html]
+2020-10-08 14:16:10.414 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8089"]
+2020-10-08 14:16:10.429 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 220 ] - Tomcat started on port(s): 8089 (http) with context path ''
+2020-10-08 14:16:10.430 [ main ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 160 ] - Context refreshed
+2020-10-08 14:16:10.443 [ main ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 163 ] - Found 1 custom documentation plugin(s)
+2020-10-08 14:16:10.467 [ main ] - [ INFO  ] [ s.d.spring.web.scanners.ApiListingReferenceScanner : 41 ] - Scanning for api listing references
+2020-10-08 14:16:10.484 [ main ] - [ INFO  ] [ com.moonmagician.reloads.ReloadsApplication : 61 ] - Started ReloadsApplication in 3.372 seconds (JVM running for 4.297)
+2020-10-08 14:16:15.508 [ http-nio-8089-exec-1 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-08 14:16:15.509 [ http-nio-8089-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 525 ] - Initializing Servlet 'dispatcherServlet'
+2020-10-08 14:16:15.516 [ http-nio-8089-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 547 ] - Completed initialization in 7 ms
+2020-10-08 14:16:15.541 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/
+2020-10-08 14:16:15.541 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:16:15.542 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.index
+2020-10-08 14:16:15.542 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : [org.apache.catalina.connector.RequestFacade@325573e1]
+2020-10-08 14:16:15.569 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - ==>  Preparing: select count(id) from imgview order by createtime desc ; 
+2020-10-08 14:16:15.584 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - ==> Parameters: 
+2020-10-08 14:16:15.595 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - <==      Total: 1
+2020-10-08 14:16:15.630 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==>  Preparing: SELECT COUNT(1) FROM imgview 
+2020-10-08 14:16:15.630 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==> Parameters: 
+2020-10-08 14:16:15.633 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==>  Preparing: SELECT id,title,imgurl,createtime,describetext,discusscount,visitcount,type,webpagepath FROM imgview LIMIT ?,? 
+2020-10-08 14:16:15.634 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==> Parameters: 0(Long), 10(Long)
+2020-10-08 14:16:15.637 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - <==      Total: 5
+2020-10-08 14:16:15.638 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : index
+2020-10-08 14:16:15.638 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 98
+2020-10-08 14:16:18.808 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/introduction
+2020-10-08 14:16:18.808 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:16:18.808 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.introduction
+2020-10-08 14:16:18.809 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-08 14:16:18.809 [ http-nio-8089-exec-2 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : bar/constitute/introduction
+2020-10-08 14:16:18.809 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-08 14:17:08.593 [ main ] - [ INFO  ] [ com.moonmagician.reloads.ReloadsApplication : 55 ] - Starting ReloadsApplication on DESKTOP-GQFO42A with PID 19656 (C:\Users\HP\Desktop\reloads\target\classes started by HP in C:\Users\HP\Desktop\reloads)
+2020-10-08 14:17:08.595 [ main ] - [ DEBUG ] [ com.moonmagician.reloads.ReloadsApplication : 56 ] - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-10-08 14:17:08.595 [ main ] - [ INFO  ] [ com.moonmagician.reloads.ReloadsApplication : 655 ] - The following profiles are active: dev
+2020-10-08 14:17:09.631 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 108 ] - Tomcat initialized with port(s): 8089 (http)
+2020-10-08 14:17:09.637 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8089"]
+2020-10-08 14:17:09.638 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2020-10-08 14:17:09.638 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-10-08 14:17:09.703 [ main ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2020-10-08 14:17:09.703 [ main ] - [ INFO  ] [ o.s.b.w.s.c.ServletWebServerApplicationContext : 285 ] - Root WebApplicationContext: initialization completed in 1081 ms
+2020-10-08 14:17:09.914 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 994 ] - {dataSource-1} inited
+2020-10-08 14:17:10.566 [ main ] - [ INFO  ] [ s.d.s.w.PropertySourcedRequestMappingHandlerMapping : 69 ] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-08 14:17:10.658 [ main ] - [ INFO  ] [ o.s.scheduling.concurrent.ThreadPoolTaskExecutor : 181 ] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-08 14:17:10.695 [ main ] - [ INFO  ] [ o.s.b.a.web.servlet.WelcomePageHandlerMapping : 54 ] - Adding welcome page: class path resource [templates/index.html]
+2020-10-08 14:17:10.831 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8089"]
+2020-10-08 14:17:10.845 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 220 ] - Tomcat started on port(s): 8089 (http) with context path ''
+2020-10-08 14:17:10.846 [ main ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 160 ] - Context refreshed
+2020-10-08 14:17:10.858 [ main ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 163 ] - Found 1 custom documentation plugin(s)
+2020-10-08 14:17:10.878 [ main ] - [ INFO  ] [ s.d.spring.web.scanners.ApiListingReferenceScanner : 41 ] - Scanning for api listing references
+2020-10-08 14:17:10.894 [ main ] - [ INFO  ] [ com.moonmagician.reloads.ReloadsApplication : 61 ] - Started ReloadsApplication in 2.657 seconds (JVM running for 3.496)
+2020-10-08 14:17:10.903 [ http-nio-8089-exec-1 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-08 14:17:10.903 [ http-nio-8089-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 525 ] - Initializing Servlet 'dispatcherServlet'
+2020-10-08 14:17:10.909 [ http-nio-8089-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 547 ] - Completed initialization in 6 ms
+2020-10-08 14:17:10.927 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/introduction
+2020-10-08 14:17:10.928 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:17:10.929 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.introduction
+2020-10-08 14:17:10.929 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-08 14:17:10.932 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : bar/constitute/introduction
+2020-10-08 14:17:10.932 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 5
+2020-10-08 14:17:16.425 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/
+2020-10-08 14:17:16.426 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:17:16.426 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.index
+2020-10-08 14:17:16.426 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : [org.apache.catalina.connector.RequestFacade@af703ce]
+2020-10-08 14:17:16.451 [ http-nio-8089-exec-2 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - ==>  Preparing: select count(id) from imgview order by createtime desc ; 
+2020-10-08 14:17:16.470 [ http-nio-8089-exec-2 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - ==> Parameters: 
+2020-10-08 14:17:16.482 [ http-nio-8089-exec-2 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - <==      Total: 1
+2020-10-08 14:17:16.517 [ http-nio-8089-exec-2 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==>  Preparing: SELECT COUNT(1) FROM imgview 
+2020-10-08 14:17:16.517 [ http-nio-8089-exec-2 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==> Parameters: 
+2020-10-08 14:17:16.520 [ http-nio-8089-exec-2 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==>  Preparing: SELECT id,title,imgurl,createtime,describetext,discusscount,visitcount,type,webpagepath FROM imgview LIMIT ?,? 
+2020-10-08 14:17:16.521 [ http-nio-8089-exec-2 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==> Parameters: 0(Long), 10(Long)
+2020-10-08 14:17:16.524 [ http-nio-8089-exec-2 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - <==      Total: 5
+2020-10-08 14:17:16.526 [ http-nio-8089-exec-2 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : index
+2020-10-08 14:17:16.526 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 101
+2020-10-08 14:17:17.222 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/allproject
+2020-10-08 14:17:17.222 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:17:17.222 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.PageController.toAllProjectPath
+2020-10-08 14:17:17.222 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-08 14:17:17.224 [ http-nio-8089-exec-5 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : redirect:/allproject/1
+2020-10-08 14:17:17.225 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 3
+2020-10-08 14:17:17.240 [ http-nio-8089-exec-8 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/allproject/1
+2020-10-08 14:17:17.240 [ http-nio-8089-exec-8 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:17:17.240 [ http-nio-8089-exec-8 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.allproject
+2020-10-08 14:17:17.240 [ http-nio-8089-exec-8 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : [1, {}]
+2020-10-08 14:17:17.241 [ http-nio-8089-exec-8 ] - [ DEBUG ] [ c.m.reloads.mapper.AllprojectMapper.datacount : 143 ] - ==>  Preparing: select count(id) from allproject order by createtime desc ; 
+2020-10-08 14:17:17.241 [ http-nio-8089-exec-8 ] - [ DEBUG ] [ c.m.reloads.mapper.AllprojectMapper.datacount : 143 ] - ==> Parameters: 
+2020-10-08 14:17:17.242 [ http-nio-8089-exec-8 ] - [ DEBUG ] [ c.m.reloads.mapper.AllprojectMapper.datacount : 143 ] - <==      Total: 1
+2020-10-08 14:17:17.244 [ http-nio-8089-exec-8 ] - [ DEBUG ] [ c.m.reloads.mapper.AllprojectMapper.selectPage : 143 ] - ==>  Preparing: SELECT COUNT(1) FROM allproject 
+2020-10-08 14:17:17.244 [ http-nio-8089-exec-8 ] - [ DEBUG ] [ c.m.reloads.mapper.AllprojectMapper.selectPage : 143 ] - ==> Parameters: 
+2020-10-08 14:17:17.245 [ http-nio-8089-exec-8 ] - [ DEBUG ] [ c.m.reloads.mapper.AllprojectMapper.selectPage : 143 ] - ==>  Preparing: SELECT id,title,imgurl,createtime,describetext,discusscount,visitcount,type,webpagepath FROM allproject LIMIT ?,? 
+2020-10-08 14:17:17.245 [ http-nio-8089-exec-8 ] - [ DEBUG ] [ c.m.reloads.mapper.AllprojectMapper.selectPage : 143 ] - ==> Parameters: 0(Long), 10(Long)
+2020-10-08 14:17:17.247 [ http-nio-8089-exec-8 ] - [ DEBUG ] [ c.m.reloads.mapper.AllprojectMapper.selectPage : 143 ] - <==      Total: 1
+2020-10-08 14:17:17.248 [ http-nio-8089-exec-8 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : bar/constitute/allproject
+2020-10-08 14:17:17.248 [ http-nio-8089-exec-8 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 8
+2020-10-08 14:17:17.651 [ http-nio-8089-exec-10 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/javanote
+2020-10-08 14:17:17.651 [ http-nio-8089-exec-10 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:17:17.651 [ http-nio-8089-exec-10 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.PageController.toJavaNotePath
+2020-10-08 14:17:17.652 [ http-nio-8089-exec-10 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-08 14:17:17.652 [ http-nio-8089-exec-10 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : redirect:/javanote/1
+2020-10-08 14:17:17.652 [ http-nio-8089-exec-10 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-08 14:17:17.658 [ http-nio-8089-exec-9 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/javanote/1
+2020-10-08 14:17:17.658 [ http-nio-8089-exec-9 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:17:17.659 [ http-nio-8089-exec-9 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.javanote
+2020-10-08 14:17:17.659 [ http-nio-8089-exec-9 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : [1, {}]
+2020-10-08 14:17:17.660 [ http-nio-8089-exec-9 ] - [ DEBUG ] [ c.m.reloads.mapper.JavaNoteMapper.datacount : 143 ] - ==>  Preparing: select count(id) from javanote ; 
+2020-10-08 14:17:17.660 [ http-nio-8089-exec-9 ] - [ DEBUG ] [ c.m.reloads.mapper.JavaNoteMapper.datacount : 143 ] - ==> Parameters: 
+2020-10-08 14:17:17.661 [ http-nio-8089-exec-9 ] - [ DEBUG ] [ c.m.reloads.mapper.JavaNoteMapper.datacount : 143 ] - <==      Total: 1
+2020-10-08 14:17:17.662 [ http-nio-8089-exec-9 ] - [ DEBUG ] [ c.m.reloads.mapper.JavaNoteMapper.selectPage : 143 ] - ==>  Preparing: SELECT COUNT(1) FROM javanote 
+2020-10-08 14:17:17.663 [ http-nio-8089-exec-9 ] - [ DEBUG ] [ c.m.reloads.mapper.JavaNoteMapper.selectPage : 143 ] - ==> Parameters: 
+2020-10-08 14:17:17.664 [ http-nio-8089-exec-9 ] - [ DEBUG ] [ c.m.reloads.mapper.JavaNoteMapper.selectPage : 143 ] - ==>  Preparing: SELECT id,title,imgurl,createtime,describetext,discusscount,visitcount,type,webpagepath FROM javanote LIMIT ?,? 
+2020-10-08 14:17:17.664 [ http-nio-8089-exec-9 ] - [ DEBUG ] [ c.m.reloads.mapper.JavaNoteMapper.selectPage : 143 ] - ==> Parameters: 0(Long), 10(Long)
+2020-10-08 14:17:17.666 [ http-nio-8089-exec-9 ] - [ DEBUG ] [ c.m.reloads.mapper.JavaNoteMapper.selectPage : 143 ] - <==      Total: 3
+2020-10-08 14:17:17.667 [ http-nio-8089-exec-9 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : bar/constitute/javanote
+2020-10-08 14:17:17.667 [ http-nio-8089-exec-9 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 9
+2020-10-08 14:17:18.171 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/mysqlnote
+2020-10-08 14:17:18.172 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:17:18.172 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.PageController.toMySQLNotePath
+2020-10-08 14:17:18.172 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-08 14:17:18.172 [ http-nio-8089-exec-4 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : redirect:/mysqlnote/1
+2020-10-08 14:17:18.172 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-08 14:17:18.177 [ http-nio-8089-exec-7 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/mysqlnote/1
+2020-10-08 14:17:18.177 [ http-nio-8089-exec-7 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:17:18.177 [ http-nio-8089-exec-7 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.distributednote
+2020-10-08 14:17:18.178 [ http-nio-8089-exec-7 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : [1, {}]
+2020-10-08 14:17:18.178 [ http-nio-8089-exec-7 ] - [ DEBUG ] [ c.m.reloads.mapper.MysqlNoteMapper.datacount : 143 ] - ==>  Preparing: select count(id) from mysqlnote; 
+2020-10-08 14:17:18.179 [ http-nio-8089-exec-7 ] - [ DEBUG ] [ c.m.reloads.mapper.MysqlNoteMapper.datacount : 143 ] - ==> Parameters: 
+2020-10-08 14:17:18.179 [ http-nio-8089-exec-7 ] - [ DEBUG ] [ c.m.reloads.mapper.MysqlNoteMapper.datacount : 143 ] - <==      Total: 1
+2020-10-08 14:17:18.192 [ http-nio-8089-exec-7 ] - [ DEBUG ] [ c.m.reloads.mapper.MysqlNoteMapper.selectPage : 143 ] - ==>  Preparing: SELECT COUNT(1) FROM mysqlnote 
+2020-10-08 14:17:18.193 [ http-nio-8089-exec-7 ] - [ DEBUG ] [ c.m.reloads.mapper.MysqlNoteMapper.selectPage : 143 ] - ==> Parameters: 
+2020-10-08 14:17:18.194 [ http-nio-8089-exec-7 ] - [ DEBUG ] [ c.m.reloads.mapper.MysqlNoteMapper.selectPage : 143 ] - ==>  Preparing: SELECT id,title,imgurl,createtime,describetext,discusscount,visitcount,type,webpagepath FROM mysqlnote LIMIT ?,? 
+2020-10-08 14:17:18.196 [ http-nio-8089-exec-7 ] - [ DEBUG ] [ c.m.reloads.mapper.MysqlNoteMapper.selectPage : 143 ] - ==> Parameters: 0(Long), 10(Long)
+2020-10-08 14:17:18.197 [ http-nio-8089-exec-7 ] - [ DEBUG ] [ c.m.reloads.mapper.MysqlNoteMapper.selectPage : 143 ] - <==      Total: 1
+2020-10-08 14:17:18.198 [ http-nio-8089-exec-7 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : bar/constitute/mysqlnote
+2020-10-08 14:17:18.198 [ http-nio-8089-exec-7 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 21
+2020-10-08 14:17:18.549 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/gitnote
+2020-10-08 14:17:18.549 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:17:18.549 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.PageController.toGitNotePath
+2020-10-08 14:17:18.550 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-08 14:17:18.550 [ http-nio-8089-exec-3 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : redirect:/gitnote/1
+2020-10-08 14:17:18.550 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-08 14:17:18.557 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/gitnote/1
+2020-10-08 14:17:18.557 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:17:18.557 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.gitnote
+2020-10-08 14:17:18.557 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : [1, {}]
+2020-10-08 14:17:18.558 [ http-nio-8089-exec-2 ] - [ DEBUG ] [ c.m.reloads.mapper.GitNoteMapper.datacount : 143 ] - ==>  Preparing: select count(id) from gitnote; 
+2020-10-08 14:17:18.558 [ http-nio-8089-exec-2 ] - [ DEBUG ] [ c.m.reloads.mapper.GitNoteMapper.datacount : 143 ] - ==> Parameters: 
+2020-10-08 14:17:18.559 [ http-nio-8089-exec-2 ] - [ DEBUG ] [ c.m.reloads.mapper.GitNoteMapper.datacount : 143 ] - <==      Total: 1
+2020-10-08 14:17:18.560 [ http-nio-8089-exec-2 ] - [ DEBUG ] [ c.m.reloads.mapper.GitNoteMapper.selectPage : 143 ] - ==>  Preparing: SELECT COUNT(1) FROM gitnote 
+2020-10-08 14:17:18.561 [ http-nio-8089-exec-2 ] - [ DEBUG ] [ c.m.reloads.mapper.GitNoteMapper.selectPage : 143 ] - ==> Parameters: 
+2020-10-08 14:17:18.562 [ http-nio-8089-exec-2 ] - [ DEBUG ] [ c.m.reloads.mapper.GitNoteMapper.selectPage : 143 ] - ==>  Preparing: SELECT id,title,imgurl,createtime,describetext,discusscount,visitcount,type,webpagepath FROM gitnote LIMIT ?,? 
+2020-10-08 14:17:18.562 [ http-nio-8089-exec-2 ] - [ DEBUG ] [ c.m.reloads.mapper.GitNoteMapper.selectPage : 143 ] - ==> Parameters: 0(Long), 10(Long)
+2020-10-08 14:17:18.563 [ http-nio-8089-exec-2 ] - [ DEBUG ] [ c.m.reloads.mapper.GitNoteMapper.selectPage : 143 ] - <==      Total: 1
+2020-10-08 14:17:18.564 [ http-nio-8089-exec-2 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : bar/constitute/gitnote
+2020-10-08 14:17:18.564 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 7
+2020-10-08 14:17:18.940 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/othernote
+2020-10-08 14:17:18.940 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:17:18.940 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.PageController.toOtherNotePath
+2020-10-08 14:17:18.940 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-08 14:17:18.941 [ http-nio-8089-exec-5 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : redirect:/othernote/1
+2020-10-08 14:17:18.941 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-08 14:17:18.946 [ http-nio-8089-exec-8 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/othernote/1
+2020-10-08 14:17:18.946 [ http-nio-8089-exec-8 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:17:18.946 [ http-nio-8089-exec-8 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.othernote
+2020-10-08 14:17:18.946 [ http-nio-8089-exec-8 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : [1, {}]
+2020-10-08 14:17:18.947 [ http-nio-8089-exec-8 ] - [ DEBUG ] [ c.m.reloads.mapper.OtherNoteMapper.datacount : 143 ] - ==>  Preparing: select count(id) from othernote; 
+2020-10-08 14:17:18.948 [ http-nio-8089-exec-8 ] - [ DEBUG ] [ c.m.reloads.mapper.OtherNoteMapper.datacount : 143 ] - ==> Parameters: 
+2020-10-08 14:17:18.948 [ http-nio-8089-exec-8 ] - [ DEBUG ] [ c.m.reloads.mapper.OtherNoteMapper.datacount : 143 ] - <==      Total: 1
+2020-10-08 14:17:18.950 [ http-nio-8089-exec-8 ] - [ DEBUG ] [ c.m.reloads.mapper.OtherNoteMapper.selectPage : 143 ] - ==>  Preparing: SELECT COUNT(1) FROM othernote 
+2020-10-08 14:17:18.950 [ http-nio-8089-exec-8 ] - [ DEBUG ] [ c.m.reloads.mapper.OtherNoteMapper.selectPage : 143 ] - ==> Parameters: 
+2020-10-08 14:17:18.951 [ http-nio-8089-exec-8 ] - [ DEBUG ] [ c.m.reloads.mapper.OtherNoteMapper.selectPage : 143 ] - ==>  Preparing: SELECT id,title,imgurl,createtime,describetext,discusscount,visitcount,type,webpagepath FROM othernote LIMIT ?,? 
+2020-10-08 14:17:18.952 [ http-nio-8089-exec-8 ] - [ DEBUG ] [ c.m.reloads.mapper.OtherNoteMapper.selectPage : 143 ] - ==> Parameters: 0(Long), 10(Long)
+2020-10-08 14:17:18.953 [ http-nio-8089-exec-8 ] - [ DEBUG ] [ c.m.reloads.mapper.OtherNoteMapper.selectPage : 143 ] - <==      Total: 1
+2020-10-08 14:17:18.954 [ http-nio-8089-exec-8 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : bar/constitute/othernote
+2020-10-08 14:17:18.954 [ http-nio-8089-exec-8 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 8
+2020-10-08 14:17:19.362 [ http-nio-8089-exec-10 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/introduction
+2020-10-08 14:17:19.362 [ http-nio-8089-exec-10 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:17:19.362 [ http-nio-8089-exec-10 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.introduction
+2020-10-08 14:17:19.362 [ http-nio-8089-exec-10 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-08 14:17:19.362 [ http-nio-8089-exec-10 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : bar/constitute/introduction
+2020-10-08 14:17:19.362 [ http-nio-8089-exec-10 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 0
+2020-10-08 14:17:20.113 [ http-nio-8089-exec-9 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/
+2020-10-08 14:17:20.114 [ http-nio-8089-exec-9 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:17:20.114 [ http-nio-8089-exec-9 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.index
+2020-10-08 14:17:20.114 [ http-nio-8089-exec-9 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : [org.apache.catalina.connector.RequestFacade@af703ce]
+2020-10-08 14:17:20.115 [ http-nio-8089-exec-9 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - ==>  Preparing: select count(id) from imgview order by createtime desc ; 
+2020-10-08 14:17:20.115 [ http-nio-8089-exec-9 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - ==> Parameters: 
+2020-10-08 14:17:20.116 [ http-nio-8089-exec-9 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - <==      Total: 1
+2020-10-08 14:17:20.118 [ http-nio-8089-exec-9 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==>  Preparing: SELECT COUNT(1) FROM imgview 
+2020-10-08 14:17:20.118 [ http-nio-8089-exec-9 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==> Parameters: 
+2020-10-08 14:17:20.119 [ http-nio-8089-exec-9 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==>  Preparing: SELECT id,title,imgurl,createtime,describetext,discusscount,visitcount,type,webpagepath FROM imgview LIMIT ?,? 
+2020-10-08 14:17:20.120 [ http-nio-8089-exec-9 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==> Parameters: 0(Long), 10(Long)
+2020-10-08 14:17:20.123 [ http-nio-8089-exec-9 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - <==      Total: 5
+2020-10-08 14:17:20.124 [ http-nio-8089-exec-9 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : index
+2020-10-08 14:17:20.124 [ http-nio-8089-exec-9 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 11
+2020-10-08 14:17:22.643 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/
+2020-10-08 14:17:22.644 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:17:22.644 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.index
+2020-10-08 14:17:22.644 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : [org.apache.catalina.connector.RequestFacade@af703ce]
+2020-10-08 14:17:22.645 [ http-nio-8089-exec-6 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - ==>  Preparing: select count(id) from imgview order by createtime desc ; 
+2020-10-08 14:17:22.646 [ http-nio-8089-exec-6 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - ==> Parameters: 
+2020-10-08 14:17:22.647 [ http-nio-8089-exec-6 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - <==      Total: 1
+2020-10-08 14:17:22.649 [ http-nio-8089-exec-6 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==>  Preparing: SELECT COUNT(1) FROM imgview 
+2020-10-08 14:17:22.649 [ http-nio-8089-exec-6 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==> Parameters: 
+2020-10-08 14:17:22.650 [ http-nio-8089-exec-6 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==>  Preparing: SELECT id,title,imgurl,createtime,describetext,discusscount,visitcount,type,webpagepath FROM imgview LIMIT ?,? 
+2020-10-08 14:17:22.651 [ http-nio-8089-exec-6 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==> Parameters: 0(Long), 10(Long)
+2020-10-08 14:17:22.653 [ http-nio-8089-exec-6 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - <==      Total: 5
+2020-10-08 14:17:22.655 [ http-nio-8089-exec-6 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : index
+2020-10-08 14:17:22.656 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 13
+2020-10-08 14:17:26.698 [ http-nio-8089-exec-7 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/
+2020-10-08 14:17:26.698 [ http-nio-8089-exec-7 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:17:26.698 [ http-nio-8089-exec-7 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.index
+2020-10-08 14:17:26.699 [ http-nio-8089-exec-7 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : [org.apache.catalina.connector.RequestFacade@af703ce]
+2020-10-08 14:17:26.699 [ http-nio-8089-exec-7 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - ==>  Preparing: select count(id) from imgview order by createtime desc ; 
+2020-10-08 14:17:26.700 [ http-nio-8089-exec-7 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - ==> Parameters: 
+2020-10-08 14:17:26.701 [ http-nio-8089-exec-7 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - <==      Total: 1
+2020-10-08 14:17:26.702 [ http-nio-8089-exec-7 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==>  Preparing: SELECT COUNT(1) FROM imgview 
+2020-10-08 14:17:26.702 [ http-nio-8089-exec-7 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==> Parameters: 
+2020-10-08 14:17:26.703 [ http-nio-8089-exec-7 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==>  Preparing: SELECT id,title,imgurl,createtime,describetext,discusscount,visitcount,type,webpagepath FROM imgview LIMIT ?,? 
+2020-10-08 14:17:26.703 [ http-nio-8089-exec-7 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==> Parameters: 0(Long), 10(Long)
+2020-10-08 14:17:26.706 [ http-nio-8089-exec-7 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - <==      Total: 5
+2020-10-08 14:17:26.707 [ http-nio-8089-exec-7 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : index
+2020-10-08 14:17:26.707 [ http-nio-8089-exec-7 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 9
+2020-10-08 14:17:27.532 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/introduction
+2020-10-08 14:17:27.532 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:17:27.533 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.introduction
+2020-10-08 14:17:27.533 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-08 14:17:27.533 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : bar/constitute/introduction
+2020-10-08 14:17:27.533 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-08 14:17:33.155 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/userlog
+2020-10-08 14:17:33.156 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:17:33.156 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LoginController.userlog
+2020-10-08 14:17:33.156 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-08 14:17:33.158 [ http-nio-8089-exec-3 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /logins/login
+2020-10-08 14:17:33.158 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 3
+2020-10-08 14:18:12.289 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/register
+2020-10-08 14:18:12.289 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:18:12.289 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LoginController.register
+2020-10-08 14:18:12.290 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-08 14:18:12.290 [ http-nio-8089-exec-6 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /logins/register
+2020-10-08 14:18:12.290 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-08 14:18:17.675 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/userRegister
+2020-10-08 14:18:17.675 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : POST
+2020-10-08 14:18:17.675 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LoginController.userRegister
+2020-10-08 14:18:17.675 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-08 14:18:17.676 [ http-nio-8089-exec-4 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /logins/register
+2020-10-08 14:18:17.676 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-08 14:35:32.295 [ main ] - [ INFO  ] [ com.moonmagician.reloads.ReloadsApplication : 55 ] - Starting ReloadsApplication on DESKTOP-GQFO42A with PID 24084 (C:\Users\HP\Desktop\reloads\target\classes started by HP in C:\Users\HP\Desktop\reloads)
+2020-10-08 14:35:32.298 [ main ] - [ DEBUG ] [ com.moonmagician.reloads.ReloadsApplication : 56 ] - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-10-08 14:35:32.298 [ main ] - [ INFO  ] [ com.moonmagician.reloads.ReloadsApplication : 655 ] - The following profiles are active: dev
+2020-10-08 14:35:33.325 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 108 ] - Tomcat initialized with port(s): 8089 (http)
+2020-10-08 14:35:33.331 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8089"]
+2020-10-08 14:35:33.332 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2020-10-08 14:35:33.332 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-10-08 14:35:33.397 [ main ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2020-10-08 14:35:33.397 [ main ] - [ INFO  ] [ o.s.b.w.s.c.ServletWebServerApplicationContext : 285 ] - Root WebApplicationContext: initialization completed in 1072 ms
+2020-10-08 14:35:33.611 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 994 ] - {dataSource-1} inited
+2020-10-08 14:35:34.638 [ main ] - [ INFO  ] [ s.d.s.w.PropertySourcedRequestMappingHandlerMapping : 69 ] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-08 14:35:34.729 [ main ] - [ INFO  ] [ o.s.scheduling.concurrent.ThreadPoolTaskExecutor : 181 ] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-08 14:35:34.766 [ main ] - [ INFO  ] [ o.s.b.a.web.servlet.WelcomePageHandlerMapping : 54 ] - Adding welcome page: class path resource [templates/index.html]
+2020-10-08 14:35:34.903 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8089"]
+2020-10-08 14:35:34.919 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 220 ] - Tomcat started on port(s): 8089 (http) with context path ''
+2020-10-08 14:35:34.919 [ main ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 160 ] - Context refreshed
+2020-10-08 14:35:34.932 [ main ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 163 ] - Found 1 custom documentation plugin(s)
+2020-10-08 14:35:34.954 [ main ] - [ INFO  ] [ s.d.spring.web.scanners.ApiListingReferenceScanner : 41 ] - Scanning for api listing references
+2020-10-08 14:35:34.956 [ http-nio-8089-exec-2 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-08 14:35:34.956 [ http-nio-8089-exec-2 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 525 ] - Initializing Servlet 'dispatcherServlet'
+2020-10-08 14:35:34.961 [ http-nio-8089-exec-2 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 547 ] - Completed initialization in 5 ms
+2020-10-08 14:35:34.969 [ main ] - [ INFO  ] [ com.moonmagician.reloads.ReloadsApplication : 61 ] - Started ReloadsApplication in 3.08 seconds (JVM running for 3.844)
+2020-10-08 14:35:34.982 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/
+2020-10-08 14:35:34.983 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:35:34.984 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.index
+2020-10-08 14:35:34.984 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : [org.apache.catalina.connector.RequestFacade@6ab4076]
+2020-10-08 14:35:35.009 [ http-nio-8089-exec-2 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - ==>  Preparing: select count(id) from imgview order by createtime desc ; 
+2020-10-08 14:35:35.023 [ http-nio-8089-exec-2 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - ==> Parameters: 
+2020-10-08 14:35:35.035 [ http-nio-8089-exec-2 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - <==      Total: 1
+2020-10-08 14:35:35.068 [ http-nio-8089-exec-2 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==>  Preparing: SELECT COUNT(1) FROM imgview 
+2020-10-08 14:35:35.069 [ http-nio-8089-exec-2 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==> Parameters: 
+2020-10-08 14:35:35.071 [ http-nio-8089-exec-2 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==>  Preparing: SELECT id,title,imgurl,createtime,describetext,discusscount,visitcount,type,webpagepath FROM imgview LIMIT ?,? 
+2020-10-08 14:35:35.072 [ http-nio-8089-exec-2 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==> Parameters: 0(Long), 10(Long)
+2020-10-08 14:35:35.075 [ http-nio-8089-exec-2 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - <==      Total: 5
+2020-10-08 14:35:35.076 [ http-nio-8089-exec-2 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : index
+2020-10-08 14:35:35.077 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 95
+2020-10-08 14:35:36.667 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/userlog
+2020-10-08 14:35:36.668 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:35:36.669 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LoginController.userlog
+2020-10-08 14:35:36.669 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-08 14:35:36.672 [ http-nio-8089-exec-4 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /logins/login
+2020-10-08 14:35:36.672 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 5
+2020-10-08 14:35:37.939 [ http-nio-8089-exec-8 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/register
+2020-10-08 14:35:37.940 [ http-nio-8089-exec-8 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:35:37.940 [ http-nio-8089-exec-8 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LoginController.register
+2020-10-08 14:35:37.941 [ http-nio-8089-exec-8 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-08 14:35:37.941 [ http-nio-8089-exec-8 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /logins/register
+2020-10-08 14:35:37.941 [ http-nio-8089-exec-8 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 2
+2020-10-08 14:35:42.330 [ http-nio-8089-exec-9 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/userRegister
+2020-10-08 14:35:42.330 [ http-nio-8089-exec-9 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : POST
+2020-10-08 14:35:42.330 [ http-nio-8089-exec-9 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LoginController.userRegister
+2020-10-08 14:35:42.331 [ http-nio-8089-exec-9 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : [zhang, 123456]
+2020-10-08 14:35:42.331 [ http-nio-8089-exec-9 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /login
+2020-10-08 14:35:42.331 [ http-nio-8089-exec-9 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-08 14:35:42.334 [ http-nio-8089-exec-9 ] - [ ERROR ] [ org.thymeleaf.TemplateEngine : 1136 ] - [THYMELEAF][http-nio-8089-exec-9] Exception processing template "/login": Error resolving template [/login], template might not exist or might not be accessible by any of the configured Template Resolvers
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [/login], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-08 14:35:42.336 [ http-nio-8089-exec-9 ] - [ ERROR ] [ o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] : 175 ] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template [/login], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [/login], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-08 14:36:56.709 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/register
+2020-10-08 14:36:56.710 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:36:56.710 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LoginController.register
+2020-10-08 14:36:56.710 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-08 14:36:56.710 [ http-nio-8089-exec-3 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /logins/register
+2020-10-08 14:36:56.710 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-08 14:36:57.480 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/userlog
+2020-10-08 14:36:57.481 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:36:57.481 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LoginController.userlog
+2020-10-08 14:36:57.481 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-08 14:36:57.482 [ http-nio-8089-exec-5 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /logins/login
+2020-10-08 14:36:57.482 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 2
+2020-10-08 14:36:58.112 [ http-nio-8089-exec-10 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/register
+2020-10-08 14:36:58.112 [ http-nio-8089-exec-10 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:36:58.113 [ http-nio-8089-exec-10 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LoginController.register
+2020-10-08 14:36:58.113 [ http-nio-8089-exec-10 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-08 14:36:58.113 [ http-nio-8089-exec-10 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /logins/register
+2020-10-08 14:36:58.113 [ http-nio-8089-exec-10 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-08 14:37:03.546 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/userRegister
+2020-10-08 14:37:03.547 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : POST
+2020-10-08 14:37:03.547 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LoginController.userRegister
+2020-10-08 14:37:03.547 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : [zhang, 123456]
+2020-10-08 14:37:03.547 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /login
+2020-10-08 14:37:03.547 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-08 14:37:03.549 [ http-nio-8089-exec-1 ] - [ ERROR ] [ org.thymeleaf.TemplateEngine : 1136 ] - [THYMELEAF][http-nio-8089-exec-1] Exception processing template "/login": Error resolving template [/login], template might not exist or might not be accessible by any of the configured Template Resolvers
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [/login], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-08 14:37:03.549 [ http-nio-8089-exec-1 ] - [ ERROR ] [ o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] : 175 ] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template [/login], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [/login], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-08 14:37:47.204 [ main ] - [ INFO  ] [ com.moonmagician.reloads.ReloadsApplication : 55 ] - Starting ReloadsApplication on DESKTOP-GQFO42A with PID 25140 (C:\Users\HP\Desktop\reloads\target\classes started by HP in C:\Users\HP\Desktop\reloads)
+2020-10-08 14:37:47.206 [ main ] - [ DEBUG ] [ com.moonmagician.reloads.ReloadsApplication : 56 ] - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-10-08 14:37:47.206 [ main ] - [ INFO  ] [ com.moonmagician.reloads.ReloadsApplication : 655 ] - The following profiles are active: dev
+2020-10-08 14:37:48.259 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 108 ] - Tomcat initialized with port(s): 8089 (http)
+2020-10-08 14:37:48.265 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8089"]
+2020-10-08 14:37:48.266 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2020-10-08 14:37:48.266 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-10-08 14:37:48.345 [ main ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2020-10-08 14:37:48.345 [ main ] - [ INFO  ] [ o.s.b.w.s.c.ServletWebServerApplicationContext : 285 ] - Root WebApplicationContext: initialization completed in 1102 ms
+2020-10-08 14:37:48.548 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 994 ] - {dataSource-1} inited
+2020-10-08 14:37:49.224 [ main ] - [ INFO  ] [ s.d.s.w.PropertySourcedRequestMappingHandlerMapping : 69 ] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-08 14:37:49.320 [ main ] - [ INFO  ] [ o.s.scheduling.concurrent.ThreadPoolTaskExecutor : 181 ] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-08 14:37:49.358 [ main ] - [ INFO  ] [ o.s.b.a.web.servlet.WelcomePageHandlerMapping : 54 ] - Adding welcome page: class path resource [templates/index.html]
+2020-10-08 14:37:49.503 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8089"]
+2020-10-08 14:37:49.518 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 220 ] - Tomcat started on port(s): 8089 (http) with context path ''
+2020-10-08 14:37:49.519 [ main ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 160 ] - Context refreshed
+2020-10-08 14:37:49.530 [ main ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 163 ] - Found 1 custom documentation plugin(s)
+2020-10-08 14:37:49.549 [ main ] - [ INFO  ] [ s.d.spring.web.scanners.ApiListingReferenceScanner : 41 ] - Scanning for api listing references
+2020-10-08 14:37:49.562 [ main ] - [ INFO  ] [ com.moonmagician.reloads.ReloadsApplication : 61 ] - Started ReloadsApplication in 2.74 seconds (JVM running for 3.445)
+2020-10-08 14:37:50.368 [ http-nio-8089-exec-1 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-08 14:37:50.369 [ http-nio-8089-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 525 ] - Initializing Servlet 'dispatcherServlet'
+2020-10-08 14:37:50.375 [ http-nio-8089-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 547 ] - Completed initialization in 6 ms
+2020-10-08 14:37:50.392 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/register
+2020-10-08 14:37:50.392 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:37:50.393 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LoginController.register
+2020-10-08 14:37:50.394 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-08 14:37:50.396 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /logins/register
+2020-10-08 14:37:50.396 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 4
+2020-10-08 14:37:57.735 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/userRegister
+2020-10-08 14:37:57.736 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : POST
+2020-10-08 14:37:57.736 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LoginController.userRegister
+2020-10-08 14:37:57.736 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : [张, 123456]
+2020-10-08 14:37:57.737 [ http-nio-8089-exec-4 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : redirece:/login
+2020-10-08 14:37:57.737 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 2
+2020-10-08 14:37:57.740 [ http-nio-8089-exec-4 ] - [ ERROR ] [ org.thymeleaf.TemplateEngine : 1136 ] - [THYMELEAF][http-nio-8089-exec-4] Exception processing template "redirece:/login": Error resolving template [redirece:/login], template might not exist or might not be accessible by any of the configured Template Resolvers
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [redirece:/login], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-08 14:37:57.742 [ http-nio-8089-exec-4 ] - [ ERROR ] [ o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] : 175 ] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template [redirece:/login], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [redirece:/login], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-08 14:38:34.891 [ main ] - [ INFO  ] [ com.moonmagician.reloads.ReloadsApplication : 55 ] - Starting ReloadsApplication on DESKTOP-GQFO42A with PID 6056 (C:\Users\HP\Desktop\reloads\target\classes started by HP in C:\Users\HP\Desktop\reloads)
+2020-10-08 14:38:34.894 [ main ] - [ DEBUG ] [ com.moonmagician.reloads.ReloadsApplication : 56 ] - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-10-08 14:38:34.895 [ main ] - [ INFO  ] [ com.moonmagician.reloads.ReloadsApplication : 655 ] - The following profiles are active: dev
+2020-10-08 14:38:35.936 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 108 ] - Tomcat initialized with port(s): 8089 (http)
+2020-10-08 14:38:35.942 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8089"]
+2020-10-08 14:38:35.943 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2020-10-08 14:38:35.943 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-10-08 14:38:36.013 [ main ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2020-10-08 14:38:36.013 [ main ] - [ INFO  ] [ o.s.b.w.s.c.ServletWebServerApplicationContext : 285 ] - Root WebApplicationContext: initialization completed in 1086 ms
+2020-10-08 14:38:36.225 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 994 ] - {dataSource-1} inited
+2020-10-08 14:38:36.861 [ main ] - [ INFO  ] [ s.d.s.w.PropertySourcedRequestMappingHandlerMapping : 69 ] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-08 14:38:36.951 [ main ] - [ INFO  ] [ o.s.scheduling.concurrent.ThreadPoolTaskExecutor : 181 ] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-08 14:38:36.988 [ main ] - [ INFO  ] [ o.s.b.a.web.servlet.WelcomePageHandlerMapping : 54 ] - Adding welcome page: class path resource [templates/index.html]
+2020-10-08 14:38:37.123 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8089"]
+2020-10-08 14:38:37.136 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 220 ] - Tomcat started on port(s): 8089 (http) with context path ''
+2020-10-08 14:38:37.137 [ main ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 160 ] - Context refreshed
+2020-10-08 14:38:37.148 [ main ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 163 ] - Found 1 custom documentation plugin(s)
+2020-10-08 14:38:37.167 [ main ] - [ INFO  ] [ s.d.spring.web.scanners.ApiListingReferenceScanner : 41 ] - Scanning for api listing references
+2020-10-08 14:38:37.180 [ main ] - [ INFO  ] [ com.moonmagician.reloads.ReloadsApplication : 61 ] - Started ReloadsApplication in 2.713 seconds (JVM running for 3.425)
+2020-10-08 14:38:47.448 [ http-nio-8089-exec-1 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-08 14:38:47.449 [ http-nio-8089-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 525 ] - Initializing Servlet 'dispatcherServlet'
+2020-10-08 14:38:47.455 [ http-nio-8089-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 547 ] - Completed initialization in 6 ms
+2020-10-08 14:38:47.473 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/register
+2020-10-08 14:38:47.473 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:38:47.474 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LoginController.register
+2020-10-08 14:38:47.475 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-08 14:38:47.477 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /logins/register
+2020-10-08 14:38:47.478 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 5
+2020-10-08 14:38:52.799 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/userRegister
+2020-10-08 14:38:52.799 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : POST
+2020-10-08 14:38:52.799 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LoginController.userRegister
+2020-10-08 14:38:52.799 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : [zhang, 123456]
+2020-10-08 14:38:52.800 [ http-nio-8089-exec-2 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : redirece:/userlog
+2020-10-08 14:38:52.800 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-08 14:38:52.803 [ http-nio-8089-exec-2 ] - [ ERROR ] [ org.thymeleaf.TemplateEngine : 1136 ] - [THYMELEAF][http-nio-8089-exec-2] Exception processing template "redirece:/userlog": Error resolving template [redirece:/userlog], template might not exist or might not be accessible by any of the configured Template Resolvers
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [redirece:/userlog], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-08 14:38:52.805 [ http-nio-8089-exec-2 ] - [ ERROR ] [ o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] : 175 ] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template [redirece:/userlog], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [redirece:/userlog], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-08 14:40:25.321 [ main ] - [ INFO  ] [ com.moonmagician.reloads.ReloadsApplication : 55 ] - Starting ReloadsApplication on DESKTOP-GQFO42A with PID 22364 (C:\Users\HP\Desktop\reloads\target\classes started by HP in C:\Users\HP\Desktop\reloads)
+2020-10-08 14:40:25.323 [ main ] - [ DEBUG ] [ com.moonmagician.reloads.ReloadsApplication : 56 ] - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-10-08 14:40:25.323 [ main ] - [ INFO  ] [ com.moonmagician.reloads.ReloadsApplication : 655 ] - The following profiles are active: dev
+2020-10-08 14:40:26.440 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 108 ] - Tomcat initialized with port(s): 8089 (http)
+2020-10-08 14:40:26.446 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8089"]
+2020-10-08 14:40:26.446 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2020-10-08 14:40:26.446 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-10-08 14:40:26.512 [ main ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2020-10-08 14:40:26.513 [ main ] - [ INFO  ] [ o.s.b.w.s.c.ServletWebServerApplicationContext : 285 ] - Root WebApplicationContext: initialization completed in 1160 ms
+2020-10-08 14:40:26.732 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 994 ] - {dataSource-1} inited
+2020-10-08 14:40:27.386 [ main ] - [ INFO  ] [ s.d.s.w.PropertySourcedRequestMappingHandlerMapping : 69 ] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-08 14:40:27.483 [ main ] - [ INFO  ] [ o.s.scheduling.concurrent.ThreadPoolTaskExecutor : 181 ] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-08 14:40:27.520 [ main ] - [ INFO  ] [ o.s.b.a.web.servlet.WelcomePageHandlerMapping : 54 ] - Adding welcome page: class path resource [templates/index.html]
+2020-10-08 14:40:27.662 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8089"]
+2020-10-08 14:40:27.677 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 220 ] - Tomcat started on port(s): 8089 (http) with context path ''
+2020-10-08 14:40:27.677 [ main ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 160 ] - Context refreshed
+2020-10-08 14:40:27.688 [ main ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 163 ] - Found 1 custom documentation plugin(s)
+2020-10-08 14:40:27.709 [ main ] - [ INFO  ] [ s.d.spring.web.scanners.ApiListingReferenceScanner : 41 ] - Scanning for api listing references
+2020-10-08 14:40:27.723 [ main ] - [ INFO  ] [ com.moonmagician.reloads.ReloadsApplication : 61 ] - Started ReloadsApplication in 2.763 seconds (JVM running for 3.485)
+2020-10-08 14:40:27.727 [ http-nio-8089-exec-1 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-08 14:40:27.727 [ http-nio-8089-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 525 ] - Initializing Servlet 'dispatcherServlet'
+2020-10-08 14:40:27.733 [ http-nio-8089-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 547 ] - Completed initialization in 6 ms
+2020-10-08 14:40:27.758 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/userRegister
+2020-10-08 14:40:27.759 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : POST
+2020-10-08 14:40:27.760 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LoginController.userRegister
+2020-10-08 14:40:27.760 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : [zhang, 123456]
+2020-10-08 14:40:27.762 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : redirect:/userlog
+2020-10-08 14:40:27.762 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 4
+2020-10-08 14:40:27.777 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/userlog
+2020-10-08 14:40:27.778 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:40:27.778 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LoginController.userlog
+2020-10-08 14:40:27.778 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-08 14:40:27.778 [ http-nio-8089-exec-2 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /logins/login
+2020-10-08 14:40:27.778 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-08 14:40:29.368 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/register
+2020-10-08 14:40:29.369 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:40:29.369 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LoginController.register
+2020-10-08 14:40:29.369 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-08 14:40:29.370 [ http-nio-8089-exec-3 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /logins/register
+2020-10-08 14:40:29.370 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 2
+2020-10-08 14:40:33.114 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/userRegister
+2020-10-08 14:40:33.115 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : POST
+2020-10-08 14:40:33.115 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LoginController.userRegister
+2020-10-08 14:40:33.115 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : [zhang, 123456]
+2020-10-08 14:40:33.115 [ http-nio-8089-exec-4 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : redirect:/userlog
+2020-10-08 14:40:33.115 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-08 14:40:33.120 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/userlog
+2020-10-08 14:40:33.120 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:40:33.121 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LoginController.userlog
+2020-10-08 14:40:33.121 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-08 14:40:33.121 [ http-nio-8089-exec-6 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /logins/login
+2020-10-08 14:40:33.121 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-08 14:40:39.971 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/register
+2020-10-08 14:40:39.972 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:40:39.972 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LoginController.register
+2020-10-08 14:40:39.972 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-08 14:40:39.972 [ http-nio-8089-exec-5 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /logins/register
+2020-10-08 14:40:39.973 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 2
+2020-10-08 14:41:00.394 [ main ] - [ INFO  ] [ com.moonmagician.reloads.ReloadsApplication : 55 ] - Starting ReloadsApplication on DESKTOP-GQFO42A with PID 16900 (C:\Users\HP\Desktop\reloads\target\classes started by HP in C:\Users\HP\Desktop\reloads)
+2020-10-08 14:41:00.396 [ main ] - [ DEBUG ] [ com.moonmagician.reloads.ReloadsApplication : 56 ] - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-10-08 14:41:00.396 [ main ] - [ INFO  ] [ com.moonmagician.reloads.ReloadsApplication : 655 ] - The following profiles are active: dev
+2020-10-08 14:41:01.519 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 108 ] - Tomcat initialized with port(s): 8089 (http)
+2020-10-08 14:41:01.525 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8089"]
+2020-10-08 14:41:01.526 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2020-10-08 14:41:01.526 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-10-08 14:41:01.599 [ main ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2020-10-08 14:41:01.599 [ main ] - [ INFO  ] [ o.s.b.w.s.c.ServletWebServerApplicationContext : 285 ] - Root WebApplicationContext: initialization completed in 1175 ms
+2020-10-08 14:41:01.805 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 994 ] - {dataSource-1} inited
+2020-10-08 14:41:02.734 [ main ] - [ INFO  ] [ s.d.s.w.PropertySourcedRequestMappingHandlerMapping : 69 ] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-08 14:41:02.826 [ main ] - [ INFO  ] [ o.s.scheduling.concurrent.ThreadPoolTaskExecutor : 181 ] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-08 14:41:02.863 [ main ] - [ INFO  ] [ o.s.b.a.web.servlet.WelcomePageHandlerMapping : 54 ] - Adding welcome page: class path resource [templates/index.html]
+2020-10-08 14:41:03.002 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8089"]
+2020-10-08 14:41:03.015 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 220 ] - Tomcat started on port(s): 8089 (http) with context path ''
+2020-10-08 14:41:03.016 [ main ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 160 ] - Context refreshed
+2020-10-08 14:41:03.027 [ main ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 163 ] - Found 1 custom documentation plugin(s)
+2020-10-08 14:41:03.046 [ main ] - [ INFO  ] [ s.d.spring.web.scanners.ApiListingReferenceScanner : 41 ] - Scanning for api listing references
+2020-10-08 14:41:03.061 [ main ] - [ INFO  ] [ com.moonmagician.reloads.ReloadsApplication : 61 ] - Started ReloadsApplication in 3.027 seconds (JVM running for 3.746)
+2020-10-08 14:41:03.121 [ http-nio-8089-exec-1 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-08 14:41:03.121 [ http-nio-8089-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 525 ] - Initializing Servlet 'dispatcherServlet'
+2020-10-08 14:41:03.127 [ http-nio-8089-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 547 ] - Completed initialization in 6 ms
+2020-10-08 14:41:03.147 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/
+2020-10-08 14:41:03.147 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:41:03.148 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.index
+2020-10-08 14:41:03.148 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : [org.apache.catalina.connector.RequestFacade@5590b95d]
+2020-10-08 14:41:03.172 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - ==>  Preparing: select count(id) from imgview order by createtime desc ; 
+2020-10-08 14:41:03.185 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - ==> Parameters: 
+2020-10-08 14:41:03.197 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - <==      Total: 1
+2020-10-08 14:41:03.231 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==>  Preparing: SELECT COUNT(1) FROM imgview 
+2020-10-08 14:41:03.231 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==> Parameters: 
+2020-10-08 14:41:03.234 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==>  Preparing: SELECT id,title,imgurl,createtime,describetext,discusscount,visitcount,type,webpagepath FROM imgview LIMIT ?,? 
+2020-10-08 14:41:03.235 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==> Parameters: 0(Long), 10(Long)
+2020-10-08 14:41:03.238 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - <==      Total: 5
+2020-10-08 14:41:03.239 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : index
+2020-10-08 14:41:03.239 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 92
+2020-10-08 14:41:04.310 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/userlog
+2020-10-08 14:41:04.310 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:41:04.310 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LoginController.userlog
+2020-10-08 14:41:04.310 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-08 14:41:04.313 [ http-nio-8089-exec-6 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /logins/login
+2020-10-08 14:41:04.313 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 3
+2020-10-08 14:41:04.939 [ http-nio-8089-exec-8 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/register
+2020-10-08 14:41:04.939 [ http-nio-8089-exec-8 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:41:04.940 [ http-nio-8089-exec-8 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LoginController.register
+2020-10-08 14:41:04.940 [ http-nio-8089-exec-8 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-08 14:41:04.940 [ http-nio-8089-exec-8 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /logins/register
+2020-10-08 14:41:04.940 [ http-nio-8089-exec-8 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-08 14:41:09.714 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/userRegister
+2020-10-08 14:41:09.714 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : POST
+2020-10-08 14:41:09.714 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LoginController.userRegister
+2020-10-08 14:41:09.714 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : [zhang, 123456]
+2020-10-08 14:41:09.716 [ http-nio-8089-exec-5 ] - [ DEBUG ] [ c.m.reloads.mapper.ConsumerMapper.insert : 143 ] - ==>  Preparing: INSERT INTO consumer ( username, password, head_portrait, message, emailcount, tipcount, registertime ) VALUES ( ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-08 14:41:10.003 [ http-nio-8089-exec-5 ] - [ DEBUG ] [ c.m.reloads.mapper.ConsumerMapper.insert : 143 ] - ==> Parameters: zhang(String), 123456(String), /userlist/otheruser/title.png(String), 0(String), 0(String), 0(String), 2020-10-08 14:41:09.715(Timestamp)
+2020-10-08 14:41:10.007 [ http-nio-8089-exec-5 ] - [ DEBUG ] [ c.m.reloads.mapper.ConsumerMapper.insert : 143 ] - <==    Updates: 1
+2020-10-08 14:41:10.018 [ http-nio-8089-exec-5 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : redirect:/userlog
+2020-10-08 14:41:10.019 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 305
+2020-10-08 14:41:10.029 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/userlog
+2020-10-08 14:41:10.029 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:41:10.029 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LoginController.userlog
+2020-10-08 14:41:10.029 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-08 14:41:10.029 [ http-nio-8089-exec-3 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /logins/login
+2020-10-08 14:41:10.030 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-08 14:41:21.132 [ http-nio-8089-exec-7 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/login
+2020-10-08 14:41:21.132 [ http-nio-8089-exec-7 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : POST
+2020-10-08 14:41:21.133 [ http-nio-8089-exec-7 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LoginController.login
+2020-10-08 14:41:21.133 [ http-nio-8089-exec-7 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : [zhang, 123456, org.apache.catalina.session.StandardSessionFacade@574d4e53]
+2020-10-08 14:41:21.134 [ http-nio-8089-exec-7 ] - [ DEBUG ] [ c.m.reloads.mapper.ConsumerMapper.selectList : 143 ] - ==>  Preparing: SELECT id,username,password,head_portrait,message,emailcount,tipcount,registertime FROM consumer 
+2020-10-08 14:41:21.134 [ http-nio-8089-exec-7 ] - [ DEBUG ] [ c.m.reloads.mapper.ConsumerMapper.selectList : 143 ] - ==> Parameters: 
+2020-10-08 14:41:21.135 [ http-nio-8089-exec-7 ] - [ DEBUG ] [ c.m.reloads.mapper.ConsumerMapper.selectList : 143 ] - <==      Total: 3
+2020-10-08 14:41:21.136 [ http-nio-8089-exec-7 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : redirect:/
+2020-10-08 14:41:21.136 [ http-nio-8089-exec-7 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 4
+2020-10-08 14:41:21.140 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/
+2020-10-08 14:41:21.140 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:41:21.141 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.index
+2020-10-08 14:41:21.141 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : [org.apache.catalina.connector.RequestFacade@5590b95d]
+2020-10-08 14:41:21.141 [ http-nio-8089-exec-2 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - ==>  Preparing: select count(id) from imgview order by createtime desc ; 
+2020-10-08 14:41:21.142 [ http-nio-8089-exec-2 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - ==> Parameters: 
+2020-10-08 14:41:21.142 [ http-nio-8089-exec-2 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - <==      Total: 1
+2020-10-08 14:41:21.144 [ http-nio-8089-exec-2 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==>  Preparing: SELECT COUNT(1) FROM imgview 
+2020-10-08 14:41:21.144 [ http-nio-8089-exec-2 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==> Parameters: 
+2020-10-08 14:41:21.146 [ http-nio-8089-exec-2 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==>  Preparing: SELECT id,title,imgurl,createtime,describetext,discusscount,visitcount,type,webpagepath FROM imgview LIMIT ?,? 
+2020-10-08 14:41:21.146 [ http-nio-8089-exec-2 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==> Parameters: 0(Long), 10(Long)
+2020-10-08 14:41:21.147 [ http-nio-8089-exec-2 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - <==      Total: 5
+2020-10-08 14:41:21.147 [ http-nio-8089-exec-2 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : index
+2020-10-08 14:41:21.148 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 8
+2020-10-08 14:42:04.363 [ main ] - [ INFO  ] [ com.moonmagician.reloads.ReloadsApplication : 55 ] - Starting ReloadsApplication on DESKTOP-GQFO42A with PID 24340 (C:\Users\HP\Desktop\reloads\target\classes started by HP in C:\Users\HP\Desktop\reloads)
+2020-10-08 14:42:04.366 [ main ] - [ DEBUG ] [ com.moonmagician.reloads.ReloadsApplication : 56 ] - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-10-08 14:42:04.366 [ main ] - [ INFO  ] [ com.moonmagician.reloads.ReloadsApplication : 655 ] - The following profiles are active: dev
+2020-10-08 14:42:05.437 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 108 ] - Tomcat initialized with port(s): 8089 (http)
+2020-10-08 14:42:05.444 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8089"]
+2020-10-08 14:42:05.444 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2020-10-08 14:42:05.444 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-10-08 14:42:05.519 [ main ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2020-10-08 14:42:05.519 [ main ] - [ INFO  ] [ o.s.b.w.s.c.ServletWebServerApplicationContext : 285 ] - Root WebApplicationContext: initialization completed in 1122 ms
+2020-10-08 14:42:05.752 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 994 ] - {dataSource-1} inited
+2020-10-08 14:42:06.480 [ main ] - [ INFO  ] [ s.d.s.w.PropertySourcedRequestMappingHandlerMapping : 69 ] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-08 14:42:06.573 [ main ] - [ INFO  ] [ o.s.scheduling.concurrent.ThreadPoolTaskExecutor : 181 ] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-08 14:42:06.610 [ main ] - [ INFO  ] [ o.s.b.a.web.servlet.WelcomePageHandlerMapping : 54 ] - Adding welcome page: class path resource [templates/index.html]
+2020-10-08 14:42:06.755 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8089"]
+2020-10-08 14:42:06.770 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 220 ] - Tomcat started on port(s): 8089 (http) with context path ''
+2020-10-08 14:42:06.770 [ main ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 160 ] - Context refreshed
+2020-10-08 14:42:06.781 [ main ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 163 ] - Found 1 custom documentation plugin(s)
+2020-10-08 14:42:06.802 [ main ] - [ INFO  ] [ s.d.spring.web.scanners.ApiListingReferenceScanner : 41 ] - Scanning for api listing references
+2020-10-08 14:42:06.816 [ main ] - [ INFO  ] [ com.moonmagician.reloads.ReloadsApplication : 61 ] - Started ReloadsApplication in 2.875 seconds (JVM running for 3.73)
+2020-10-08 14:42:08.678 [ http-nio-8089-exec-1 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-08 14:42:08.678 [ http-nio-8089-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 525 ] - Initializing Servlet 'dispatcherServlet'
+2020-10-08 14:42:08.684 [ http-nio-8089-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 547 ] - Completed initialization in 6 ms
+2020-10-08 14:42:08.706 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/
+2020-10-08 14:42:08.706 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:42:08.707 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.index
+2020-10-08 14:42:08.707 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : [org.apache.catalina.connector.RequestFacade@6482ba4b]
+2020-10-08 14:42:08.731 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - ==>  Preparing: select count(id) from imgview order by createtime desc ; 
+2020-10-08 14:42:08.744 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - ==> Parameters: 
+2020-10-08 14:42:08.756 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - <==      Total: 1
+2020-10-08 14:42:08.787 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==>  Preparing: SELECT COUNT(1) FROM imgview 
+2020-10-08 14:42:08.788 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==> Parameters: 
+2020-10-08 14:42:08.791 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==>  Preparing: SELECT id,title,imgurl,createtime,describetext,discusscount,visitcount,type,webpagepath FROM imgview LIMIT ?,? 
+2020-10-08 14:42:08.792 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==> Parameters: 0(Long), 10(Long)
+2020-10-08 14:42:08.795 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - <==      Total: 5
+2020-10-08 14:42:08.796 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : index
+2020-10-08 14:42:08.797 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 91
+2020-10-08 14:42:10.156 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/userlog
+2020-10-08 14:42:10.157 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:42:10.157 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LoginController.userlog
+2020-10-08 14:42:10.157 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-08 14:42:10.160 [ http-nio-8089-exec-3 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /logins/login
+2020-10-08 14:42:10.160 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 4
+2020-10-08 14:42:14.595 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/login
+2020-10-08 14:42:14.595 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : POST
+2020-10-08 14:42:14.595 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LoginController.login
+2020-10-08 14:42:14.595 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : [zhang, 123456, org.apache.catalina.session.StandardSessionFacade@4ecf4ced]
+2020-10-08 14:42:14.596 [ http-nio-8089-exec-4 ] - [ DEBUG ] [ c.m.reloads.mapper.ConsumerMapper.selectList : 143 ] - ==>  Preparing: SELECT id,username,password,head_portrait,message,emailcount,tipcount,registertime FROM consumer 
+2020-10-08 14:42:14.597 [ http-nio-8089-exec-4 ] - [ DEBUG ] [ c.m.reloads.mapper.ConsumerMapper.selectList : 143 ] - ==> Parameters: 
+2020-10-08 14:42:14.598 [ http-nio-8089-exec-4 ] - [ DEBUG ] [ c.m.reloads.mapper.ConsumerMapper.selectList : 143 ] - <==      Total: 3
+2020-10-08 14:42:14.599 [ http-nio-8089-exec-4 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : redirect:/
+2020-10-08 14:42:14.599 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 4
+2020-10-08 14:42:14.612 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/
+2020-10-08 14:42:14.612 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-08 14:42:14.612 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.index
+2020-10-08 14:42:14.612 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : [org.apache.catalina.connector.RequestFacade@6482ba4b]
+2020-10-08 14:42:14.613 [ http-nio-8089-exec-5 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - ==>  Preparing: select count(id) from imgview order by createtime desc ; 
+2020-10-08 14:42:14.613 [ http-nio-8089-exec-5 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - ==> Parameters: 
+2020-10-08 14:42:14.614 [ http-nio-8089-exec-5 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - <==      Total: 1
+2020-10-08 14:42:14.615 [ http-nio-8089-exec-5 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==>  Preparing: SELECT COUNT(1) FROM imgview 
+2020-10-08 14:42:14.615 [ http-nio-8089-exec-5 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==> Parameters: 
+2020-10-08 14:42:14.617 [ http-nio-8089-exec-5 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==>  Preparing: SELECT id,title,imgurl,createtime,describetext,discusscount,visitcount,type,webpagepath FROM imgview LIMIT ?,? 
+2020-10-08 14:42:14.617 [ http-nio-8089-exec-5 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==> Parameters: 0(Long), 10(Long)
+2020-10-08 14:42:14.620 [ http-nio-8089-exec-5 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - <==      Total: 5
+2020-10-08 14:42:14.621 [ http-nio-8089-exec-5 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : index
+2020-10-08 14:42:14.621 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 9

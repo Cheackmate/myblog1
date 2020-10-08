@@ -20,4 +20,9 @@ public class ConsumerServiceImpl implements ConsumerService {
         List<Consumer> consumers = consumerMapper.selectList(null);
         return consumers;
     }
+
+    @Override
+    public void insertuser(Consumer consumer) {
+        consumerMapper.insert(consumer);
+    }
 }

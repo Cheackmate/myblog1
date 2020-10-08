@@ -13,4 +13,10 @@ public interface ConsumerService {
      * @return
      */
     List<Consumer> search();
+
+    /**
+     * 插入一个新的用户
+     */
+
+    void insertuser(Consumer consumer);
 }

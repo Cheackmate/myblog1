@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.util.Date;
 import java.util.Enumeration;
 import java.util.List;
 
@@ -71,10 +72,22 @@ public class LoginController {
      * 接收注册的post数据，然后把它添加到数据库中。
      * @return
      */
-    @RequestMapping("/userRegister")
-    public String userRegister(){
+    @PostMapping("/userRegister")
+    public String userRegister(String username,String password){
         //把用户数据放到数据库中，如果用户名重复返回重复，用户名不重复添加成功。
-        return "/logins/register";
+        Consumer consumer = new Consumer();
+        consumer.setUsername(username);
+        consumer.setPassword(password);
+        consumer.setHeadPortrait("/userlist/otheruser/title.png");
+        consumer.setEmailcount("0");
+        consumer.setMessage("0");
+        consumer.setTipcount("0");
+        Date date = new Date();
+        date.getTime();
+        consumer.setRegistertime(date);
+
+        consumerService.insertuser(consumer);
+        return "redirect:/userlog";
     }
 
     /**
