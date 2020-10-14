@@ -1,0 +1,404 @@
+2020-10-02 09:12:39.371 [ main ] - [ INFO  ] [ com.moonmagician.reloads.ReloadsApplication : 55 ] - Starting ReloadsApplication on DESKTOP-GQFO42A with PID 17436 (C:\Users\HP\Desktop\reloads\target\classes started by HP in C:\Users\HP\Desktop\reloads)
+2020-10-02 09:12:39.375 [ main ] - [ DEBUG ] [ com.moonmagician.reloads.ReloadsApplication : 56 ] - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-10-02 09:12:39.375 [ main ] - [ INFO  ] [ com.moonmagician.reloads.ReloadsApplication : 655 ] - The following profiles are active: dev
+2020-10-02 09:12:41.091 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 108 ] - Tomcat initialized with port(s): 8089 (http)
+2020-10-02 09:12:41.115 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8089"]
+2020-10-02 09:12:41.115 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2020-10-02 09:12:41.116 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-10-02 09:12:41.180 [ main ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2020-10-02 09:12:41.180 [ main ] - [ INFO  ] [ o.s.b.w.s.c.ServletWebServerApplicationContext : 285 ] - Root WebApplicationContext: initialization completed in 1748 ms
+2020-10-02 09:12:41.598 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 994 ] - {dataSource-1} inited
+2020-10-02 09:12:42.269 [ main ] - [ INFO  ] [ s.d.s.w.PropertySourcedRequestMappingHandlerMapping : 69 ] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-02 09:12:42.364 [ main ] - [ INFO  ] [ o.s.scheduling.concurrent.ThreadPoolTaskExecutor : 181 ] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-02 09:12:42.416 [ main ] - [ INFO  ] [ o.s.b.a.web.servlet.WelcomePageHandlerMapping : 58 ] - Adding welcome page template: index
+2020-10-02 09:12:42.608 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8089"]
+2020-10-02 09:12:42.633 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 220 ] - Tomcat started on port(s): 8089 (http) with context path ''
+2020-10-02 09:12:42.634 [ main ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 160 ] - Context refreshed
+2020-10-02 09:12:42.671 [ main ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 163 ] - Found 1 custom documentation plugin(s)
+2020-10-02 09:12:42.692 [ main ] - [ INFO  ] [ s.d.spring.web.scanners.ApiListingReferenceScanner : 41 ] - Scanning for api listing references
+2020-10-02 09:12:42.715 [ main ] - [ INFO  ] [ com.moonmagician.reloads.ReloadsApplication : 61 ] - Started ReloadsApplication in 3.957 seconds (JVM running for 4.894)
+2020-10-02 09:12:50.015 [ http-nio-8089-exec-1 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-02 09:12:50.015 [ http-nio-8089-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 525 ] - Initializing Servlet 'dispatcherServlet'
+2020-10-02 09:12:50.021 [ http-nio-8089-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 547 ] - Completed initialization in 5 ms
+2020-10-02 09:12:50.069 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/
+2020-10-02 09:12:50.070 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:12:50.071 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.index
+2020-10-02 09:12:50.071 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : [org.apache.catalina.connector.RequestFacade@6cd3d657]
+2020-10-02 09:12:50.110 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - ==>  Preparing: select count(id) from imgview; 
+2020-10-02 09:12:50.141 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - ==> Parameters: 
+2020-10-02 09:12:50.162 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - <==      Total: 1
+2020-10-02 09:12:50.202 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==>  Preparing: SELECT COUNT(1) FROM imgview 
+2020-10-02 09:12:50.202 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==> Parameters: 
+2020-10-02 09:12:50.205 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==>  Preparing: SELECT id,title,imgurl,createtime,describetext,discusscount,visitcount,type,webpagepath FROM imgview LIMIT ?,? 
+2020-10-02 09:12:50.206 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==> Parameters: 0(Long), 10(Long)
+2020-10-02 09:12:50.210 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - <==      Total: 10
+2020-10-02 09:12:50.211 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : index
+2020-10-02 09:12:50.211 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 142
+2020-10-02 09:12:52.209 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/othernote
+2020-10-02 09:12:52.209 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:12:52.210 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.othernote
+2020-10-02 09:12:52.210 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:12:52.210 [ http-nio-8089-exec-2 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/constitute/othernote
+2020-10-02 09:12:52.210 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-02 09:12:53.024 [ http-nio-8089-exec-7 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/redisnote
+2020-10-02 09:12:53.024 [ http-nio-8089-exec-7 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:12:53.024 [ http-nio-8089-exec-7 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.redisnote
+2020-10-02 09:12:53.025 [ http-nio-8089-exec-7 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:12:53.025 [ http-nio-8089-exec-7 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/constitute/redisnote
+2020-10-02 09:12:53.025 [ http-nio-8089-exec-7 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-02 09:12:53.594 [ http-nio-8089-exec-10 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/gitnote
+2020-10-02 09:12:53.595 [ http-nio-8089-exec-10 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:12:53.595 [ http-nio-8089-exec-10 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.gitnote
+2020-10-02 09:12:53.595 [ http-nio-8089-exec-10 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:12:53.595 [ http-nio-8089-exec-10 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/constitute/gitnote
+2020-10-02 09:12:53.595 [ http-nio-8089-exec-10 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-02 09:12:54.041 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/linuxnote
+2020-10-02 09:12:54.041 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:12:54.041 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.linuxnote
+2020-10-02 09:12:54.041 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:12:54.041 [ http-nio-8089-exec-6 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/constitute/linuxnote
+2020-10-02 09:12:54.041 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 0
+2020-10-02 09:12:55.231 [ http-nio-8089-exec-8 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/redisnote
+2020-10-02 09:12:55.231 [ http-nio-8089-exec-8 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:12:55.232 [ http-nio-8089-exec-8 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.redisnote
+2020-10-02 09:12:55.232 [ http-nio-8089-exec-8 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:12:55.233 [ http-nio-8089-exec-8 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/constitute/redisnote
+2020-10-02 09:12:55.233 [ http-nio-8089-exec-8 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 2
+2020-10-02 09:12:55.610 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/vuenote
+2020-10-02 09:12:55.610 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:12:55.610 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.vuenote
+2020-10-02 09:12:55.610 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:12:55.610 [ http-nio-8089-exec-4 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/constitute/vuenote
+2020-10-02 09:12:55.610 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 0
+2020-10-02 09:12:57.431 [ http-nio-8089-exec-9 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/linuxnote
+2020-10-02 09:12:57.432 [ http-nio-8089-exec-9 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:12:57.432 [ http-nio-8089-exec-9 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.linuxnote
+2020-10-02 09:12:57.432 [ http-nio-8089-exec-9 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:12:57.432 [ http-nio-8089-exec-9 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/constitute/linuxnote
+2020-10-02 09:12:57.432 [ http-nio-8089-exec-9 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-02 09:12:58.097 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/javanote
+2020-10-02 09:12:58.097 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:12:58.097 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.javanote
+2020-10-02 09:12:58.097 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:12:58.098 [ http-nio-8089-exec-5 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/constitute/javanote
+2020-10-02 09:12:58.098 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-02 09:12:59.695 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/redisnote
+2020-10-02 09:12:59.695 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:12:59.696 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.redisnote
+2020-10-02 09:12:59.696 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:12:59.696 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/constitute/redisnote
+2020-10-02 09:12:59.696 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-02 09:13:01.456 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/
+2020-10-02 09:13:01.456 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:13:01.457 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.index
+2020-10-02 09:13:01.457 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : [org.apache.catalina.connector.RequestFacade@6cd3d657]
+2020-10-02 09:13:01.458 [ http-nio-8089-exec-3 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - ==>  Preparing: select count(id) from imgview; 
+2020-10-02 09:13:01.458 [ http-nio-8089-exec-3 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - ==> Parameters: 
+2020-10-02 09:13:01.459 [ http-nio-8089-exec-3 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - <==      Total: 1
+2020-10-02 09:13:01.461 [ http-nio-8089-exec-3 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==>  Preparing: SELECT COUNT(1) FROM imgview 
+2020-10-02 09:13:01.461 [ http-nio-8089-exec-3 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==> Parameters: 
+2020-10-02 09:13:01.462 [ http-nio-8089-exec-3 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==>  Preparing: SELECT id,title,imgurl,createtime,describetext,discusscount,visitcount,type,webpagepath FROM imgview LIMIT ?,? 
+2020-10-02 09:13:01.462 [ http-nio-8089-exec-3 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==> Parameters: 0(Long), 10(Long)
+2020-10-02 09:13:01.466 [ http-nio-8089-exec-3 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - <==      Total: 10
+2020-10-02 09:13:01.466 [ http-nio-8089-exec-3 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : index
+2020-10-02 09:13:01.467 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 11
+2020-10-02 09:13:02.251 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/introduction
+2020-10-02 09:13:02.252 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:13:02.252 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.introduction
+2020-10-02 09:13:02.252 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:13:02.252 [ http-nio-8089-exec-4 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/constitute/introduction
+2020-10-02 09:13:02.252 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-02 09:13:03.498 [ http-nio-8089-exec-9 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/talk
+2020-10-02 09:13:03.498 [ http-nio-8089-exec-9 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:13:03.498 [ http-nio-8089-exec-9 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.talk
+2020-10-02 09:13:03.499 [ http-nio-8089-exec-9 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:13:03.499 [ http-nio-8089-exec-9 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/navigation/talk
+2020-10-02 09:13:03.499 [ http-nio-8089-exec-9 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-02 09:13:29.108 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/introduction
+2020-10-02 09:13:29.109 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:13:29.109 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.introduction
+2020-10-02 09:13:29.109 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:13:29.109 [ http-nio-8089-exec-5 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/constitute/introduction
+2020-10-02 09:13:29.110 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 2
+2020-10-02 09:13:31.312 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/introduction
+2020-10-02 09:13:31.313 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:13:31.313 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.introduction
+2020-10-02 09:13:31.313 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:13:31.313 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/constitute/introduction
+2020-10-02 09:13:31.313 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-02 09:13:51.481 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/allproject
+2020-10-02 09:13:51.482 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:13:51.482 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.allproject
+2020-10-02 09:13:51.482 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:13:51.483 [ http-nio-8089-exec-3 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/constitute/allproject
+2020-10-02 09:13:51.483 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 2
+2020-10-02 09:13:52.318 [ http-nio-8089-exec-7 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/introduction
+2020-10-02 09:13:52.319 [ http-nio-8089-exec-7 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:13:52.319 [ http-nio-8089-exec-7 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.introduction
+2020-10-02 09:13:52.319 [ http-nio-8089-exec-7 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:13:52.320 [ http-nio-8089-exec-7 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/constitute/introduction
+2020-10-02 09:13:52.320 [ http-nio-8089-exec-7 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 2
+2020-10-02 09:16:20.994 [ main ] - [ INFO  ] [ com.moonmagician.reloads.ReloadsApplication : 55 ] - Starting ReloadsApplication on DESKTOP-GQFO42A with PID 11484 (C:\Users\HP\Desktop\reloads\target\classes started by HP in C:\Users\HP\Desktop\reloads)
+2020-10-02 09:16:20.996 [ main ] - [ DEBUG ] [ com.moonmagician.reloads.ReloadsApplication : 56 ] - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-10-02 09:16:20.997 [ main ] - [ INFO  ] [ com.moonmagician.reloads.ReloadsApplication : 655 ] - The following profiles are active: dev
+2020-10-02 09:16:22.054 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 108 ] - Tomcat initialized with port(s): 8089 (http)
+2020-10-02 09:16:22.060 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8089"]
+2020-10-02 09:16:22.061 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2020-10-02 09:16:22.061 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-10-02 09:16:22.130 [ main ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2020-10-02 09:16:22.130 [ main ] - [ INFO  ] [ o.s.b.w.s.c.ServletWebServerApplicationContext : 285 ] - Root WebApplicationContext: initialization completed in 1098 ms
+2020-10-02 09:16:22.329 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 994 ] - {dataSource-1} inited
+2020-10-02 09:16:22.840 [ main ] - [ INFO  ] [ s.d.s.w.PropertySourcedRequestMappingHandlerMapping : 69 ] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-02 09:16:22.941 [ main ] - [ INFO  ] [ o.s.scheduling.concurrent.ThreadPoolTaskExecutor : 181 ] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-02 09:16:22.983 [ main ] - [ INFO  ] [ o.s.b.a.web.servlet.WelcomePageHandlerMapping : 58 ] - Adding welcome page template: index
+2020-10-02 09:16:23.122 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8089"]
+2020-10-02 09:16:23.136 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 220 ] - Tomcat started on port(s): 8089 (http) with context path ''
+2020-10-02 09:16:23.137 [ main ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 160 ] - Context refreshed
+2020-10-02 09:16:23.149 [ main ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 163 ] - Found 1 custom documentation plugin(s)
+2020-10-02 09:16:23.169 [ main ] - [ INFO  ] [ s.d.spring.web.scanners.ApiListingReferenceScanner : 41 ] - Scanning for api listing references
+2020-10-02 09:16:23.180 [ http-nio-8089-exec-1 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-02 09:16:23.180 [ http-nio-8089-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 525 ] - Initializing Servlet 'dispatcherServlet'
+2020-10-02 09:16:23.184 [ main ] - [ INFO  ] [ com.moonmagician.reloads.ReloadsApplication : 61 ] - Started ReloadsApplication in 2.595 seconds (JVM running for 3.298)
+2020-10-02 09:16:23.186 [ http-nio-8089-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 547 ] - Completed initialization in 5 ms
+2020-10-02 09:16:23.205 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/introduction
+2020-10-02 09:16:23.205 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:16:23.206 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.introduction
+2020-10-02 09:16:23.207 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:16:23.210 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/constitute/introduction
+2020-10-02 09:16:23.210 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 5
+2020-10-02 09:16:24.731 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/
+2020-10-02 09:16:24.731 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:16:24.732 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.index
+2020-10-02 09:16:24.733 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : [org.apache.catalina.connector.RequestFacade@165df657]
+2020-10-02 09:16:24.756 [ http-nio-8089-exec-5 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - ==>  Preparing: select count(id) from imgview; 
+2020-10-02 09:16:24.768 [ http-nio-8089-exec-5 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - ==> Parameters: 
+2020-10-02 09:16:24.780 [ http-nio-8089-exec-5 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - <==      Total: 1
+2020-10-02 09:16:24.812 [ http-nio-8089-exec-5 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==>  Preparing: SELECT COUNT(1) FROM imgview 
+2020-10-02 09:16:24.813 [ http-nio-8089-exec-5 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==> Parameters: 
+2020-10-02 09:16:24.816 [ http-nio-8089-exec-5 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==>  Preparing: SELECT id,title,imgurl,createtime,describetext,discusscount,visitcount,type,webpagepath FROM imgview LIMIT ?,? 
+2020-10-02 09:16:24.816 [ http-nio-8089-exec-5 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==> Parameters: 0(Long), 10(Long)
+2020-10-02 09:16:24.820 [ http-nio-8089-exec-5 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - <==      Total: 10
+2020-10-02 09:16:24.822 [ http-nio-8089-exec-5 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : index
+2020-10-02 09:16:24.823 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 92
+2020-10-02 09:16:25.577 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/allproject
+2020-10-02 09:16:25.578 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:16:25.578 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.allproject
+2020-10-02 09:16:25.578 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:16:25.578 [ http-nio-8089-exec-4 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/constitute/allproject
+2020-10-02 09:16:25.578 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-02 09:16:26.198 [ http-nio-8089-exec-7 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/javanote
+2020-10-02 09:16:26.198 [ http-nio-8089-exec-7 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:16:26.198 [ http-nio-8089-exec-7 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.javanote
+2020-10-02 09:16:26.198 [ http-nio-8089-exec-7 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:16:26.199 [ http-nio-8089-exec-7 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/constitute/javanote
+2020-10-02 09:16:26.199 [ http-nio-8089-exec-7 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-02 09:16:26.721 [ http-nio-8089-exec-8 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/linuxnote
+2020-10-02 09:16:26.721 [ http-nio-8089-exec-8 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:16:26.721 [ http-nio-8089-exec-8 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.linuxnote
+2020-10-02 09:16:26.721 [ http-nio-8089-exec-8 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:16:26.721 [ http-nio-8089-exec-8 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/constitute/linuxnote
+2020-10-02 09:16:26.722 [ http-nio-8089-exec-8 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 2
+2020-10-02 09:16:27.178 [ http-nio-8089-exec-10 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/mysqlnote
+2020-10-02 09:16:27.178 [ http-nio-8089-exec-10 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:16:27.179 [ http-nio-8089-exec-10 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.distributednote
+2020-10-02 09:16:27.179 [ http-nio-8089-exec-10 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:16:27.179 [ http-nio-8089-exec-10 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/constitute/mysqlnote
+2020-10-02 09:16:27.179 [ http-nio-8089-exec-10 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-02 09:16:27.656 [ http-nio-8089-exec-9 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/gitnote
+2020-10-02 09:16:27.657 [ http-nio-8089-exec-9 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:16:27.657 [ http-nio-8089-exec-9 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.gitnote
+2020-10-02 09:16:27.657 [ http-nio-8089-exec-9 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:16:27.657 [ http-nio-8089-exec-9 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/constitute/gitnote
+2020-10-02 09:16:27.657 [ http-nio-8089-exec-9 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-02 09:16:28.063 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/vuenote
+2020-10-02 09:16:28.063 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:16:28.063 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.vuenote
+2020-10-02 09:16:28.063 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:16:28.063 [ http-nio-8089-exec-3 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/constitute/vuenote
+2020-10-02 09:16:28.064 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-02 09:16:28.398 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/redisnote
+2020-10-02 09:16:28.398 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:16:28.398 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.redisnote
+2020-10-02 09:16:28.398 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:16:28.398 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/constitute/redisnote
+2020-10-02 09:16:28.399 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-02 09:16:28.871 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/othernote
+2020-10-02 09:16:28.871 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:16:28.871 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.othernote
+2020-10-02 09:16:28.871 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:16:28.872 [ http-nio-8089-exec-6 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/constitute/othernote
+2020-10-02 09:16:28.872 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-02 09:16:29.726 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/redisnote
+2020-10-02 09:16:29.726 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:16:29.727 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.redisnote
+2020-10-02 09:16:29.727 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:16:29.727 [ http-nio-8089-exec-2 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/constitute/redisnote
+2020-10-02 09:16:29.727 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-02 09:17:00.384 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/allproject
+2020-10-02 09:17:00.385 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:17:00.385 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.allproject
+2020-10-02 09:17:00.385 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:17:00.385 [ http-nio-8089-exec-5 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/constitute/allproject
+2020-10-02 09:17:00.386 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 2
+2020-10-02 09:17:00.848 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/introduction
+2020-10-02 09:17:00.848 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:17:00.849 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.introduction
+2020-10-02 09:17:00.849 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:17:00.849 [ http-nio-8089-exec-4 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/constitute/introduction
+2020-10-02 09:17:00.849 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-02 09:17:01.543 [ http-nio-8089-exec-7 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/javanote
+2020-10-02 09:17:01.543 [ http-nio-8089-exec-7 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:17:01.543 [ http-nio-8089-exec-7 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.javanote
+2020-10-02 09:17:01.543 [ http-nio-8089-exec-7 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:17:01.544 [ http-nio-8089-exec-7 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/constitute/javanote
+2020-10-02 09:17:01.544 [ http-nio-8089-exec-7 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-02 09:17:02.023 [ http-nio-8089-exec-8 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/linuxnote
+2020-10-02 09:17:02.024 [ http-nio-8089-exec-8 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:17:02.024 [ http-nio-8089-exec-8 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.linuxnote
+2020-10-02 09:17:02.024 [ http-nio-8089-exec-8 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:17:02.024 [ http-nio-8089-exec-8 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/constitute/linuxnote
+2020-10-02 09:17:02.024 [ http-nio-8089-exec-8 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-02 09:17:02.535 [ http-nio-8089-exec-10 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/mysqlnote
+2020-10-02 09:17:02.535 [ http-nio-8089-exec-10 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:17:02.536 [ http-nio-8089-exec-10 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.distributednote
+2020-10-02 09:17:02.536 [ http-nio-8089-exec-10 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:17:02.536 [ http-nio-8089-exec-10 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/constitute/mysqlnote
+2020-10-02 09:17:02.536 [ http-nio-8089-exec-10 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-02 09:17:03.023 [ http-nio-8089-exec-9 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/gitnote
+2020-10-02 09:17:03.024 [ http-nio-8089-exec-9 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:17:03.024 [ http-nio-8089-exec-9 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.gitnote
+2020-10-02 09:17:03.024 [ http-nio-8089-exec-9 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:17:03.025 [ http-nio-8089-exec-9 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/constitute/gitnote
+2020-10-02 09:17:03.025 [ http-nio-8089-exec-9 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 2
+2020-10-02 09:17:03.462 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/vuenote
+2020-10-02 09:17:03.462 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:17:03.462 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.vuenote
+2020-10-02 09:17:03.463 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:17:03.463 [ http-nio-8089-exec-3 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/constitute/vuenote
+2020-10-02 09:17:03.463 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-02 09:17:03.952 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/redisnote
+2020-10-02 09:17:03.952 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:17:03.952 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.redisnote
+2020-10-02 09:17:03.952 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:17:03.953 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/constitute/redisnote
+2020-10-02 09:17:03.953 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-02 09:17:04.376 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/othernote
+2020-10-02 09:17:04.376 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:17:04.376 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.othernote
+2020-10-02 09:17:04.377 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:17:04.377 [ http-nio-8089-exec-6 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/constitute/othernote
+2020-10-02 09:17:04.377 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-02 09:17:06.015 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/redisnote
+2020-10-02 09:17:06.016 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:17:06.016 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.redisnote
+2020-10-02 09:17:06.016 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:17:06.016 [ http-nio-8089-exec-2 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/constitute/redisnote
+2020-10-02 09:17:06.016 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-02 09:17:06.543 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/othernote
+2020-10-02 09:17:06.543 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:17:06.543 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.othernote
+2020-10-02 09:17:06.543 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:17:06.544 [ http-nio-8089-exec-5 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/constitute/othernote
+2020-10-02 09:17:06.544 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-02 09:17:07.311 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/talk
+2020-10-02 09:17:07.312 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:17:07.312 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.talk
+2020-10-02 09:17:07.312 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:17:07.312 [ http-nio-8089-exec-4 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/navigation/talk
+2020-10-02 09:17:07.312 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-02 09:17:11.330 [ main ] - [ INFO  ] [ com.moonmagician.reloads.ReloadsApplication : 55 ] - Starting ReloadsApplication on DESKTOP-GQFO42A with PID 452 (C:\Users\HP\Desktop\reloads\target\classes started by HP in C:\Users\HP\Desktop\reloads)
+2020-10-02 09:17:11.332 [ main ] - [ DEBUG ] [ com.moonmagician.reloads.ReloadsApplication : 56 ] - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-10-02 09:17:11.332 [ main ] - [ INFO  ] [ com.moonmagician.reloads.ReloadsApplication : 655 ] - The following profiles are active: dev
+2020-10-02 09:17:12.398 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 108 ] - Tomcat initialized with port(s): 8089 (http)
+2020-10-02 09:17:12.404 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8089"]
+2020-10-02 09:17:12.404 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2020-10-02 09:17:12.405 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-10-02 09:17:12.473 [ main ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2020-10-02 09:17:12.473 [ main ] - [ INFO  ] [ o.s.b.w.s.c.ServletWebServerApplicationContext : 285 ] - Root WebApplicationContext: initialization completed in 1107 ms
+2020-10-02 09:17:12.672 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 994 ] - {dataSource-1} inited
+2020-10-02 09:17:13.190 [ main ] - [ INFO  ] [ s.d.s.w.PropertySourcedRequestMappingHandlerMapping : 69 ] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-02 09:17:13.292 [ main ] - [ INFO  ] [ o.s.scheduling.concurrent.ThreadPoolTaskExecutor : 181 ] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-02 09:17:13.340 [ main ] - [ INFO  ] [ o.s.b.a.web.servlet.WelcomePageHandlerMapping : 58 ] - Adding welcome page template: index
+2020-10-02 09:17:13.471 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8089"]
+2020-10-02 09:17:13.485 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 220 ] - Tomcat started on port(s): 8089 (http) with context path ''
+2020-10-02 09:17:13.486 [ main ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 160 ] - Context refreshed
+2020-10-02 09:17:13.496 [ main ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 163 ] - Found 1 custom documentation plugin(s)
+2020-10-02 09:17:13.515 [ main ] - [ INFO  ] [ s.d.spring.web.scanners.ApiListingReferenceScanner : 41 ] - Scanning for api listing references
+2020-10-02 09:17:13.528 [ main ] - [ INFO  ] [ com.moonmagician.reloads.ReloadsApplication : 61 ] - Started ReloadsApplication in 2.575 seconds (JVM running for 3.341)
+2020-10-02 09:17:16.741 [ http-nio-8089-exec-1 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-02 09:17:16.742 [ http-nio-8089-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 525 ] - Initializing Servlet 'dispatcherServlet'
+2020-10-02 09:17:16.747 [ http-nio-8089-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 547 ] - Completed initialization in 5 ms
+2020-10-02 09:17:16.766 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/talk
+2020-10-02 09:17:16.766 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:17:16.768 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.talk
+2020-10-02 09:17:16.768 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:17:16.771 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/navigation/talk
+2020-10-02 09:17:16.771 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 5
+2020-10-02 09:17:22.271 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/othernote
+2020-10-02 09:17:22.272 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:17:22.273 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.othernote
+2020-10-02 09:17:22.273 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:17:22.273 [ http-nio-8089-exec-2 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/constitute/othernote
+2020-10-02 09:17:22.273 [ http-nio-8089-exec-2 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 2
+2020-10-02 09:17:22.760 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/redisnote
+2020-10-02 09:17:22.760 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:17:22.760 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.redisnote
+2020-10-02 09:17:22.760 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:17:22.760 [ http-nio-8089-exec-4 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/constitute/redisnote
+2020-10-02 09:17:22.760 [ http-nio-8089-exec-4 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 0
+2020-10-02 09:17:23.311 [ http-nio-8089-exec-8 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/vuenote
+2020-10-02 09:17:23.311 [ http-nio-8089-exec-8 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:17:23.311 [ http-nio-8089-exec-8 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.vuenote
+2020-10-02 09:17:23.311 [ http-nio-8089-exec-8 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:17:23.311 [ http-nio-8089-exec-8 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/constitute/vuenote
+2020-10-02 09:17:23.312 [ http-nio-8089-exec-8 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-02 09:17:23.687 [ http-nio-8089-exec-10 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/gitnote
+2020-10-02 09:17:23.688 [ http-nio-8089-exec-10 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:17:23.689 [ http-nio-8089-exec-10 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.gitnote
+2020-10-02 09:17:23.689 [ http-nio-8089-exec-10 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:17:23.689 [ http-nio-8089-exec-10 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/constitute/gitnote
+2020-10-02 09:17:23.689 [ http-nio-8089-exec-10 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 2
+2020-10-02 09:17:24.071 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/mysqlnote
+2020-10-02 09:17:24.072 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:17:24.072 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.distributednote
+2020-10-02 09:17:24.072 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:17:24.073 [ http-nio-8089-exec-5 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/constitute/mysqlnote
+2020-10-02 09:17:24.073 [ http-nio-8089-exec-5 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 2
+2020-10-02 09:17:24.458 [ http-nio-8089-exec-7 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/linuxnote
+2020-10-02 09:17:24.458 [ http-nio-8089-exec-7 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:17:24.458 [ http-nio-8089-exec-7 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.linuxnote
+2020-10-02 09:17:24.458 [ http-nio-8089-exec-7 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:17:24.459 [ http-nio-8089-exec-7 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/constitute/linuxnote
+2020-10-02 09:17:24.459 [ http-nio-8089-exec-7 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-02 09:17:24.855 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/javanote
+2020-10-02 09:17:24.856 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:17:24.856 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.javanote
+2020-10-02 09:17:24.856 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:17:24.856 [ http-nio-8089-exec-3 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/constitute/javanote
+2020-10-02 09:17:24.856 [ http-nio-8089-exec-3 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-02 09:17:25.360 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/allproject
+2020-10-02 09:17:25.361 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:17:25.361 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.allproject
+2020-10-02 09:17:25.361 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:17:25.361 [ http-nio-8089-exec-6 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/constitute/allproject
+2020-10-02 09:17:25.361 [ http-nio-8089-exec-6 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-02 09:17:25.736 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/introduction
+2020-10-02 09:17:25.736 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:17:25.737 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.introduction
+2020-10-02 09:17:25.737 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : []
+2020-10-02 09:17:25.737 [ http-nio-8089-exec-1 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : /bar/constitute/introduction
+2020-10-02 09:17:25.737 [ http-nio-8089-exec-1 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 1
+2020-10-02 09:17:26.130 [ http-nio-8089-exec-9 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 35 ] - 请求地址 : http://localhost:8089/
+2020-10-02 09:17:26.130 [ http-nio-8089-exec-9 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 36 ] - HTTP METHOD : GET
+2020-10-02 09:17:26.130 [ http-nio-8089-exec-9 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 39 ] - CLASS_METHOD : com.moonmagician.reloads.controller.LeftMenuController.index
+2020-10-02 09:17:26.131 [ http-nio-8089-exec-9 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 41 ] - 参数 : [org.apache.catalina.connector.RequestFacade@163c2128]
+2020-10-02 09:17:26.152 [ http-nio-8089-exec-9 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - ==>  Preparing: select count(id) from imgview; 
+2020-10-02 09:17:26.165 [ http-nio-8089-exec-9 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - ==> Parameters: 
+2020-10-02 09:17:26.176 [ http-nio-8089-exec-9 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.datacount : 143 ] - <==      Total: 1
+2020-10-02 09:17:26.208 [ http-nio-8089-exec-9 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==>  Preparing: SELECT COUNT(1) FROM imgview 
+2020-10-02 09:17:26.208 [ http-nio-8089-exec-9 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==> Parameters: 
+2020-10-02 09:17:26.211 [ http-nio-8089-exec-9 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==>  Preparing: SELECT id,title,imgurl,createtime,describetext,discusscount,visitcount,type,webpagepath FROM imgview LIMIT ?,? 
+2020-10-02 09:17:26.211 [ http-nio-8089-exec-9 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==> Parameters: 0(Long), 10(Long)
+2020-10-02 09:17:26.215 [ http-nio-8089-exec-9 ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - <==      Total: 10
+2020-10-02 09:17:26.216 [ http-nio-8089-exec-9 ] - [ DEBUG ] [ com.moonmagician.reloads.config.LogAspectConfig : 57 ] - 返回值 : index
+2020-10-02 09:17:26.216 [ http-nio-8089-exec-9 ] - [ INFO  ] [ com.moonmagician.reloads.config.LogAspectConfig : 50 ] - 耗时 : 86

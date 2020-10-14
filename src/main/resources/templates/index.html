@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible">
+    <title>MoonMagicianの首页</title>
+
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!--标题头像设置-->
+    <link th:href="@{/img/favicon.ico}" type="image/ico" rel="shortcut icon">
+    <!--各种css的引入-->
+    <link rel="stylesheet" th:href="@{/dist/css/bootstrap.css}">
+    <link rel="stylesheet" th:href="@{/project/css/font-awesome.css}">
+    <link rel="stylesheet" th:href="@{/project/css/ionicons.css}">
+    <link rel="stylesheet" th:href="@{/project/css/AdminLTE.css}">
+    <link rel="stylesheet" th:href="@{/project/css/skins/skin-blue.min.css}">
+    <link rel="stylesheet" th:href="@{/dist/css/container.css}">
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="warp">
+    <div  th:replace="commons/template::mian-header"></div>
+    <div  th:replace="commons/template::main-sidebar"></div>
+
+    <!--各种页面的显示区域-->
+    <div class="row">
+        <div th:fragment="content-wrapper" class="content-wrapper " style="height:720px; background-image: url('/img/background1.jpg');background-size:cover">
+        <!-- Content Header (Page header) -->
+
+        <!-- Main content -->
+            <section class="content container-fluid mybox" style="width: 100%;height:100%; ">
+                <div class="container-fluid" style="width: 80%;margin-top: 1px">
+                    <div class="container-fluid " style="width: 60%">
+                        <h1  class="text-center" style="color: white">MoonMagician</h1>
+                        <p class="text-center"style="color: white">F O R W A R D + E N E R G Y = H A P P I N E S S</p>
+                    </div>
+                    <!--这里是图片的显示区域，之后使用themely语句循环调用后台传输过来的一页的数据-->
+
+                    <div th:each="data:${session.datas}" class="container-fluid mystyle">
+                        <div class="row" >
+                            <div class="col-md-2 "></div>
+                            <a class="col-md-8"  th:href="${data.webpagepath}"  >
+                                <img th:src="${data.imgurl}" class="view-box" style="position: relative;"/>
+                                <div style="position:absolute;top:50%;width:95%;height: 30%;">
+                                    <div class="view-box col-md-12" th:text="${data.title}">
+                                    </div>
+                                    <div class="showdata text-nowrap col-md-12" >
+                                        <!--${#dates.format(baseFeedbackInfo.createTime, 'yyyy-MM-dd HH:mm:ss')-->
+                                        <!--<span th:text="'创建日期:'+${#dates.format(data.createtime,'yyyy-MM-dd HH:mm:ss')}"></span>-->
+                                        <span th:text="'创建日期: '+${data.createtime}" ></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <span th:text="'访问数量: '+${data.visitcount}" ></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <span >讨论数量: [[${data.discusscount}]]</span>
+                                        <!--<span th:text="“'讨论数量: '+${data.discusscount}"></span>-->
+                                    </div>
+
+
+                                </div>
+                            </a>
+                            <div class="col-md-2 col-xs-1"></div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!--这里是分页，之后用数据库查询到的数据进行分页的显示。-->
+                <div>
+                    <nav aria-label="Page navigation" style="text-align: center;">
+                        <ul class="pagination">
+                            <li th:if="${session.pageindex}ne'1'">
+                                <a th:href="'/index/'+${(session.pageindex)-1}" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li th:each="i:${#numbers.sequence(1,session.pagenumber)}"><a th:href="'/index/'+${i}" th:text="${i}"></a></li>
+                            <li th:if="${session.pagenumber}ne${session.pageindex} ">
+                                <a th:href="'/index/'+${session.pageindex+1}" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </section>
+        <!-- /.content -->
+    </div>
+    </div>
+
+
+
+    <div  th:replace="commons/template::main-footer"></div>
+    <div  th:replace="commons/template::control-sidebar"></div>
+    <div  th:replace="commons/template::control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED JS SCRIPTS -->
+
+<!-- jQuery 3 -->
+<script th:src="@{/project/js/jquery-3.3.1.min.js}"></script>
+<!-- Bootstrap 3.3.7 -->
+<script th:src="@{/project/js/bootstrap.js}"></script>
+<!-- AdminLTE App -->
+<script th:src="@{/project/js/adminlte.js}"></script>
+<!--<script>-->
+    <!--$(function () {-->
+        <!--$('ul.sidebar-menu li').click(function () {-->
+            <!--var li = $('ul.sidebar-menu li.active');-->
+            <!--li.removeClass('active');-->
+            <!--$(this).addClass('active');-->
+        <!--});-->
+
+        <!--$('.myLeftMenu').click(function (e) {-->
+
+            <!--var url = $(this).attr('data');-->
+            <!--//  console.log(url);-->
+            <!--$('#container').load(url);-->
+        <!--});-->
+    <!--})-->
+<!--</script>-->
+</body>
+<!-- Optionally, you can add Slimscroll and FastClick plugins.
+     Both of these plugins are recommended to enhance the
+     user experience. -->
+</html>

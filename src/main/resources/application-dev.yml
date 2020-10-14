@@ -1,0 +1,59 @@
+#配置数据库连接
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/myblog?Unicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: Python.1432.ACGN
+    ###########################druid配置##################################
+    type: com.alibaba.druid.pool.DruidDataSource
+    #下面为数据库连接池的补充，应用到上面的数据源需要编写配置类
+    #初始化连接池的数量
+    tomcat:
+      initial-size: 1
+      #最小连接池的数量
+      min-idle: 3
+      #配置获取连接等待超时时间，单位毫秒
+      max-active: 60000
+      #1）配置间隔多久才进行一次检测，检测需要关闭的连接，单位是毫秒
+      #2）testWhileIdle的判断
+      time-between-eviction-runs-millis: 60000
+      #配置一个连接在连接池中最小生存时间，单位是毫秒
+      min-evictable-idle-time-millis: 30000
+      #用来检测连接是否有效的sql，要求是一个查询语句，如果validationQuery为null,testOnBorrow、testOnReturn、testWhileIdle都不会其作用。
+      validation-query: select 'x'
+      # 申请连接的时候检测，如果空闲时间大于timeBetweenEvictionRunsMillis，执行validationQuery检测连接是否有效。
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
+      connection-properties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+    dbcp2:
+      pool-prepared-statements: true
+mybatis-plus:
+  #除了mybatisplus提供给我们的自定义的crud功能，我们可能也需要写自己的crud，这时需要配置我们的mapper接口与mapper.xml的映射路径
+  mapper-locations: /static/mybatis/**/*Mapper.xml
+  type-aliases-package: com.moonmagician.**.entity
+  #配置mybatis-plus全局逻辑
+  global-config:
+    db-config:
+      id-type: auto
+      #驼峰转下划线,不过下面这条语句并没有在官方文档中找到，可能是写错了吧
+      column-underline: true
+      #逻辑删除配置
+      logic-delete-value: 0
+      logic-not-delete-value: 1
+      table-underline: true
+    #是否控制台 print mybatis-plus 的 LOGO
+    banner: false
+  configuration:
+    #是否开启自动驼峰命名规则（camel case）映射，即从经典数据库列名 A_COLUMN（下划线命名） 到经典 Java 属性名 aColumn（驼峰命名） 的类似映射。
+    map-underscore-to-camel-case: true
+    #是否开启二级缓存
+    cache-enabled: false
+    #官方的说法是该参数的作用是：“允许JDBC支持自动生成主键，需要驱动兼容”，如何理解这句话的意思？
+    #其本意是说：对于支持自动生成记录主键的数据库，如：MySQL，SQL Server，此时设置useGeneratedKeys参数值为true，在执行添加记录之后可以获取到数据库自动生成的主键ID。
+    #实际上，在settings元素中设置useGeneratedKeys是一个全局参数，但是只会对接口映射器产生影响，对xml映射器不起效。
+    use-generated-keys: true
+    #useColumnLabel是使用列标签代替列名
+    use-column-label: true

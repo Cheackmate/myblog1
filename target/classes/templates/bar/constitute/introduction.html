@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>自我介绍</title>
+
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!--标题头像设置-->
+    <link th:href="@{/img/favicon.ico}" type="image/ico" rel="shortcut icon">
+    <!--各种css的引入-->
+    <link rel="stylesheet" th:href="@{/dist/css/bootstrap.css}">
+    <link rel="stylesheet" th:href="@{/project/css/font-awesome.css}">
+    <link rel="stylesheet" th:href="@{/project/css/ionicons.css}">
+    <link rel="stylesheet" th:href="@{/project/css/AdminLTE.css}">
+    <link rel="stylesheet" th:href="@{/project/css/skins/skin-blue.min.css}">
+    <link rel="stylesheet" th:href="@{/dist/css/container.css}">
+    <!--<link rel="stylesheet" th:href="@{/dist/css/container.css}">-->
+
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="warp">
+    <div  th:replace="commons/template::mian-header"></div>
+    <aside th:fragment="main-sidebar"  class="main-sidebar">
+
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+
+            <!-- Sidebar user panel (optional) -->
+            <div class="user-panel">
+                <div class="pull-left image">
+                    <!--可以自定义上传图片-->
+                    <img th:src="@{/project/img/1.png}" class="img-circle" alt="User Image">
+                </div>
+                <div class="pull-left info">
+                    <p>MoonMagician</p>
+                    <!-- 在线状态 -->
+                    <p href="#"><i class="fa fa-circle text-success"></i> 吼吼吼</p>
+                </div>
+            </div>
+
+            <!-- search form (Optional) -->
+            <form action="#" method="get" class="sidebar-form">
+                <div class="input-group">
+                    <input type="text" name="q" class="form-control" placeholder="搜索...">
+                    <span class="input-group-btn">
+                            <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </span>
+                </div>
+            </form>
+            <!-- /.search form -->
+
+            <!-- Sidebar Menu -->
+            <ul class="sidebar-menu" data-widget="tree">
+                <!--侧栏第一个标题的位置-->
+                <li class="header">导航</li>
+                <!-- Optionally, you can add icons to the links -->
+                <li >
+                    <a href="/">
+                        <i class="glyphicon glyphicon-home"></i>
+                        <span>首页</span>
+                    </a>
+                </li>
+                <!-- Optionally, you can add icons to the links -->
+                <li class="active">
+                    <a href="/introduction">
+                        <i class="glyphicon glyphicon-user"></i>
+                        <span>自我介绍</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/allproject">
+                        <i class="glyphicon glyphicon-briefcase"></i>
+                        <span>个人项目</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/javanote">
+                        <i class="glyphicon glyphicon-list-alt"></i>
+                        <span>Java笔记</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/linuxnote">
+                        <i class="glyphicon glyphicon-list-alt"></i>
+                        <span>Linux笔记</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/mysqlnote">
+                        <i class="glyphicon glyphicon-list-alt"></i>
+                        <span>Mysql笔记</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/gitnote">
+                        <i class="glyphicon glyphicon-list-alt"></i>
+                        <span>Git笔记</span>
+                    </a>
+                </li>
+                <!--<li>-->
+                    <!--<a href="/vuenote">-->
+                        <!--<i class="glyphicon glyphicon-list-alt"></i>-->
+                        <!--<span>Vue笔记</span>-->
+                    <!--</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="/redisnote">-->
+                        <!--<i class="glyphicon glyphicon-list-alt"></i>-->
+                        <!--<span>Redis笔记</span>-->
+                    <!--</a>-->
+                <!--</li>-->
+                <li >
+                    <a href="/othernote">
+                        <i class="glyphicon glyphicon-list-alt"></i>
+                        <span>其他笔记</span>
+                    </a>
+                </li>
+                <!--<li>-->
+                    <!--<a href="/talk">-->
+                        <!--<i class="glyphicon glyphicon-phone-alt"></i>-->
+                        <!--<span>讨论区</span>-->
+                    <!--</a>-->
+                <!--</li>-->
+            </ul>
+            <!-- /.sidebar-menu -->
+        </section>
+        <!-- /.sidebar -->
+    </aside>
+
+    <div class="row">
+        <div th:fragment="content-wrapper"  class="content-wrapper" style="height:720px; background-image: url('/img/background1.jpg');background-size:cover">
+            <section class="content container-fluid mybox" style="width: 100%;height:100%; ">
+                <div class="container-fluid" style="width: 80%;margin-top: 1px">
+                    <div class="row" style="margin-top:5%">
+                    <div class="col-md-2"></div>
+                    <div class="panel panel-primary col-md-8">
+                        <div class="panel-body" style="">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img th:src="@{/project/img/1.png}"  class="img-circle" style="width: 100%;height: 100%">
+                                </div>
+                                <div class="col-md-8">
+                                    <h1>欢迎光临我的小网站</h1>
+                                    <hr/>
+                                    <p class="lead">嗨~这里是magician，正在努力的完善这个小网站的功能</p>
+                                    <hr/>
+                                    <ul class="lead">
+                                        <li>一名JAVA程序员</li>
+                                        <li>喜欢探索新的技术</li>
+                                        <li>喜欢幻想的世界</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <blockquote>
+                                        <p>一个非常自闭的人</p>
+                                    </blockquote>
+                                    <blockquote>
+                                        <p>喜欢神秘的东西或者幻想的东西，在幻想的世界可以做到现实中无法做大的事情。一直致力于完成自己幻想世界的搭建。因为对于这些的向往才一直使用magician或者欺诈师这类的网名</p>
+                                    </blockquote>
+                                    <blockquote>
+                                        <p>喜欢一切美好的事物。并且希望能够保护好哪些美好的东西，聚会时一般都是在角落里沉默的那种类型，基本上不会在网络上交友</p>
+                                    </blockquote>
+                                </div>
+                                <div class="col-md-6">
+                                    <div>
+                                        <a class="btn btn-default" href="https://space.bilibili.com/35289419" role="button" style="width: 100%;margin: 5% ">BiliBili @欺诈师-3306</a>
+                                        <a class="btn btn-default" href="https://github.com/Cheackmate" role="button" style="width: 100%;margin: 5% ">Github @Cheackmate</a>
+                                        <a class="btn btn-default" href="https://blog.csdn.net/baidu_40924406/article/details/83241018" role="button" style="width: 100%;margin: 5% ">CSDN @fly_magician</a>
+                                        <a class="btn btn-default" href="https://www.nowcoder.com/profile/360533504" role="button" style="width: 100%;margin: 5% ">牛客网 @magician3306</a>
+                                        <a class="btn btn-default" href="https://gitee.com/moonmagician" role="button" style="width: 100%;margin: 5% ">码云 @Cheackmate</a>
+                                    </div>
+
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+    <div  th:replace="commons/template::main-footer"></div>
+    <div  th:replace="commons/template::control-sidebar"></div>
+    <div  th:replace="commons/template::control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED JS SCRIPTS -->
+
+<!-- jQuery 3 -->
+<script th:src="@{/project/js/jquery-3.3.1.min.js}"></script>
+<!-- Bootstrap 3.3.7 -->
+<script th:src="@{/project/js/bootstrap.js}"></script>
+<!-- AdminLTE App -->
+<script th:src="@{/project/js/adminlte.js}"></script>
+<!--<script>-->
+    <!--$(function () {-->
+        <!--$('ul.sidebar-menu li').click(function () {-->
+            <!--var li = $('ul.sidebar-menu li.active');-->
+            <!--li.removeClass('active');-->
+            <!--$(this).addClass('active');-->
+        <!--});-->
+
+        <!--$('.myLeftMenu').click(function (e) {-->
+
+            <!--var url = $(this).attr('data');-->
+            <!--//  console.log(url);-->
+            <!--$('#container').load(url);-->
+        <!--});-->
+    <!--})-->
+<!--</script>-->
+</body>
+<!-- Optionally, you can add Slimscroll and FastClick plugins.
+     Both of these plugins are recommended to enhance the
+     user experience. -->
+</html>

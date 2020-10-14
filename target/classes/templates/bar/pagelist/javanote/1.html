@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Java笔记</title>
+
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!--标题头像设置-->
+    <link th:href="@{/img/favicon.ico}" type="image/ico" rel="shortcut icon">
+    <!--各种css的引入-->
+    <link rel="stylesheet" th:href="@{/dist/css/bootstrap.css}">
+    <link rel="stylesheet" th:href="@{/project/css/font-awesome.css}">
+    <link rel="stylesheet" th:href="@{/project/css/ionicons.css}">
+    <link rel="stylesheet" th:href="@{/project/css/AdminLTE.css}">
+    <link rel="stylesheet" th:href="@{/project/css/skins/skin-blue.min.css}">
+    <link rel="stylesheet" th:href="@{/dist/css/container.css}">
+    <!--<link rel="stylesheet" th:href="@{/dist/css/container.css}">-->
+
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="warp">
+    <div th:replace="commons/template::mian-header"></div>
+    <aside th:fragment="main-sidebar" class="main-sidebar">
+
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+
+            <!-- Sidebar user panel (optional) -->
+            <div class="user-panel">
+                <div class="pull-left image">
+                    <!--可以自定义上传图片-->
+                    <img th:src="@{/project/img/1.png}" class="img-circle" alt="User Image">
+                </div>
+                <div class="pull-left info">
+                    <p>MoonMagician</p>
+                    <!-- 在线妆台 -->
+                    <p href="#"><i class="fa fa-circle text-success"></i> 吼吼吼</p>
+                </div>
+            </div>
+
+            <!-- search form (Optional) -->
+            <form action="#" method="get" class="sidebar-form">
+                <div class="input-group">
+                    <input type="text" name="q" class="form-control" placeholder="搜索...">
+                    <span class="input-group-btn">
+                            <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </span>
+                </div>
+            </form>
+            <!-- /.search form -->
+
+            <!-- Sidebar Menu -->
+            <ul class="sidebar-menu" data-widget="tree">
+                <!--侧栏第一个标题的位置-->
+                <li class="header">导航</li>
+                <!-- Optionally, you can add icons to the links -->
+                <li>
+                    <a href="/">
+                        <i class="glyphicon glyphicon-home"></i>
+                        <span>首页</span>
+                    </a>
+                </li>
+                <!-- Optionally, you can add icons to the links -->
+                <li class="">
+                    <a href="/introduction">
+                        <i class="glyphicon glyphicon-user"></i>
+                        <span>自我介绍</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/allproject">
+                        <i class="glyphicon glyphicon-briefcase"></i>
+                        <span>个人项目</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="/javanote">
+                        <i class="glyphicon glyphicon-list-alt"></i>
+                        <span>Java笔记</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/linuxnote">
+                        <i class="glyphicon glyphicon-list-alt"></i>
+                        <span>Linux笔记</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/mysqlnote">
+                        <i class="glyphicon glyphicon-list-alt"></i>
+                        <span>Mysql笔记</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/gitnote">
+                        <i class="glyphicon glyphicon-list-alt"></i>
+                        <span>Git笔记</span>
+                    </a>
+                </li>
+                <!--<li>-->
+                    <!--<a href="/vuenote">-->
+                        <!--<i class="glyphicon glyphicon-list-alt"></i>-->
+                        <!--<span>Vue笔记</span>-->
+                    <!--</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="/redisnote">-->
+                        <!--<i class="glyphicon glyphicon-list-alt"></i>-->
+                        <!--<span>Redis笔记</span>-->
+                    <!--</a>-->
+                <!--</li>-->
+                <li>
+                    <a href="/othernote">
+                        <i class="glyphicon glyphicon-list-alt"></i>
+                        <span>其他笔记</span>
+                    </a>
+                </li>
+                <!--<li>-->
+                    <!--<a href="/talk">-->
+                        <!--<i class="glyphicon glyphicon-phone-alt"></i>-->
+                        <!--<span>讨论区</span>-->
+                    <!--</a>-->
+                <!--</li>-->
+            </ul>
+            <!-- /.sidebar-menu -->
+        </section>
+        <!-- /.sidebar -->
+    </aside>
+
+    <div class="row">
+        <div th:fragment="content-wrapper" class="content-wrapper"
+             style="height:720px; background-image: url('/img/background1.jpg');background-size:cover">
+            <section class="content container-fluid mybox" style="width: 100%;height:100%; ">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10 panel panel-primary">
+                        <h1>File类</h1>
+                        <p>文件和目录路径名的抽象表现形式，File类的实例是不可变的。</p>
+                        <h2>构造方法</h2>
+                        <blockquote>
+                            <p>File(String pathname);//将指定的路径名转化为File对象。<br>
+
+                                ​ 指向不存在的路径不会报错，也不会创建文件。<br>
+
+                                File(File parent,String child);//根据指定父路径的对象和文件路径创建对象。<br>
+
+                                File(String parent,String child);//根据指定的父路径和文件路径来创建File对象。<br>
+                            </p>
+                        </blockquote>
+
+                        <h2>File常用功能</h2>
+                        <pre>
+创建功能：
+
+​	boolean createNewFile()//指定文件不存在成功，存在失败。
+
+​	boolean mkdir()//文件夹存在不成功，不存在成功
+
+​	boolean mddirs()//创建多级目录，指定路径存在不成功，不存在成功。创建的到底是什么东西，是使用方法决定的。
+</pre>
+                        ​
+                        <h3>删除功能：</h3>
+                        <pre>boolean delete()//删除文件或者文件夹，并返回true,删除的时候路径删掉的是最后一级。不能删除多级目录。删除文件夹下不能有文件和子文件夹。delete删除的时候不走回收站。</pre>
+                        <h3>获取功能：</h3>
+                        <pre>File getAbsoluteFile()
+
+​String getAbsolutePath()
+
+​String getName()
+
+​String getParent()
+
+​File getParentFile()
+
+​String getPath()
+
+​long lastModified() 最后一次被修改的时间
+
+​long length()
+                        </pre>
+
+                        <h3>判断功能：</h3>
+                        <pre>
+​	boolean exists()
+
+​	boolean isAbsolute()
+
+​	boolean isDirectory()
+
+​	boolean isFile()
+
+​	boolean isHidden()
+</pre>
+                        <h3>修改功能：</h3>
+                        <pre>
+​boolean renameTo(File dest);
+
+绝对路径：（省略）
+
+参照路径：（省略）
+</pre>
+
+
+                        <h3>创建和删除功能</h3>
+                        <pre>
+public class MyFIle01 {
+    public static void main(String[] args) throws IOException {
+        //	File file = new File("a");
+        //	file.createNewFile();
+
+        //	File file = new File("b");
+        //	file.mkdir();
+
+        //	File file = new File("c\\d\\e\\f\\g");
+        //	file.mkdirs();
+
+        File file = new File("c");
+        System.out.println(file.delete());
+    }
+}
+                        </pre>
+
+                        <h3>判断功能</h3>
+
+                        <pre>
+public class MyFile02 {
+    public static void main(String[] args) {
+        //exists();
+        File file = new File("a");
+        System.out.println(file.exists());
+
+        File file1 = new File("d");
+        System.out.println(file1.exists());
+
+        //isAbsolute()
+        File file2 = new File("F:\\JAVA\\day05\\workspace\\myFileDemo02");
+        System.out.println(file2.isAbsolute());
+
+
+        File file3 = new File("myFileDemo02");
+        System.out.println(file3.isAbsolute());
+
+        //isDirectory()
+        File file4= new File("b");
+        System.out.println(file4.isDirectory());
+
+        File file5 = new File("a");
+        System.out.println(file5.isDirectory());
+
+        //isFile()
+
+        File file6= new File("b");
+        System.out.println(file6.isFile());
+
+        File file7 = new File("a");
+        System.out.println(file7.isFile());
+
+        //isHidden()判断文件是否被隐藏
+        File file8= new File("b");
+        System.out.println(file8.isFile());
+
+    }
+}
+                        </pre>
+
+                        <h3>获取和修改功能</h3>
+
+                        <pre>
+public class MyFile03 {
+    public static void main(String[] args) {
+        // File f1 = new File("a.txt");
+        // System.out.println(f1.getAbsoluteFile());
+        //
+        // File f2 = new File("b.txt");
+        // System.out.println(f2.getAbsolutePath());
+        //
+        // File f3 = new File("c.txt");
+        // System.out.println(f3.getName());//可以获取文件名字和文件夹名字。
+
+        // File f4 = new File("F:\\JAVA\\day05\\workspace\\myFileDemo02","d.txt");
+        // System.out.println(f4.getParent());
+        //
+        // File f5 = new File(new File("F:\\JAVA\\day05\\workspace\\myFileDemo02"),"d.txt");
+        // System.out.println(f5.getParent());
+        //
+
+        // File f6 = new File("F:\\JAVA\\day05\\workspace\\myFileDemo02","d.txt");
+        // System.out.println(f6.getParentFile());
+        //
+        // File f7 = new File("d.txt");
+        // System.out.println(f7.getPath());
+        //
+        // File f8 = new File("b");
+        // System.out.println(f8.lastModified());
+        // Date date = new Date(1565918223901L);
+        // System.out.println(date.toLocaleString());
+
+        // File f9 = new File("a");
+        // System.out.println(f9.length());
+
+        File f10 = new File("a");
+        File f11 = new File("b.txt");
+        f10.renameTo(f11);
+
+    }
+}
+                        </pre>
+
+                        <h3>重要的获取功能</h3>
+
+<pre>
+//String[] list()
+//File[] listFiles()
+//static File[] listRoots()
+
+public class MyFile04 {
+public static void main(String[] args) {
+    // File f1 = new File("c:\\");
+    // String[] s = f1.list();
+    // for(String a : s){
+    // System.out.println(a);
+    //
+    //
+    // File f2 = new File("c:\\");
+    // File[] s1 = f2.listFiles();
+    // for(File a2 : s1){
+    // System.out.println(a2);
+    // }
+
+    // File[] a = File.listRoots();
+    // for(File r3:a){
+    // System.out.println(r3);
+    // }
+    }
+}
+</pre>
+
+                        <h4>遍历所有目录</h4>
+
+                        <pre>
+public class MyFile05 {
+    public static void main(String[] args) {
+        File fs = new File("F:\\JAVA\\day05\\workspace\\myFileDemo02");
+    digui(fs);
+    }
+    public static void digui(File file){
+    File[] f = file.listFiles();
+        for(File f1 : f){
+            if(f1.isDirectory()){
+                digui(f1);
+            }else if(f1.isFile()){
+                System.out.println(f1.getName());
+            }
+        }
+    }
+}
+                        </pre>
+
+                        <h4>删除指定的目录：</h4>
+
+                        <pre>
+//先把所有子目录和子文件都删掉。然后把本身目录删掉
+import java.io.File;
+
+public class MyFile06 {
+    public static void main(String[] args) {
+        File f = new File("F:\\a");
+        method(f);
+    }
+    public static void method(File file){
+        File[] files = file.listFiles();
+        for(File f : files){
+            if(f.isDirectory()){
+                method(f);
+                System.out.println(f.getName());
+                f.delete();
+
+            }else if(f.isFile()){
+                System.out.println(f.getName());
+                f.delete();
+            }
+        }
+        file.delete();
+    }
+}
+                        </pre>
+
+                        <h2>IO流分类</h2>
+                        <blockquote>
+                            <p>
+                                分类方式
+
+                                ​ 流向分类:
+
+                                ​ 输入流：Reader FileReader
+
+                                ​ 输出流：Writer FileWriter
+
+                                ​ 数据类型：
+
+                                ​ 字节流：
+
+                                ​ 字节输入流：InputStream
+
+                                ​ 字节输出流：OutputStream
+
+                                ​ 字符流：
+
+                                ​ 字符输入流：Reader
+
+                                ​ 字符输出流：Writer
+
+                                字符流能做的，字节流都可以做，但是反过来不行。
+
+                            </p>
+                        </blockquote>
+
+
+                        <h5>字符流复制文件</h5>
+
+                        <pre>
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+//使用IO操作来复制文件，针对字符流文件
+public class MyIOTest {
+    public static void main(String[] args) throws IOException {
+        // FileReader fr = new FileReader("copy.txt");
+        // FileWriter fw = new FileWriter("copy3.txt");
+
+        //第一种方法，使用单个字符读取
+        // int ch;
+        // while((ch=fr.read())!=-1){
+        // fw.write(ch);
+        // }
+
+        //第二种方法使用一个数组读取
+        // char[] chs = new char[1024];
+        // int len;
+        // while((len = fr.read(chs))!=-1){
+        // System.out.print(len);
+        // System.out.print(new String(chs,0,len));
+        // fw.write(chs,0,len);
+        // }
+
+
+        //第三种方法使用缓冲字符流读取单个字符
+        // BufferedReader bfr =new BufferedReader(new FileReader("copy.txt"));
+        // BufferedWriter bfw = new BufferedWriter(new FileWriter("copy4.txt"));
+        // int ch;
+        // while((ch=bfr.read())!=-1){
+        // bfw.write(ch);
+        // }
+        // bfr.close();
+        // bfw.close();
+        //
+
+
+        //第四种方法使用缓冲字节流读取一个数组
+        //
+        // BufferedReader bfr =new BufferedReader(new FileReader("copy.txt"));
+        // BufferedWriter bfw = new BufferedWriter(new FileWriter("copy5.txt"));
+        //
+        // char[] chs = new char[1024];
+        // int len;
+        //
+        // while((len=bfr.read(chs))!=-1){
+        // bfw.write(chs,0,len);
+        // }
+        // bfr.close();
+        // bfw.close();
+
+
+        //第五种方法，使用缓冲字节流读取字符串
+        BufferedReader bfr =new BufferedReader(new FileReader("copy.txt"));
+        BufferedWriter bfw = new BufferedWriter(new FileWriter("copy6.txt"));
+
+        String str;
+        while(((str = bfr.readLine()) != null )){
+        bfw.write(str);
+        bfw.newLine();
+        bfw.flush();
+        }
+        bfr.close();
+        bfw.close();
+        //
+        // fr.close();
+        // fw.close();
+    }
+}
+                        </pre>
+
+                        <h5>字节流复制文件</h5>
+
+                        <pre>
+public class MyIODemo01 {
+    public static void main(String[] args) throws IOException {
+
+        FileInputStream fr = new FileInputStream("b.txt");
+        FileOutputStream fs = new FileOutputStream("d.txt");
+
+        // byte[] by= new byte[1024];
+        // int len;
+        // while((len=fr.read(by))!=-1){
+        // fs.write(by,0,len);
+        // }
+        int by ;
+        while((by=fr.read())!=-1){
+            fs.write(by);
+        }
+        fs.close();
+        fr.close();
+    }
+}
+                        </pre>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div th:replace="commons/template::main-footer"></div>
+    <div th:replace="commons/template::control-sidebar"></div>
+    <div th:replace="commons/template::control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED JS SCRIPTS -->
+
+<!-- jQuery 3 -->
+<script th:src="@{/project/js/jquery-3.3.1.min.js}"></script>
+<!-- Bootstrap 3.3.7 -->
+<script th:src="@{/project/js/bootstrap.js}"></script>
+<!-- AdminLTE App -->
+<script th:src="@{/project/js/adminlte.js}"></script>
+<!--<script>-->
+<!--$(function () {-->
+<!--$('ul.sidebar-menu li').click(function () {-->
+<!--var li = $('ul.sidebar-menu li.active');-->
+<!--li.removeClass('active');-->
+<!--$(this).addClass('active');-->
+<!--});-->
+
+<!--$('.myLeftMenu').click(function (e) {-->
+
+<!--var url = $(this).attr('data');-->
+<!--//  console.log(url);-->
+<!--$('#container').load(url);-->
+<!--});-->
+<!--})-->
+<!--</script>-->
+</body>
+<!-- Optionally, you can add Slimscroll and FastClick plugins.
+     Both of these plugins are recommended to enhance the
+     user experience. -->
+</html>

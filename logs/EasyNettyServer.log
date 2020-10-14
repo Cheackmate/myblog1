@@ -1,0 +1,19 @@
+2020-10-14 14:47:17.453 [ main ] - [ INFO  ] [ com.moonmagician.reloads.ReloadsApplicationTests : 55 ] - Starting ReloadsApplicationTests on DESKTOP-GQFO42A with PID 16240 (started by HP in C:\Users\HP\Desktop\reloads)
+2020-10-14 14:47:17.456 [ main ] - [ DEBUG ] [ com.moonmagician.reloads.ReloadsApplicationTests : 56 ] - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-10-14 14:47:17.457 [ main ] - [ INFO  ] [ com.moonmagician.reloads.ReloadsApplicationTests : 655 ] - The following profiles are active: dev
+2020-10-14 14:47:20.109 [ main ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 994 ] - {dataSource-1} inited
+2020-10-14 14:47:21.948 [ main ] - [ INFO  ] [ s.d.s.w.PropertySourcedRequestMappingHandlerMapping : 69 ] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-14 14:47:22.376 [ main ] - [ INFO  ] [ o.s.scheduling.concurrent.ThreadPoolTaskExecutor : 181 ] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-14 14:47:22.513 [ main ] - [ INFO  ] [ o.s.b.a.web.servlet.WelcomePageHandlerMapping : 54 ] - Adding welcome page: class path resource [templates/index.html]
+2020-10-14 14:47:22.849 [ main ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 160 ] - Context refreshed
+2020-10-14 14:47:22.896 [ main ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 163 ] - Found 1 custom documentation plugin(s)
+2020-10-14 14:47:22.921 [ main ] - [ INFO  ] [ s.d.spring.web.scanners.ApiListingReferenceScanner : 41 ] - Scanning for api listing references
+2020-10-14 14:47:22.949 [ main ] - [ INFO  ] [ com.moonmagician.reloads.ReloadsApplicationTests : 61 ] - Started ReloadsApplicationTests in 6.321 seconds (JVM running for 7.874)
+2020-10-14 14:47:23.390 [ main ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==>  Preparing: SELECT COUNT(1) FROM imgview 
+2020-10-14 14:47:23.409 [ main ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==> Parameters: 
+2020-10-14 14:47:23.449 [ main ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==>  Preparing: SELECT id,title,imgurl,createtime,describetext,discusscount,visitcount,type,webpagepath FROM imgview LIMIT ?,? 
+2020-10-14 14:47:23.451 [ main ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - ==> Parameters: 0(Long), 10(Long)
+2020-10-14 14:47:23.459 [ main ] - [ DEBUG ] [ c.m.reloads.mapper.ImgviewMapper.selectPage : 143 ] - <==      Total: 5
+2020-10-14 14:47:23.507 [ SpringContextShutdownHook ] - [ INFO  ] [ o.s.scheduling.concurrent.ThreadPoolTaskExecutor : 218 ] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-14 14:47:23.510 [ SpringContextShutdownHook ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2029 ] - {dataSource-1} closing ...
+2020-10-14 14:47:23.553 [ SpringContextShutdownHook ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2101 ] - {dataSource-1} closed

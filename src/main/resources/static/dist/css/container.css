@@ -1,0 +1,46 @@
+.mystyle{
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.view-box{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+    font-family: '华文楷体';
+    color:white;
+    font-size: calc(1em + 1vw);
+    font-weight: bolder;
+}
+.showdata{
+
+    text-align: center;
+    font-family: '华文楷体';
+    color:white;
+    font-size: calc(1.2em);
+    font-weight: bolder;
+
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.mybox{
+
+    width: 100%;
+    height: 100%;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+html{
+    width: 100%;
+    height:100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
